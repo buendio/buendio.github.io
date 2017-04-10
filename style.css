@@ -1,0 +1,338 @@
+/* Eric Meyer's CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Eric Meyer's CSS Reset */
+
+html {
+	height: 100%;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+body {
+	font: 16px Arial, sans-serif;
+	height: 100%;
+	background-color: #ffffff;
+
+}
+a {
+	text-decoration: none;
+}
+@font-face {
+  font-family: Lato, sans-serif;
+  src: url(font/Lato-Regular.ttf);
+   } 
+   @font-face {
+  font-family: LatoLigtItalic;
+  src: url(font/Lato-LightItalic.ttf);
+   }   
+   @font-face {
+  font-family: ChunkFive;
+  src: url(font/chunkfive.regular.ttf);
+   }  
+    @font-face {
+  font-family: Montserrat;
+  src: url(font/Montserrat-Regular.ttf)
+}
+
+.wrapper {
+	min-width: 300px;
+	max-width: 1440px;
+	margin: 0 auto;
+	
+	
+	
+	box-sizing: border-box;
+	
+}
+
+
+/* Header
+-----------------------------------------------------------------------------*/
+.header {
+	
+	background: #FFE680;
+	font-family: Lato;
+	background-image: url(img/headerBg.jpg);
+	background-size: 100% 100%;
+	text-align: center;
+	padding-top: 5.42%;
+	padding-bottom: 19.87%;
+	position: relative;
+	
+
+	
+	
+
+}
+#menu{
+	margin: 0 auto;
+	
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-around;
+	margin-bottom: 11.876%;
+
+}
+
+#logo {
+	
+	
+}
+ #logo a {
+color: #fff;
+font-family: Montserrat;
+font-size: 1.574em;
+ }
+ #logo a span {
+ 	font-weight: bold;
+ }
+ nav {
+margin-top: 0.5%;
+ }
+ nav ul {
+
+ }
+ nav ul li {
+display: inline-block;
+margin-right: 30px;
+ }
+ nav ul li a {
+ 	display: block;
+ 	color: #fff;
+ 	font-family: Lato;
+ 	font-size: 0.875em;
+ 	padding: 10% ;
+ 	
+ 	border-radius: 20px;
+
+ }
+ nav ul li:last-child  {
+ 	margin-right: 0px;
+ }
+ nav ul li a:hover {
+
+ border: 3px solid #fff;
+}
+.header h1 {
+font-family: ChunkFive;
+font-size: 5em;
+color: #ffffff;
+
+
+}
+.header h1 span{
+color: #01a2a6;
+}
+.header p{
+color: #ffffff;
+font-size: 1.125em;
+line-height: 1.5;
+}
+
+#but {
+	background-color: #ffffa6;
+	margin: 0 auto;
+	border-width: 0px;
+	width: 17.97%;
+	cursor: pointer;
+	padding: 2% ;
+	color: #000000;
+	border-radius: 35px;
+	margin-top: 4%;
+	font-weight: bold;
+
+}
+#op {
+	background-color: #faf7f7;
+	opacity: 0.9;
+	height: 5.886%;
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	
+}
+
+
+/* Middle
+-----------------------------------------------------------------------------*/
+.content {
+	padding: 0 0 100px;
+}
+/*
+_-------------------------
+---------about--------
+-----------------------*/
+#about {
+	width: 100%;
+	display: flex;
+	flex-flow: wrap;
+	justify-content: center;
+	font-family: Lato;
+	padding-top: 6.33%;
+	line-height: 1.5em;
+	color: #77777;
+}
+#about h2 {
+	font-family: ChunkFive;
+font-size:3.75em;
+color: #29d9c2;
+margin-bottom: 7%;
+line-height: 1em;
+
+}
+#about h2 span {
+	color: #01a2a6;
+}
+#abText {
+	
+	padding-top: 4.77%;
+}
+#abImg {
+	padding-right: 5.542%;
+}
+ img {
+ 	max-width: 100%;
+ }
+ /*-----------------
+ -------end about===
+ -----------------*/
+ article {
+ 	background-color: #f2fefe;
+ 	width: 100%;	
+ }
+ #des {
+padding-top: 6.334%;
+width: 100%;
+display: flex;
+flex-flow: wrap;
+justify-content: center;
+
+ }
+ #des h2 {
+ 	font-size: 4.187em;
+ 	font-family: ChunkFive;
+ 	color: #01a2a6;
+ 	margin-bottom: 5.542%;
+
+ }
+ #des h2 span {
+ 	color: #29d9c2;
+ }
+#des p {
+	font-family: Lato;
+	color: #777777;
+	line-height: 1.7em;
+	margin-bottom: 11.5%;
+
+}
+#for {
+	color: #c1c1c1;
+	font-weight: lighter;
+
+}
+#for p {
+	margin: 0 ;
+	margin-left: 0.1%;
+}
+#for img {
+	width: 20px;
+	height: 20px;
+}
+#for section {
+	display: flex;
+	align-items: center;
+}
+#sec {
+	margin-right: 5.5%;
+	padding-left: 1%;
+
+}
+#sec form{
+width: 32.923%;
+position: relative;
+}
+#sec form input {
+	width: 100%;
+	height: 35px;
+border: 1px solid #e8e8e8;
+border-radius: 20px;
+outline: none;
+font-size: 0.875em;
+font-family: LatoLigtItalic;
+padding-left: 16%;
+position: relative;
+
+
+}
+#sec form button{
+background: none;
+border-width: 0px;
+outline: none;
+cursor: pointer;
+position: absolute;
+top: 30%;
+left: 3%;
+padding: 0;
+
+
+}
+
+/*+++++++++++++++++
+++++++des2+++++++++
+++++++++++++++++*/
+#des2{
+	background-image: url(img/des2.jpg);
+	width: 81.25%;
+	margin: 0px auto;
+	
+}
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+
+}
+
