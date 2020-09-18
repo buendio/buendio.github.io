@@ -1,0 +1,271 @@
+div.fancy-select {
+	position: relative;
+	font-size: 0.85vw;
+	color: #727272;
+/*	color: #ffffff;*/
+	cursor: pointer;
+	font-weight: 400;
+	width: 100%;
+	/*margin: 0 auto;*/
+	/*margin-bottom: 0.7vw;*/
+
+} 
+
+div.fancy-select.disabled {
+	opacity: 0.5;
+}
+
+div.fancy-select select:focus + div.trigger {
+	
+}
+
+div.fancy-select select:focus + div.trigger.open {
+	
+}
+
+div.fancy-select div.trigger {
+	text-align: left;
+	position: relative;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	border-radius: 7px;
+	background-color: #f6f6f6;
+	padding: 0.3vw 1vw;
+	padding-left: 2vw;
+	padding-right: 2.2vw;
+	border: none;
+	color: #727272;
+	font-size: 0.85vw;
+	width: 100%;
+	min-height: 3.3vw;
+	width: 100%;
+	transition: all 240ms ease-out;
+	-webkit-transition: all 240ms ease-out;
+	-moz-transition: all 240ms ease-out;
+	-ms-transition: all 240ms ease-out;
+	-o-transition: all 240ms ease-out;
+/*	white-space: nowrap;
+	text-overflow: clip;
+	overflow: hidden;*/
+}
+
+div.fancy-select div.trigger:after {
+	position: absolute;
+	content: "";
+	top: 50%;
+	margin-top: -3px;
+	right: 0.8vw;
+	border-right: 6px solid transparent;
+	border-left: 6px solid transparent;
+	border-bottom: 8px solid #afafb0;
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+	-webkit-transition: all 0.4s;
+	transition: all 0.4s;
+	z-index: 9;
+}
+
+div.fancy-select div.trigger.open {
+	/*background-color: rgba(0, 0, 0, 0.25);
+	color: #ffffff;*/
+	box-shadow: none;
+}
+
+div.fancy-select div.trigger.open:after {
+	/*border-top-color: #7A8498;*/
+	-webkit-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+
+div.fancy-select ul.options {
+	padding-left: 0;
+	list-style: none;
+	margin: 0;
+	margin-top: -2px;
+	position: absolute;
+	/*top: 2rem;*/
+	left: 0;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 50;
+	overflow: auto;
+	background-color: rgba(255, 255, 255, 1);
+	width: 100%;
+	max-height: 22vh;
+	overflow-y: auto;
+	overflow-x: hidden;
+
+	transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+	-webkit-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+	-moz-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+	-ms-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+	-o-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+}
+
+div.fancy-select ul.options.open {
+	visibility: visible;
+	top: 85%;
+	opacity: 1;
+	border: 1px solid rgba(0, 0, 0, 0.07);
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	/* have to use a non-visibility transition to prevent this iOS issue (bug?): */
+	/*http://stackoverflow.com/questions/10736478/css-animation-visibility-visible-works-on-chrome-and-safari-but-not-on-ios*/
+	transition: opacity 300ms ease-out, top 300ms ease-out;
+	-webkit-transition: opacity 300ms ease-out, top 300ms ease-out;
+	-moz-transition: opacity 300ms ease-out, top 300ms ease-out;
+	-ms-transition: opacity 300ms ease-out, top 300ms ease-out;
+	-o-transition: opacity 300ms ease-out, top 300ms ease-out;
+}
+
+div.fancy-select ul.options.overflowing {
+	top: 100%;
+	/*bottom: 40px;*/
+
+	transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+	-webkit-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+	-moz-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+	-ms-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+	-o-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+}
+
+div.fancy-select ul.options.overflowing.open {
+	top: 100%;
+	/*bottom: 50px;*/
+
+	transition: opacity 300ms ease-out, bottom 300ms ease-out;
+	-webkit-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+	-moz-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+	-ms-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+	-o-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+}
+
+div.fancy-select ul.options li {
+	text-align: left;
+	padding: 1.1vw;
+	color: #9699a9;
+	cursor: pointer;
+	white-space: nowrap;
+	margin: 0;
+	transition: all 150ms ease-out;
+	-webkit-transition: all 150ms ease-out;
+	-moz-transition: all 150ms ease-out;
+	-ms-transition: all 150ms ease-out;
+	-o-transition: all 150ms ease-out;
+	/*white-space: nowrap;
+	text-overflow: ellipsis;*/
+}
+div.fancy-select ul.options li:before{
+	display: none;
+
+}
+div.fancy-select ul.options li.selected {
+	/*background: #04a9f3;*/
+	color: #1981b6;
+}
+
+div.fancy-select ul.options li.hover {
+	/*background: #04a9f3;*/
+	color: #1981b6;
+	cursor: pointer;
+}
+
+
+
+
+.to_top {
+position: fixed;
+right: 2.5vw;
+bottom: 1.5vw;
+-webkit-box-shadow: 0 0 84px rgba(0, 108, 163, 0.41);
+box-shadow: 0 0 84px rgba(0, 108, 163, 0.41);
+background-color: #0a6df0;
+width: 3.5vw;
+height: 3.5vw;
+border-radius: 100%;
+padding: 0.7vw;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+justify-content: center;
+cursor: pointer;
+z-index: 189;
+/*-webkit-animation: radial-pulse 1.5s infinite;*/
+/*animation: radial-pulse 1.5s infinite;*/
+
+opacity: 0;
+-webkit-transform: scale(0);
+-ms-transform: scale(0);
+transform: scale(0);
+-webkit-transition: all 0.4s;
+-o-transition: all 0.4s;
+transition: all 0.4s;
+}
+.to_top:before {
+content: '';
+position: relative;
+border: 0.8vw solid transparent;
+border-bottom: 1vw solid #fff;
+-webkit-transform: translateY(-25%);
+-ms-transform: translateY(-25%);
+transform: translateY(-25%);
+-webkit-transition: all 0.4s;
+-o-transition: all 0.4s;
+transition: all 0.4s;
+}
+.to_top.act {
+opacity: 1;
+-webkit-transform: scale(1);
+-ms-transform: scale(1);
+transform: scale(1);
+}
+.to_top:hover:before {
+-webkit-transform: translateY(-37%);
+-ms-transform: translateY(-37%);
+transform: translateY(-37%);
+}
+/*@-webkit-keyframes radial-pulse {
+0% {
+-webkit-box-shadow: 0 0 0 0px rgba(243, 174, 25, 0.7);
+box-shadow: 0 0 0 0px rgba(243, 174, 25, 0.7);
+}
+100% {
+-webkit-box-shadow: 0 0 0 20px rgba(243, 174, 25, 0);
+box-shadow: 0 0 0 20px rgba(243, 174, 25, 0);
+}
+}
+@keyframes radial-pulse {
+0% {
+-webkit-box-shadow: 0 0 0 0px rgba(243, 174, 25, 0.7);
+box-shadow: 0 0 0 0px rgba(243, 174, 25, 0.7);
+}
+100% {
+-webkit-box-shadow: 0 0 0 20px rgba(243, 174, 25, 0);
+box-shadow: 0 0 0 20px rgba(243, 174, 25, 0);
+}*/
+/*}*/
+
+@media (max-width: 900px){
+	.to_top{
+		right: 2rem;
+		bottom: 1.5rem;
+		width: 3.5rem;
+		height: 3.5rem;
+	}
+	.to_top:before {
+	border: 0.8rem solid transparent;
+	border-bottom: 1rem solid #fff;
+
+	}
+
+}
