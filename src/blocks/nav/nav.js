@@ -1,47 +1,22 @@
-let $html = $('html'),
-    $nav = $('.nav');
+$(window).scroll(function () {
+    let $nav = $('.nav');
 
-function fixedMenu() {
-    $html.toggleClass('html_nav-scroll', ($(window).scrollTop() > 60) )
-}
-fixedMenu();
-$(window).on('scroll', fixedMenu);
-
-$('.nav__burger, .nav__hidden-close').on('click', () => {
-    $html.toggleClass('html_nav-hidden-open');
-    $html.toggleClass('html_overflow-hidden');
+    if ($(window).scrollTop() > 60) {
+        $nav.addClass('nav_scroll');
+    } else {
+        $nav.removeClass('nav_scroll');
+    }
 });
 
-window.onload = () => {
-    baron($('.nav__submenu'), {
-        scroller: '.nav__scroll',
-        container: '.nav__submenu-main',
-        bar: '.nav__bar',
-        barOnCls: 'nav__bar_state_on'
-    });
-};
+$('.nav__burger, .nav__hidden-close').on('click', function () {
+    let $html = $('html'),
+        $nav_hidden = $('.nav__hidden'),
+        cNavHidden = 'nav__hidden_open';
 
-$('.nav__item-box').on('mouseover mouseout', function() {
-    $html.toggleClass('html_overflow-hidden');
-    $nav.toggleClass('nav_active');
+    $nav_hidden.toggleClass(cNavHidden);
+
+    if ($nav_hidden.hasClass(cNavHidden))
+        $html.css('overflow', 'hidden');
+    else
+        $html.css('overflow', '');
 });
-
-/*let count = Math.round($('.block20').outerWidth() / $('.block20__item').first().outerWidth()),
-    k = 1,
-    arr = [];
-
-$('.nav .nav__item-box').each(function() {
-    let $this = $(this);
-
-    $this.find('.block20__item').each(function () {
-        if (count / k === 1) {
-            k = 0;
-            arr.push($(this).outerHeight());
-        }
-        k++;
-    });
-
-    $this.find('.block11__item-inner').each(function(i) {
-        $(this).outerHeight(arr[i]);
-    });
-});*/

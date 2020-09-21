@@ -5,8 +5,10 @@
   &_small { font-size: 17px; line-height: 1.45; font-weight: normal; padding: 30px; }
   &__wrapper { position: relative; z-index: 2; background: #fff;  padding: 20px 0; margin-left: -10px; width: calc(100% + 20px); font-size: 16px; }
   &__wrapper:before { content: ' '; position: absolute; right: -165px; width: 150px; height: 60px; border: 20px solid #fff; border-right: 0; border-left: 0; background: #d64356; }
-  &:before { content: ' '; position: absolute; bottom: -20px; left: 20px; width: 100%; height: calc(65% - 20px); background-color: #f9f9f9; }
+  &:before { content: ' '; position: absolute; bottom: -20px; left: 20px; width: 100%; height: calc(65% - 20px); background-color: #FFF; }
   &:after { content: ' '; position: absolute; bottom: -40px; left: 40px; z-index: -11; width: 100%; height: calc(65% - 20px); border: 1px solid #d64356; }
+  
+  &_before-gray::before { background: #F9F9F9 }
 }
 
 @media(min-width: screen-lg-min) {

@@ -1,0 +1,27 @@
+.block4 {
+    display: flex; 
+    flex-wrap: wrap;
+    margin: 0 -10px -15px;
+    &__item {
+        border: 8px solid #D64356;
+        box-sizing: border-box; display: flex; flex-grow: 1; flex-direction: column; justify-content: space-between; 
+        padding: 25px 15px;
+        position: relative;
+
+        &::after {
+            position: absolute; top: 68px; right: -8px; content: ''; width: 8px; height: 50px; transition: .3s; background: #CC4052; border-top: 21px solid #fff; border-bottom: 21px solid #fff;
+        }
+        
+        &:hover::after { opacity: 0; }
+    }
+
+    &__item-box {
+        width: 100%;
+        display: flex; padding: 0 10px; margin-bottom: 15px;
+    }
+    &__title {
+        color: #000000; font-weight: 500; font-size: 28px; line-height: 33px; margin-bottom: 20px;
+    }
+    &__text {
+        color: #9598A2; font-size: 18px; line-height: 26px; transition: .3s; margin-bottom: 40px;}
+}

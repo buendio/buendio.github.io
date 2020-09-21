@@ -1,0 +1,48 @@
+.gallery {
+    display: flex;
+    flex-direction: column;
+
+    &__img { width: 100%; height: 100%; }
+    
+    &__top-row {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    &__block {
+        height: 266px;
+        width: 266px;
+        background: #825a5a;
+
+        &_small {
+            width 100px
+            background: wheat;
+        }
+
+        &_multiple-blocks { display: flex; flex-direction: column; }
+        
+        &-sm-horizontal {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__title {
+        font-size: 42px;
+        color: #414141;
+        font-weight: 500;
+        
+        flex: 0 0 49%;        
+    }
+}
+
+
+.gallery__block_sm {
+    height 120px
+    width 120px
+    background rebeccapurple
+}
+
+.gallery__block_horizontaly { height: 220px; background: olive;}
