@@ -1,0 +1,16 @@
+.block-frames {
+  position: relative; z-index: initial; width: 85%; background: #fff; margin: 0 auto; padding: 40px 80px 40px 0; font-weight: 400; line-height: 32px; color: #262c3a;
+
+  &__border { position: absolute; top: 0; left: 0; z-index: 2; width: 100%; height: 100%; border: 11px solid #d64356; background: #fff; }
+  &_small { font-size: 17px; line-height: 1.45; font-weight: normal; padding: 30px; }
+  &__wrapper { position: relative; z-index: 2; background: #fff;  padding: 20px 0; margin-left: -10px; width: calc(100% + 20px); font-size: 16px; }
+  &__wrapper:before { content: ' '; position: absolute; right: -165px; width: 150px; height: 60px; border: 20px solid #fff; border-right: 0; border-left: 0; background: #d64356; }
+  &:before { content: ' '; position: absolute; bottom: -20px; left: 20px; width: 100%; height: calc(65% - 20px); background-color: #f9f9f9; }
+  &:after { content: ' '; position: absolute; bottom: -40px; left: 40px; z-index: -11; width: 100%; height: calc(65% - 20px); border: 1px solid #d64356; }
+}
+
+@media(min-width: screen-lg-min) {
+  .block-frames {
+    &__wrapper { font-size: 20px; margin-left: -80px; width: calc(100% + 80px); }
+  }
+}

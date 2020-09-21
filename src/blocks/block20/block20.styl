@@ -1,0 +1,24 @@
+.block20 {
+  display: flex; flex-wrap: wrap;
+
+  &__icon { opacity: 0; position: absolute; right: -10px; top: 0; transition: .3s; }
+  &__item { position: relative; overflow: hidden; width: 100%; padding: 34px 35px 37px; background: #fff; border: 1px solid #E3EAEE; display: flex; flex-direction: column; justify-content: space-between; transition: .3s; }
+  &__title { color: #333333; font-weight: 500; font-size: 22px; line-height: 28px; margin-bottom: 20px; }
+  &__text { color: #878787; font-weight: 300; font-size: 16px; line-height: 22px; margin-bottom: 25px; }
+  &__btn { width: 120px; border-color: #2B7DD1; background: #2B7DD1; }
+
+  &__item:hover { background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 100%); box-shadow: 0 45px 60px rgba(0, 0, 0, 0.12); }
+  &__item:hover &__icon { opacity: 1; }
+}
+
+@media(min-width: screen-sm-min) {
+  .block20 {
+    &__item { width: 50%; }
+  }
+}
+
+@media(min-width: screen-md-min) {
+  .block20 {
+    &__item { width: 33.33%; }
+  }
+}

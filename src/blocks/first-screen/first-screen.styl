@@ -1,0 +1,40 @@
+.first-screen {
+  position: relative; width: 100%; padding: 90px 15px 50px;
+
+  &__content { position: relative; color: #fff; padding-left: 100px; }
+  &__title { position: relative; z-index: 1; font-size: 40px; line-height: 55px; font-weight: 500; margin-bottom: 25px; }
+  &__text { position: relative; z-index: 1; font-size: 16px; line-height: 26px; font-weight: 300; margin-bottom: 35px; }
+
+  &__logo-box {
+    position: absolute; top: 7px; left: -250px; display: none; width: 250px; height: 220px; opacity: 0;
+    -webkit-mask: url('../img/blocks/logo-min.svg'); -webkit-mask-repeat: no-repeat; -webkit-mask-position: center;
+    -webkit-mask-size: contain; object-fit: cover; background: no-repeat center / cover;
+  }
+  &__logo-box_animate { opacity: 0.4; animation-duration: 3s; animation-name: first-screen__logo-box_animate; }
+  &__logo { width: 100%; }
+  &__btn { min-width: 100%; }
+}
+
+@keyframes first-screen__logo-box_animate { 0% { opacity: 0; } 100% { opacity: 0.4; }}
+
+@media (min-width: 1200px) {
+  .first-screen {
+    padding: 90px 15px 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .first-screen {
+    width: 870px; margin: auto; padding: 90px 15px;
+
+    &__title { font-size: 54px; line-height: 70px; }
+    &__text { font-size: 21px; line-height: 31px; }
+    &__logo-box { display: block; }
+  }
+}
+
+@media (min-width: 576px) {
+  .first-screen {
+    &__btn { min-width: 200px; max-width: max-content; }
+  }
+}

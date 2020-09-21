@@ -1,0 +1,16 @@
+.flex {
+  margin: 0 -10px -20px; display: flex; flex-wrap: wrap;
+
+  &__item { padding: 0 10px; margin-bottom: 20px; }
+
+  &_no-gutters &__item { padding: 0; }
+  &_align-items-center { align-items: center; }
+
+  &_width4 &__item { width: 25%; }
+  &_width3 &__item { width: 33%; }
+  &_width2 &__item { width: 50%; }
+
+  &_width4 &__item_width2 { width: 50%; }
+  &_width4 &__item_width3 { width: 75%; }
+  &_width3 &__item_width2 { width: 66.66%; }
+}

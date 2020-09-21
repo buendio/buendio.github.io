@@ -1,0 +1,29 @@
+User-agent: *
+Disallow: /connectors/
+Disallow: /assets/components/
+Disallow: /library/tags
+Disallow: /search
+Disallow: /assets/cache/
+Disallow: /assets/docs/
+Disallow: /assets/export/
+Disallow: /assets/import/
+Disallow: /assets/modules/
+Disallow: /assets/plugins/
+Disallow: /assets/snippets/
+Disallow: /install/
+Disallow: /manager/
+Disallow: /?
+Disallow: /*?
+Disallow: /index.php
+
+
+Disallow: /otkroem-biznesu-vozmozhnosti-arabskix-emiratov-test
+Disallow: /biznes-czentr-test
+Disallow: /en/private-offices-test-gallerei
+Disallow: /bloki-test-3
+Disallow: /bloki-dlya-lendingov
+Disallow: /bloki1
+Disallow: /tipovyie-bloki
+ 
+Host: https://sorp.ae/
+Sitemap: https://sorp.ae/sitemap.xml
