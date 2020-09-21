@@ -15,7 +15,7 @@ module.exports = {
     
     entry: {
         main: "./src/js/index.js",
-        //test: "./src/js/pages/test.js"
+        test: "./src/js/pages/test.js"
     },
 
     output: {
