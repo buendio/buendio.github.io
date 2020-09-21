@@ -3442,7 +3442,7 @@ button.swiper-pagination-bullet {
 /*-----------END STL----------*/
 
 .block7_modal .block7__item:hover {
-  background: #524dd2 url("../../img/pattern-hover-modal.png") no-repeat;
+  background: #524dd2 url("../img/pattern-hover-modal.png") no-repeat;
   background-position: 76% 20%;
   border-bottom: 5px solid #524dd2;
 }
