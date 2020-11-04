@@ -151,4 +151,12 @@ document.addEventListener('DOMContentLoaded', () => {
   search.addEventListener('submit', searchItem);
   data_id.addEventListener('click', sort1);
   data_name.addEventListener('click', sort2);
+
+// MENU
+ $('.nav_mob').hide();//?
+      $('.mob').on('click', function(){
+        $('.nav_mob').slideToggle();
+        $('.mob span').toggleClass('active');
+      });
+
 })
