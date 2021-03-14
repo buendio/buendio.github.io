@@ -1,0 +1,53 @@
+@media only screen and (max-width: 1025px) {
+  .wrap {
+    min-height: 100vh;
+  }
+}
+/*-------------------------------------------*/
+@media only screen and (max-width: 769px) {
+  h1 {
+    margin: 30px auto;
+  }
+  .enter {
+    max-width: 90%;
+  }
+  .enter form {
+    width: 85%;
+    margin: auto;
+  }
+}
+/*-------------------------------------------*/
+@media only screen and (max-width: 450px) {
+  html {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 1.4rem;
+  }
+  .enter {
+    max-width: 95%;
+  }
+  .enter form {
+    width: 100%;
+  }
+  .enter__title {
+    font-size: 1.6rem;
+  }
+  .enter__title img {
+    display: none;
+  }
+  .enter__body {
+    padding: 0 10px 20px;
+  }
+  .login input[type="text"],
+  .login input[type="password"] {
+    padding-left: 20px;
+  }
+  .login__decor {
+    margin-bottom: 25px;
+  }
+  .login__label__text {
+    padding: 15px 10px;
+    left: 0;
+  }
+}

@@ -1,1 +1,85 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Space X - Falcon 1</title><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/><link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png"><link rel="manifest" href="favicon/site.webmanifest"><link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#05171c"><meta name="msapplication-TileColor" content="#05171c"><meta name="theme-color" content="#05171c"><link rel="manifest" href="/manifest.json"/><link href="/static/css/main.97fc473a.chunk.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script>!function(e){function r(r){for(var n,l,a=r[0],p=r[1],f=r[2],c=0,s=[];c<a.length;c++)l=a[c],Object.prototype.hasOwnProperty.call(o,l)&&o[l]&&s.push(o[l][0]),o[l]=0;for(n in p)Object.prototype.hasOwnProperty.call(p,n)&&(e[n]=p[n]);for(i&&i(r);s.length;)s.shift()();return u.push.apply(u,f||[]),t()}function t(){for(var e,r=0;r<u.length;r++){for(var t=u[r],n=!0,a=1;a<t.length;a++){var p=t[a];0!==o[p]&&(n=!1)}n&&(u.splice(r--,1),e=l(l.s=t[0]))}return e}var n={},o={1:0},u=[];function l(r){if(n[r])return n[r].exports;var t=n[r]={i:r,l:!1,exports:{}};return e[r].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=e,l.c=n,l.d=function(e,r,t){l.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},l.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},l.t=function(e,r){if(1&r&&(e=l(e)),8&r)return e;if(4&r&&"object"==typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(l.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:e}),2&r&&"string"!=typeof e)for(var n in e)l.d(t,n,function(r){return e[r]}.bind(null,n));return t},l.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(r,"a",r),r},l.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},l.p="/";var a=this.webpackJsonpspase=this.webpackJsonpspase||[],p=a.push.bind(a);a.push=r,a=a.slice();for(var f=0;f<a.length;f++)r(a[f]);var i=p;t()}([])</script><script src="/static/js/2.a28f0a0f.chunk.js"></script><script src="/static/js/main.2c787ee1.chunk.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
+</head>
+
+<body>
+    <div class="wrap">
+        <h1>Login To Your Account / Register New</h1>
+        <div class="enter">
+            <div class="enter__title">
+                <img src="/img/icon.png" alt="">
+                <span>Login To Your Account / Register New</span>
+            </div>
+            <div class="enter__body">
+                <form class="login">
+                    <div class="login__decor"></div>
+                    <input type="text" placeholder="User Name">
+                    <input type="password" placeholder="Password">
+                    <div class="login__item">
+                        <div class="login__label">
+                            <input type="checkbox" id="check">
+                            <label for="check"></label>
+                            Remember My password
+                            <div class="login__label__text">
+                                You no longer need to enter a password every time you use the site
+                            </div>
+                        </div>
+                        <button type="submit">Login</button>
+                    </div>
+                </form>
+                <form action="send.php" class="register"  method="post">
+                    <h3 class="register__title">Register</h3>
+                    <label for="email">Email</label>
+                    <div class="input_wrap">
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <label for="name">User Name</label>
+                    <div class="input_wrap">
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <label for="passw">Password</label>
+                    <div class="input_wrap">
+                        <input type="password" id="passw" name="passw">                        
+                    </div>
+
+                    <button type="submit" name="sendForm">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const register = document.querySelector('.register');
+            
+            register.addEventListener('submit', function (event) {
+                
+                let inputs = register.elements;
+
+                [...inputs].forEach(input => {
+                if(input.type != "submit") {
+                
+                    input.closest('.input_wrap').classList.remove('error');
+                    
+                    if (input.value == '') {
+                    input.closest('.input_wrap').classList.add('error');
+                    event.preventDefault();
+                    } else {
+                    input.closest('.input_wrap').classList.add('sucess');
+                    }
+                }    
+                })
+            })
+
+            })
+    </script>
+</body>
+
+</html>
