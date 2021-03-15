@@ -95,13 +95,24 @@
                                 h1.innerHTML = `You will need ${res}packs of 6pcs`;    
                         }
                         else if (arr.length == 0) {
-                            let res = Math.round(elements / p8)
-                            let res2 = Math.round(elements / p6);
-                            if (elements % p8 > elements % p6) {
-                                h1.innerHTML = `You will need ${res}packs of 8pcs`;
+                            let res = Math.trunc(elements / p8)
+                            let res2 =Math.trunc(elements / p6);
+
+                            if (res * p8 < elements) {
+                                res = res +1;
+                                console.log(res);
+                            }
+                            if (res2 * p6 < elements) {
+                                res2 = res2 +1;
+                            }
+                            if ((p6 * res2) - elements   > (p8 * res) - elements) {                                 
+                                    h1.innerHTML = `You will need ${res}packs of 8pcs`;
+                               
                             }
                             else {
-                                h1.innerHTML = `You will need ${res2}packs of 6pcs`;
+                                  
+                                    h1.innerHTML = `You will need ${res2}packs of 6pcs`;
+                                
                             }
                         }               
                     }    
