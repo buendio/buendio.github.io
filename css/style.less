@@ -428,12 +428,17 @@ body.vh {
 	text-align: center;
 }
 .input__wrap {
+	position: relative;
 	width: 100%;
 	margin-bottom: 37px;
+	text-align: left;
 }
 .input__wrap.error {
 	input {
 		border-bottom: 1px solid #FF5700;
+	}
+	label {
+		display: inline-block;
 	}
 }
 .input__wrap.change {
@@ -447,7 +452,14 @@ input {
 	padding-bottom: 15px;
 	border-bottom: 1px solid #21A6B2;
 }
-
+label {
+	position: absolute;
+	left: 0;
+	bottom: -15px;
+	display: none;
+	font-size: 10px;
+	color:#C72525;
+}
 :-moz-placeholder {color: rgba(@col, 0.7);}
 ::-moz-placeholder {color: rgba(@col, 0.7);}
 :-ms-input-placeholder {color: rgba(@col, 0.7);}
