@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Документы</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
+</head>
+
+<body>
+    <header class="page">
+        <div class="wrap">
+            <a href="/" class="logo"><img src="/img/logoCredits.svg" alt="logo"></a>
+            <nav>
+                <ul class="nav">
+                    <li><a href="investors.html">Інвесторам</a></li>
+                    <li><a href="documents.html" class="active">Документи компанії</a></li>
+                    <li><a href="contacts.html">Контакти</a></li>
+                </ul>
+                
+            </nav>  
+            <button class="mob"><span></span></button>
+        </div>  
+        <ul class="nav_mob">
+            <li><a href="investors.html">Інвесторам</a></li>
+            <li><a href="documents.html" class="active">Документи компанії</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+            <li class="nav_mob_last"><a href="tel:0800216675" class="footer__tel"><span class="footer__span">0 800 21-66-75<br><span class="footer__span_small">Безкоштовно по Україні</span></span></a></li>
+        </ul>      
+    </header>
+    <main>
+        <h1>Документи</h1>
+        <details open>
+            <summary ><span>01</span> Свідоцтво та ліцензії</summary>
+            <div class="details__conent">
+                <a href="" target="_blank">Повідомлення про видачу ліцензії</a>
+                <a href="" target="_blank">Повідомлення про видачу ліцензії</a>
+                <a href="" target="_blank">Повідомлення про видачу ліцензії</a>
+                <a href="" target="_blank">Повідомлення про видачу ліцензії</a>
+            </div>
+        </details>
+        <details>
+            <summary ><span>02</span> Звітність</summary>
+            <div class="details__conent">
+                <a href="" target="_blank">Повідомлення про видачу ліцензії</a>
+                <a href="" target="_blank">Повідомлення про видачу ліцензії</a>
+                <a href="" target="_blank">Повідомлення про видачу ліцензії</a>
+                <a href="" target="_blank">Повідомлення про видачу ліцензії</a>
+            </div>
+        </details>
+        <details>
+            <summary ><span>03</span> Облігаційна програма ТОВ "Кредитсервіс"</summary>
+            <div class="details__conent">
+                <a href="" target="_blank">Повідомлення про видачу ліцензії</a>
+                <a href="" target="_blank">Повідомлення про видачу ліцензії</a>
+                <a href="" target="_blank">Повідомлення про видачу ліцензії</a>
+                <a href="" target="_blank">Повідомлення про видачу ліцензії</a>
+            </div>
+        </details>
+
+    </main>
+    <footer>
+        <div class="wrap">
+            <nav>
+                <ul class="nav">
+                    <li><a href="investors.html">Інвесторам</a></li>
+                    <li><a href="documents.html">Документи компанії</a></li>
+                    <li><a href="contacts.html">Контакти</a></li>
+                </ul>
+            </nav>
+            <a href="tel:0800216675" class="footer__tel"><span class="footer__span">0 800 21-66-75<br><span class="footer__span_small">Безкоштовно по Україні</span></span></a>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!-- https://developers.google.com/speed/libraries/  actual version -->
+    <script>
+        $(document).ready(function(){
+        ////////////////mob nav//////////////////////////////
+              $('.nav_mob').hide();//?
+              $('.mob').on('click', function(){
+              $('.nav_mob').slideToggle();
+              $('.mob span').toggleClass('active');
+              $('body').toggleClass('vh');
+             });
+        /////////////////mob nav///////////////////////////////
+        }); // end ready 
+    </script>
+</body>
+
+</html>

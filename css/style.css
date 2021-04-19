@@ -51,6 +51,9 @@ h2,
 h3 {
   font-weight: normal;
 }
+section {
+  box-sizing: border-box;
+}
 /*-------------------END BASE STYLE----------------------------------*/
 @font-face {
   font-family: 'GothamPro';
@@ -92,6 +95,11 @@ header {
   position: relative;
   margin-bottom: 15px;
   padding: 40px 0;
+}
+header.page .wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .header {
   margin-bottom: 70px;
@@ -186,6 +194,20 @@ h1 {
   font-family: 'GothamPro-Bold';
   text-align: center;
   text-transform: uppercase;
+}
+.btn {
+  display: inline-block;
+  padding: 20px 40px;
+  background: #FFD739;
+  font-size: 1.125rem;
+  border-radius: 20px;
+}
+.btn:hover,
+.btn:focus {
+  background: #FFE271;
+}
+.btn:active {
+  background: #F2C40E;
 }
 .brands__item {
   position: relative;
@@ -403,10 +425,258 @@ body.vh .header {
   width: 100%;
   padding-left: 0;
 }
+/*------------INVESTOR--------------------*/
+.investorAbout .wrap {
+  max-width: 772px;
+}
+.investorAbout p {
+  font-size: 1.375rem;
+  line-height: 1.64;
+  margin-bottom: 50px;
+}
+.why {
+  margin-top: 120px;
+}
+.why .wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.why__item {
+  max-width: 336px;
+  margin-bottom: 100px;
+}
+.why__item h2 {
+  font-size: 2.625rem;
+  line-height: 1.24;
+  font-family: 'GothamPro-Bold';
+  color: #008894;
+  text-transform: uppercase;
+}
+.why__item h3 {
+  margin-bottom: 18px;
+  font-size: 1.125rem;
+  font-family: 'GothamPro-Bold';
+}
+.why__item p {
+  line-height: 1.5;
+}
+.why__item span {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #008894;
+}
+.advantages {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: #ECFBFF;
+}
+.advantages__img {
+  width: 50%;
+}
+.advantages__list h2 {
+  max-width: 350px;
+  margin-bottom: 50px;
+  font-size: 1.5rem;
+  line-height: 1.33;
+}
+.advantages__list li {
+  position: relative;
+  font-size: 1.125rem;
+  margin-bottom: 35px;
+}
+.advantages__list li::before {
+  content: "";
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  margin-right: 20px;
+  border-radius: 50%;
+  background: #FFD739;
+}
+.investorContact {
+  padding: 65px 0 95px;
+}
+.investorContact h2 {
+  margin-bottom: 25px;
+  font-size: 1.5rem;
+  font-family: 'GothamPro-Bold';
+  text-transform: uppercase;
+  text-align: center;
+}
+.investorContact p {
+  font-size: 1.375rem;
+  text-align: center;
+}
+.investorForm {
+  max-width: 376px;
+  margin: 35px auto;
+  text-align: center;
+}
+.input__wrap {
+  width: 100%;
+  margin-bottom: 37px;
+}
+.input__wrap.error input {
+  border-bottom: 1px solid #FF5700;
+}
+.input__wrap.change input {
+  border-bottom: 1px solid #FFD739;
+}
+input {
+  display: block;
+  width: 100%;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #21A6B2;
+}
+:-moz-placeholder {
+  color: rgba(43, 43, 43, 0.7);
+}
+::-moz-placeholder {
+  color: rgba(43, 43, 43, 0.7);
+}
+:-ms-input-placeholder {
+  color: rgba(43, 43, 43, 0.7);
+}
+::-webkit-input-placeholder {
+  color: rgba(43, 43, 43, 0.7);
+}
+.investorContact_bold {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  font-family: 'GothamPro-Bold';
+}
+main {
+  max-width: 970px;
+  min-height: 60vh;
+  margin: auto;
+  box-sizing: border-box;
+}
+main h1 {
+  margin-bottom: 30px;
+  font-size: 2.375rem;
+  color: #2B2B2B;
+  text-align: center;
+}
+details summary::-webkit-details-marker {
+  display: none;
+}
+details > summary {
+  position: relative;
+  list-style: none;
+  outline: none;
+  font-size: 22px;
+  font-family: 'GothamPro-Bold';
+}
+details > summary span {
+  display: inline-block;
+  margin-right: 75px;
+  font-family: 'GothamPro';
+  color: #61BEC7;
+}
+details summary:before {
+  content: '+';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: 7px;
+  font-size: 36px;
+  font-family: 'GothamPro';
+  color: #008894;
+  cursor: pointer;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+details[open] summary:before {
+  content: '-';
+  transform: scaleX(1.4) translateY(-50%);
+}
+details {
+  padding: 18px 0;
+  border-top: 1px solid #EFEFEF;
+}
+details:last-child {
+  border-bottom: 1px solid #EFEFEF;
+}
+.details__conent {
+  margin-top: 30px;
+}
+.details__conent a {
+  display: block;
+  margin-bottom: 25px;
+  padding-left: 105px;
+  text-decoration: underline;
+}
+.details__conent a:hover {
+  text-decoration: none;
+  color: #008894;
+}
+/*---------------------contacts--------------------*/
+.contact__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.contact__info {
+  max-width: 330px;
+  padding: 42px 55px 100px 55px;
+  box-sizing: border-box;
+  background: #E8F8F3;
+}
+.contact__info .footer__tel {
+  display: block;
+  margin-bottom: 17px;
+  padding: 0;
+  background: none;
+  color: #008894;
+}
+.contact__info .footer__span_small {
+  color: #2B2B2B;
+}
+.contact__info .footer__span::before {
+  background: url(/img/phone_blue.svg) no-repeat;
+}
+.contact__info p {
+  margin-bottom: 10px;
+  font-family: 'GothamPro-Bold';
+}
+.contact__mail {
+  color: #008894;
+  margin-bottom: 45px;
+}
+address {
+  margin-bottom: 30px;
+  font-style: normal;
+  font-size: 14px;
+}
+address span {
+  display: block;
+  margin-bottom: 10px;
+}
+.contact__item {
+  max-width: 430px;
+  margin-left: 20px;
+  text-align: center;
+}
+.contact__item h2 {
+  margin-bottom: 35px;
+  font-size: 22px;
+  line-height: 1.64;
+  text-align: center;
+}
 /*~~~~~~~~~~~~~~~~~~~MEDIA~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 @media only screen and (max-width: 1025px) {
   .wrap {
     padding: 0 10px;
+  }
+  main {
+    min-height: 79vh;
   }
 }
 /*-------------------------------------------*/
@@ -450,6 +720,9 @@ body.vh .header {
   }
   footer .nav {
     justify-content: center;
+  }
+  main {
+    padding: 0 20px;
   }
 }
 /*-------------------------------------------*/
@@ -533,5 +806,37 @@ body.vh .header {
     width: 100%;
     padding: 50px 0;
     box-sizing: border-box;
+  }
+  .advantages {
+    display: block;
+    padding-bottom: 70px;
+  }
+  .advantages__img {
+    width: 100%;
+  }
+  .advantages__list {
+    padding: 0 20px;
+  }
+  .advantages__list h2 {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+  details > summary {
+    font-size: 18px;
+  }
+  details > summary span {
+    display: none;
+  }
+  .details__conent a {
+    padding-left: 0;
+  }
+  .contact__wrap {
+    display: block;
+  }
+  .contact__info {
+    margin-bottom: 35px;
+  }
+  .contact__item h2 {
+    font-size: 18px;
   }
 }

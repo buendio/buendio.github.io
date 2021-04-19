@@ -23,6 +23,11 @@ header {
 	margin-bottom: 15px;
 	padding: 40px 0;
 }
+header.page {
+	.wrap {
+		.flex(space-between);
+	}
+}
 .header {
 	margin-bottom: 70px;
 	padding-bottom: 50px;
@@ -110,6 +115,19 @@ h1 {
 		text-align: center;
 		text-transform: uppercase;
 	}
+}
+.btn {
+		display: inline-block;
+		padding: 20px 40px;
+		background:#FFD739;
+		font-size: 1.125rem;
+		border-radius:20px;
+		&:hover, &:focus {
+			background: #FFE271;
+		}
+		&:active {
+			background: #F2C40E;
+		}
 }
 .brands__item {
 	position: relative;
@@ -318,6 +336,246 @@ body.vh {
 		padding-left: 0;
 	}
 }
+/*------------INVESTOR--------------------*/
+.investorAbout {
+	.wrap {
+		max-width: 772px;
+	}
+	p {
+		font-size: 1.375rem;
+		line-height: 1.64;
+		margin-bottom: 50px;
+	}
+}
+.why {
+	margin-top: 120px;
+	.wrap {
+		.flex( space-between, flex-start);
+		flex-wrap: wrap;
+	}
+}
+.why__item {
+	max-width: 336px;
+	margin-bottom: 100px;
+	h2 {
+		font-size:2.625rem; 
+		line-height: 1.24;
+		font-family: 'GothamPro-Bold';
+		color:#008894;
+		text-transform: uppercase;
+	}
+	h3 {
+		margin-bottom: 18px;
+		font-size: 1.125rem;
+		font-family: 'GothamPro-Bold';
+	}
+	p {
+		line-height: 1.5;
+	}
+	span {
+		display: inline-block;
+		margin-bottom: 10px;
+		color:#008894;
+	}
+}
+.advantages {
+	.flex;
+	background: #ECFBFF;
+}
+.advantages__img {
+	width: 50%;
+}
+.advantages__list {
+	
+	h2 {
+		max-width: 350px;
+		margin-bottom: 50px;
+		font-size: 1.5rem;
+		line-height: 1.33;
+	}
+	li {
+		position: relative;
+		font-size: 1.125rem;
+		margin-bottom: 35px;
+		&::before {
+			content:"";
+			display: inline-block;
+			width: 9px;
+			height: 9px;
+			margin-right: 20px;
+			border-radius:50%;
+			background: #FFD739;
+		}
+	}
+}
+.investorContact {
+	padding: 65px 0 95px;
+	h2 {
+		margin-bottom: 25px;
+		font-size: 1.5rem;
+		font-family: 'GothamPro-Bold';
+		text-transform: uppercase;
+		text-align: center;
+	}
+	p {
+		font-size: 1.375rem;
+		text-align: center;
+	}
+}
+.investorForm {
+	max-width: 376px;
+	margin:35px auto;
+	text-align: center;
+}
+.input__wrap {
+	width: 100%;
+	margin-bottom: 37px;
+}
+.input__wrap.error {
+	input {
+		border-bottom: 1px solid #FF5700;
+	}
+}
+.input__wrap.change {
+	input {
+		border-bottom: 1px solid #FFD739;
+	}
+}
+input {
+	display: block;
+	width: 100%;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #21A6B2;
+}
 
+:-moz-placeholder {color: rgba(@col, 0.7);}
+::-moz-placeholder {color: rgba(@col, 0.7);}
+:-ms-input-placeholder {color: rgba(@col, 0.7);}
+::-webkit-input-placeholder {color: rgba(@col, 0.7);}
+.investorContact_bold {
+	margin-top: 10px;
+	font-size: 1.5rem;
+	font-family: 'GothamPro-Bold';
+}
+main {
+	max-width: 970px;
+	min-height: 60vh;
+	margin: auto;
+	box-sizing:border-box;
+	h1 {
+		margin-bottom: 30px;
+		font-size: 2.375rem;
+		color:@col;
+		text-align: center
+	}
+}
+details summary::-webkit-details-marker {
+	display: none
+}
+details > summary {
+	position: relative;
+	list-style: none;
+	outline: none;
+	font-size: 22px;
+	font-family: 'GothamPro-Bold';
+	span {
+		display: inline-block;
+		margin-right: 75px;
+		font-family: 'GothamPro';
+		color:#61BEC7;
+	}
+}
+details summary:before {
+	content: '+';
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	margin-right: 7px;
+	font-size: 36px;
+	font-family: 'GothamPro';
+	color:#008894;
+	cursor: pointer;
+	.transition;
+}
+details[open] summary:before {
+	content:'-';
+	transform: scaleX(1.4) translateY(-50%);;
+}
+details {
+	padding: 18px 0;
+	border-top: 1px solid #EFEFEF;
+	&:last-child {
+		border-bottom: 1px solid #EFEFEF;
+	}
+	
+}
+.details__conent {
+	margin-top: 30px;
+	a {
+		display: block;
+		margin-bottom: 25px;
+		padding-left:105px;
+		text-decoration: underline;
+		&:hover {
+			text-decoration: none;
+			color:#008894;
+		}
+	}
+}
+/*---------------------contacts--------------------*/
+.contact__wrap {
+	.flex(space-between);
+	margin-bottom: 100px;
+}
+.contact__info {
+	max-width: 330px;
+	padding: 42px 55px 100px 55px;
+	box-sizing: border-box;
+	background: #E8F8F3;
+	.footer__tel {
+		display: block;
+		margin-bottom: 17px;
+		padding: 0;
+		background: none;
+		color:#008894;
+	}
+	.footer__span_small {
+		color:@col;
+	}
+	.footer__span {
+		&::before {
+			background:url(/img/phone_blue.svg) no-repeat;
+		}
+	}
+	p {
+		margin-bottom: 10px;
+		font-family: 'GothamPro-Bold';
+	}
+}
+.contact__mail {
+	color:#008894;
+	margin-bottom: 45px;
+}
+address {
+	margin-bottom: 30px;
+	font-style: normal;
+	font-size: 14px;
+	span {
+		display: block;
+		margin-bottom: 10px;
+	}
+}
+.contact__item {
+	max-width: 430px;
+	margin-left: 20px;
+	text-align: center;
+	h2 {
+		margin-bottom: 35px;
+		font-size: 22px;
+		line-height:1.64;
+		text-align: center;
+	}
+}
 /*~~~~~~~~~~~~~~~~~~~MEDIA~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 @import "media.less";
