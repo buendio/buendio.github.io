@@ -63,9 +63,6 @@ h1, h2, h3 {
  // stretch
  // flex-wrap: wrap;
 
-  // display: grid;
-  // grid-template-columns:1fr 1fr 1fr;
-  // grid-template-rows:  300px 300px 300px;
 
 // :-moz-placeholder {color: #000;}
 // ::-moz-placeholder {color: #000;}
@@ -74,58 +71,4 @@ h1, h2, h3 {
 
 //~"calc(100% - 800px)";
 
-//.nav li:not(:last-child) {border-right: 1px solid #666;} удаляем у последнего элемента бордер
- //<button class="mob"><span></span></button>
-.mob {
-	width: 45px;
-  height: 70px;
-  overflow: hidden;
-  display: none;
-  background: none;	
-}
-.mob span {
-	display: block;
-  position: relative;
-  width: 100%;
-  height: 6px;
-  background: @col;
-  border-radius: 4px;
-  .transition(0.1s);
-  &:before {
-    content: "";
-    width: 100%;
-    border-radius: 4px;
-    position: absolute;
-    top: -15px;
-    left: 0;
-    height: 6px;
-    background-color: @col;
-    .transition;
-  }
-  &:after {
-    border-radius: 4px;
-  	content: "";
-  	width: 100%;
-    position: absolute;
-    height: 6px;
-    left: 0;
-    background-color: @col;
-    bottom: -15px;
-    .transition;
-  }
-}
-.mob .active {
-  background: none;
-}
-.mob .active:before {
-  top: 0;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-.mob .active:after {
-  bottom: 0;
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
+

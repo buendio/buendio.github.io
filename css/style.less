@@ -40,6 +40,11 @@ header {
 	li:not(:last-child) {
 		margin-right: 55px;
 	}
+	a {
+		&.active, &:hover {
+			color:#008894;
+		}
+	}
 }
 .header__block {
 	position: relative;
@@ -169,6 +174,10 @@ h1 {
 		}
 	}
 }
+.about__img_hide {
+	display: none;
+	margin: 0 auto 25px;
+}
 .about__text {
 	max-width: 475px;
 	h3 {
@@ -224,5 +233,91 @@ footer {
 	font-family: 'GothamPro-Bold';
 	text-transform: uppercase;
 }
+.mob {
+  display: none;
+  width: 60px;
+  height: 60px;
+  border-radius:10px;
+  overflow: hidden;
+  background: #FFD739;	
+}
+.mob span {
+  display: inline-block;
+  position: relative;
+  width: 15px;
+  height: 2px;
+  background: @col;
+  border-radius: 4px;
+  .transition(0.1s);
+  &:before {
+    content: "";
+    width: 15px;
+	height: 2px;
+    border-radius: 4px;
+    position: absolute;
+    top: -8px;
+    left: 0;
+    background-color: @col;
+    .transition;
+  }
+  &:after {
+    border-radius: 4px;
+  	content: "";
+  	width: 15px;
+    position: absolute;
+    height: 2px;
+    left: 0;
+    background-color: @col;
+    bottom: -8px;
+    .transition;
+  }
+}
+.mob .active {
+	background: none;
+  }
+  .mob .active:before {
+	top: 0;
+	-webkit-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+			transform: rotate(45deg);
+  }
+  .mob .active:after {
+	bottom: 0;
+	-webkit-transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg);
+			transform: rotate(-45deg);
+  }
+  .vh {
+	height: 100vh;
+	overflow: hidden;
+}
+body.vh {
+	.header {
+		background: #fff;
+	}
+}
+.nav_mob {
+	position: absolute;
+	z-index: 999;
+	top: 140px;
+	left: 0;
+	right: 0;
+	height: 100vh;
+	font-size: 22px;
+	font-family: 'GothamPro';
+	background: #fff;
+	transition: all 0s;
+	li {
+		margin-bottom: 40px;
+		padding-left: 23px;
+	}
+	.nav_mob_last {
+		position: absolute;
+		top:~"calc(100vh - 290px)";
+		width: 100%;
+		padding-left: 0;
+	}
+}
+
 /*~~~~~~~~~~~~~~~~~~~MEDIA~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 @import "media.less";

@@ -1,11 +1,135 @@
 
 @media only screen and (max-width : 1025px) {
+    .wrap {
+        padding: 0 10px;
+    }
 }
 /*-------------------------------------------*/
 @media only screen and (max-width : 769px) {
+    html {
+        font-size: 14px;
+    }
+    .bg_circle {display: none;}
+    .header__item {
+        max-width: 440px;
+        margin-right: 25px;
+    }
+    .header {
+        overflow: hidden;
+        background-size: cover;
+         background-position: top;
+    }
+    .header__img {
+        &:before {
+            top:15px;
+		    left: -12px;
+        }
+    }
+    .nav li:not(:last-child) {
+        margin-right: 30px;
+    }
+    .brands__item {
+        padding: 50px 40px;
+    }
+    .about__description {
+        margin: 0 auto 60px;
+    }
+    .about__item {
+        margin-bottom: 60px;
+    }
+    footer {
+        .wrap {
+            display: block;
+        }
+        nav {
+            padding: 44px 0;
+        }
+        .nav {
+            justify-content: center;
+        }
+    }
 }
 /*-------------------------------------------*/
 @media only screen and (max-width : 450px) {
+    .wrap {
+        padding: 0 20px;
+    }
+    .mob, .brands .wrap, .about__item, .header__block, .about__img_hide {
+        display: block;
+    }
+    header {
+        margin-bottom: 0;
+        .nav {
+            display: none;
+        }
+    }
+    .logo {
+        max-width: 213px;
+    }
+    h1 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    .header {
+        padding-bottom: 7px;
+        overflow: visible;
+        background: #E8F8F3;
+    }
+    .header__item {
+        margin-right: 0;
+        p {
+            font-size: 18px;
+            margin-bottom: 50px;
+        }
+    }
+    .header__img {
+        max-width: 238px;
+        margin:0 auto -50px;
+    }
+    .brands  {
+        margin-bottom: 50px;
+        padding-top: 35px;
+    }
+    .brands__item {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        text-align: center;
+        img {
+            margin: 0 auto 50px;
+        }
+        p {
+            font-size: 16px;
+        }
+        a {
+            position: static;
+            margin-top: 50px;
+        }
+    }
+    .about__description {
+        padding: 0 20px;
+        text-align: left;
+    }
+    .about__img {
+        display: none;
+    }
+    footer {
+        height: auto;
+        .wrap {
+            padding: 0;
+        }
+        
+        .nav {
+            a {
+                font-size: 14px;
+            }
+        }
+    }
+    .footer__tel {
+        width: 100%;
+        padding: 50px 0;
+        box-sizing:border-box;
+    }
 }
 
 
