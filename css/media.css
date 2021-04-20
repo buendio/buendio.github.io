@@ -1,18 +1,18 @@
 @media only screen and (max-width: 1025px) {
-  .wrap {
-    padding: 0 10px;
+  .bg_circle {
+    display: none;
   }
   main {
     min-height: 79vh;
+  }
+  .brands__item {
+    padding: 50px 40px;
   }
 }
 /*-------------------------------------------*/
 @media only screen and (max-width: 769px) {
   html {
     font-size: 14px;
-  }
-  .bg_circle {
-    display: none;
   }
   .header__item {
     max-width: 440px;
@@ -30,16 +30,17 @@
   .nav li:not(:last-child) {
     margin-right: 30px;
   }
-  .brands__item {
-    padding: 50px 40px;
-  }
   .about__description {
     margin: 0 auto 60px;
   }
   .about__item {
     margin-bottom: 60px;
   }
+  footer {
+    height: auto;
+  }
   footer .wrap {
+    padding: 0;
     display: block;
   }
   footer nav {
@@ -48,8 +49,22 @@
   footer .nav {
     justify-content: center;
   }
+  .footer__tel {
+    width: 100%;
+    padding: 50px 0;
+    box-sizing: border-box;
+  }
   main {
     padding: 0 20px;
+  }
+  .advantages__list {
+    padding: 20px 0;
+  }
+  .mob {
+    display: block;
+  }
+  header .nav {
+    display: none;
   }
 }
 /*-------------------------------------------*/
@@ -57,7 +72,6 @@
   .wrap {
     padding: 0 20px;
   }
-  .mob,
   .brands .wrap,
   .about__item,
   .header__block,
@@ -66,9 +80,6 @@
   }
   header {
     margin-bottom: 0;
-  }
-  header .nav {
-    display: none;
   }
   .logo {
     max-width: 213px;
@@ -120,19 +131,8 @@
   .about__img {
     display: none;
   }
-  footer {
-    height: auto;
-  }
-  footer .wrap {
-    padding: 0;
-  }
   footer .nav a {
     font-size: 14px;
-  }
-  .footer__tel {
-    width: 100%;
-    padding: 50px 0;
-    box-sizing: border-box;
   }
   .advantages {
     display: block;
@@ -165,5 +165,11 @@
   }
   .contact__item h2 {
     font-size: 18px;
+  }
+  .investorContact {
+    padding: 65px 20px 95px;
+  }
+  .why__item {
+    margin-bottom: 50px;
   }
 }

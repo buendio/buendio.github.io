@@ -14,7 +14,7 @@ body {
 	max-width: 1168px;
 	position: relative;
 	margin: 0 auto;
-	padding: 0 0px;
+	padding: 0 20px;
 	box-sizing: border-box;
 }
 /*------------------END BODY && WRAP BASE STYLE------------------------------*/
@@ -34,7 +34,7 @@ header.page {
 	background:url(/img/bg_fon.svg) no-repeat;
 	background-size:contain;
 	background-position: 0% 100%;
-	
+	overflow: hidden;
 	header {
 		.flex(space-between);
 	}
@@ -397,12 +397,17 @@ body.vh {
 		position: relative;
 		font-size: 1.125rem;
 		margin-bottom: 35px;
+		padding-left: 20px;
 		&::before {
 			content:"";
 			display: inline-block;
+			position: absolute;
+			left: -10px;
+			top: 50%;
+			transform: translateY(-50%);
 			width: 9px;
 			height: 9px;
-			margin-right: 20px;
+			
 			border-radius:50%;
 			background: #FFD739;
 		}

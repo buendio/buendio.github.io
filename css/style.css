@@ -87,7 +87,7 @@ body {
   max-width: 1168px;
   position: relative;
   margin: 0 auto;
-  padding: 0 0px;
+  padding: 0 20px;
   box-sizing: border-box;
 }
 /*------------------END BODY && WRAP BASE STYLE------------------------------*/
@@ -107,6 +107,7 @@ header.page .wrap {
   background: url(/img/bg_fon.svg) no-repeat;
   background-size: contain;
   background-position: 0% 100%;
+  overflow: hidden;
 }
 .header header {
   display: flex;
@@ -486,13 +487,17 @@ body.vh .header {
   position: relative;
   font-size: 1.125rem;
   margin-bottom: 35px;
+  padding-left: 20px;
 }
 .advantages__list li::before {
   content: "";
   display: inline-block;
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
   width: 9px;
   height: 9px;
-  margin-right: 20px;
   border-radius: 50%;
   background: #FFD739;
 }
@@ -686,20 +691,20 @@ address span {
 }
 /*~~~~~~~~~~~~~~~~~~~MEDIA~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 @media only screen and (max-width: 1025px) {
-  .wrap {
-    padding: 0 10px;
+  .bg_circle {
+    display: none;
   }
   main {
     min-height: 79vh;
+  }
+  .brands__item {
+    padding: 50px 40px;
   }
 }
 /*-------------------------------------------*/
 @media only screen and (max-width: 769px) {
   html {
     font-size: 14px;
-  }
-  .bg_circle {
-    display: none;
   }
   .header__item {
     max-width: 440px;
@@ -726,7 +731,11 @@ address span {
   .about__item {
     margin-bottom: 60px;
   }
+  footer {
+    height: auto;
+  }
   footer .wrap {
+    padding: 0;
     display: block;
   }
   footer nav {
@@ -735,8 +744,22 @@ address span {
   footer .nav {
     justify-content: center;
   }
+  .footer__tel {
+    width: 100%;
+    padding: 50px 0;
+    box-sizing: border-box;
+  }
   main {
     padding: 0 20px;
+  }
+  .advantages__list {
+    padding: 20px 0;
+  }
+  .mob {
+    display: block;
+  }
+  header .nav {
+    display: none;
   }
 }
 /*-------------------------------------------*/
@@ -744,7 +767,6 @@ address span {
   .wrap {
     padding: 0 20px;
   }
-  .mob,
   .brands .wrap,
   .about__item,
   .header__block,
@@ -753,9 +775,6 @@ address span {
   }
   header {
     margin-bottom: 0;
-  }
-  header .nav {
-    display: none;
   }
   .logo {
     max-width: 213px;
@@ -807,19 +826,8 @@ address span {
   .about__img {
     display: none;
   }
-  footer {
-    height: auto;
-  }
-  footer .wrap {
-    padding: 0;
-  }
   footer .nav a {
     font-size: 14px;
-  }
-  .footer__tel {
-    width: 100%;
-    padding: 50px 0;
-    box-sizing: border-box;
   }
   .advantages {
     display: block;
@@ -852,5 +860,11 @@ address span {
   }
   .contact__item h2 {
     font-size: 18px;
+  }
+  .investorContact {
+    padding: 65px 20px 95px;
+  }
+  .why__item {
+    margin-bottom: 50px;
   }
 }
