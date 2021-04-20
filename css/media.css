@@ -3,6 +3,7 @@
     display: none;
   }
   main {
+    padding: 0 20px 120px;
     min-height: 79vh;
   }
   .brands__item {

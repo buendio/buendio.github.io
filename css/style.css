@@ -568,7 +568,7 @@ label {
 }
 main {
   max-width: 970px;
-  min-height: 60vh;
+  min-height: 70vh;
   padding-bottom: 120px;
   margin: auto;
   box-sizing: border-box;
@@ -695,6 +695,7 @@ address span {
     display: none;
   }
   main {
+    padding: 0 20px 120px;
     min-height: 79vh;
   }
   .brands__item {
@@ -828,9 +829,6 @@ address span {
   .about__description {
     padding: 0 20px;
     text-align: left;
-  }
-  .about__img {
-    display: none;
   }
   footer .nav a {
     font-size: 14px;
