@@ -722,9 +722,6 @@ address span {
   .nav li:not(:last-child) {
     margin-right: 30px;
   }
-  .brands__item {
-    padding: 50px 40px;
-  }
   .about__description {
     margin: 0 auto 60px;
   }
@@ -856,7 +853,7 @@ address span {
     display: block;
   }
   .contact__info {
-    margin-bottom: 35px;
+    margin: 0 auto 35px;
   }
   .contact__item h2 {
     font-size: 18px;
