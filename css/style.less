@@ -6,10 +6,34 @@
 
 /*!!!!!!!!!!!!!!!!!!!STYLE CSS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 body {
+	position: relative;
 	font-family: 'SF UI Display';
 	font-size: 16px;
 	background:#E5E5E5;
 	color: #000;
+	&:after {
+		content:"";
+		position: absolute;
+		top: 0;
+		z-index: -1;
+		left: 10%;
+		width: 247px;
+		height: 40%;
+		background:url(../img/bg.svg);
+		background-size:contain;
+	}
+	&:before {
+		content:"";
+		position: absolute;
+		top: 0;
+		transform: rotate(180deg);
+		z-index: -1;
+		right: 10%;
+		width: 247px;
+		height: 40%;
+		background:url(../img/bg.svg);
+		background-size:contain;
+	}
 }
 .wrap {
 	max-width: 1440px;
@@ -137,10 +161,12 @@ header {
 
 /*+++++++++++++++++++START MAIN++++++++++++++++++++++++++++++++++++++*/
 main {
-
+	text-align: center;
 }
 .animals {
-	.flex(center);
+	display: inline-flex;
+	border-radius: 20px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 	a {
 		.flex(center);
 		width: 236px;
@@ -153,18 +179,32 @@ main {
 		font-weight: 700;
 		color:#BDBDBD;
 		&:last-child {
+			&.active {
+				margin-left: -20px;
+			}
 			svg {
+				width:62px;
+				 height:47px;
 				margin-left: 25px;
 			}
 		}
+		&:first-child {
+			&.active {
+				margin-right: -20px;
+			}
+			svg {
+				width:60px;
+				 height:47px;
+				margin-right: 25px;
+			}
+		}
 		&.active {
-			position: relative;
-			margin-right: -20px;
+			position: relative;			
 			background:@col;
 			color:#fff;
 			svg {
 				fill: #fff;	
-				margin-right: 25px;		
+						
 			}
 		}
 		svg {
@@ -191,10 +231,11 @@ main {
 	}
 	button {
 		position: absolute;
-		right: 3px;
+		right: 0.7%;
 		top: 50%;
 		transform: translateY(-50%);
-		padding:11px 18px;
+		height: 83%;
+		padding:0 18px;
 		border-radius: 6px;
 		background:@col;
 		font-size: 1.125rem;font-family: 'SF UI Display';
@@ -356,6 +397,7 @@ main {
 }
 .about__text {
 	max-width: 570px;
+	text-align: left;
 	p {
 		margin-bottom: 25px;
 		font-size: 14px;
@@ -428,7 +470,7 @@ footer {
 	margin:0 14%;
 }
 .footer__wrap {
-	.flex
+	.flex;
 }
 /*~~~~~~~~~~~~~~~~~~~MEDIA~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 @import "media.less";

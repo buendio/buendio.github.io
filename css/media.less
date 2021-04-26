@@ -22,6 +22,11 @@
 }
 /*-------------------------------------------*/
 @media only screen and (max-width : 980px) {
+    body {
+        &:after, &::before {
+            display: none;
+        }
+    }
     header {
         margin-bottom: 40px;
     }
@@ -87,6 +92,27 @@
     }
 }
 @media only screen and (max-width : 690px) {
+    .logo {
+        max-width: 80px;
+    }
+    header {
+        padding:10px 0 20px;
+        .wrap {
+            
+            padding:70px 0px 30px;
+        }
+    }
+    .header__info {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 95%;
+        &>div:last-child {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
     .baner {
         .wrap {
             display: block;
@@ -99,9 +125,73 @@
     }
     .baner__buttons {
         margin-bottom: 20px;
+        button {
+            font-size: 14px;
+        }
+    }
+    .about {
+        h2 {
+            padding:0 20px;
+        }
     }
     .about__img {
         max-width: 100%;
+    }
+    .imgFront, .about__img {
+        display: none;
+    }
+    .targetLinks {
+        width: 95%;
+        a {
+            font-size: 11px;
+            &:last-child {
+                padding-right: 5px;
+            }
+            &::before {
+                display: none;
+            }
+            svg {
+                margin-right: 5px;
+            }
+        }
+    }
+    .animals {
+        width: 95%;
+        a {
+            width: 55%;
+            font-size: 1rem;
+            &:last-child {
+                &.active {
+                    margin-left: -10px;
+                }
+                svg {
+                    margin-left: 10px;
+                }
+            }
+            &:first-child {
+                &.active {
+                    margin-right: -10px;
+                }
+                svg {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    .footer__nav, .footer_info {
+        display: none;
+    }
+    .footer_info_cntr {
+        display: block;
+    }
+    .baner__buttons {
+        margin:0 auto 20px;
+    }
+    .search {
+        max-width: 95%;
+        button {
+            right: 1%;
+        }
     }
 }
 @media only screen and (max-width : 450px) {

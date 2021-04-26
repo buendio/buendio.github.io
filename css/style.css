@@ -130,10 +130,34 @@ hr {
 /*-------------------END FONTS STYLE---------------------------------*/
 /*!!!!!!!!!!!!!!!!!!!STYLE CSS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 body {
+  position: relative;
   font-family: 'SF UI Display';
   font-size: 16px;
   background: #E5E5E5;
   color: #000;
+}
+body:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  left: 10%;
+  width: 247px;
+  height: 40%;
+  background: url(../img/bg.svg);
+  background-size: contain;
+}
+body:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  transform: rotate(180deg);
+  z-index: -1;
+  right: 10%;
+  width: 247px;
+  height: 40%;
+  background: url(../img/bg.svg);
+  background-size: contain;
 }
 .wrap {
   max-width: 1440px;
@@ -270,10 +294,13 @@ header .wrap {
 }
 /*-------------------END HEADER--------------------------------------*/
 /*+++++++++++++++++++START MAIN++++++++++++++++++++++++++++++++++++++*/
+main {
+  text-align: center;
+}
 .animals {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: inline-flex;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 }
 .animals a {
   display: flex;
@@ -289,18 +316,29 @@ header .wrap {
   font-weight: 700;
   color: #BDBDBD;
 }
+.animals a:last-child.active {
+  margin-left: -20px;
+}
 .animals a:last-child svg {
+  width: 62px;
+  height: 47px;
   margin-left: 25px;
+}
+.animals a:first-child.active {
+  margin-right: -20px;
+}
+.animals a:first-child svg {
+  width: 60px;
+  height: 47px;
+  margin-right: 25px;
 }
 .animals a.active {
   position: relative;
-  margin-right: -20px;
   background: #FCC000;
   color: #fff;
 }
 .animals a.active svg {
   fill: #fff;
-  margin-right: 25px;
 }
 .animals a svg {
   fill: #BDBDBD;
@@ -325,10 +363,11 @@ header .wrap {
 }
 .search button {
   position: absolute;
-  right: 3px;
+  right: 0.7%;
   top: 50%;
   transform: translateY(-50%);
-  padding: 11px 18px;
+  height: 83%;
+  padding: 0 18px;
   border-radius: 6px;
   background: #FCC000;
   font-size: 1.125rem;
@@ -521,6 +560,7 @@ header .wrap {
 }
 .about__text {
   max-width: 570px;
+  text-align: left;
 }
 .about__text p {
   margin-bottom: 25px;
@@ -617,6 +657,10 @@ footer h3 {
 }
 /*-------------------------------------------*/
 @media only screen and (max-width: 980px) {
+  body:after,
+  body::before {
+    display: none;
+  }
   header {
     margin-bottom: 40px;
   }
@@ -684,6 +728,26 @@ footer h3 {
   }
 }
 @media only screen and (max-width: 690px) {
+  .logo {
+    max-width: 80px;
+  }
+  header {
+    padding: 10px 0 20px;
+  }
+  header .wrap {
+    padding: 70px 0px 30px;
+  }
+  .header__info {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+  }
+  .header__info > div:last-child {
+    width: 100%;
+    max-width: 100%;
+  }
   .baner .wrap {
     display: block;
   }
@@ -695,7 +759,67 @@ footer h3 {
   .baner__buttons {
     margin-bottom: 20px;
   }
+  .baner__buttons button {
+    font-size: 14px;
+  }
+  .about h2 {
+    padding: 0 20px;
+  }
   .about__img {
     max-width: 100%;
+  }
+  .imgFront,
+  .about__img {
+    display: none;
+  }
+  .targetLinks {
+    width: 95%;
+  }
+  .targetLinks a {
+    font-size: 11px;
+  }
+  .targetLinks a:last-child {
+    padding-right: 5px;
+  }
+  .targetLinks a::before {
+    display: none;
+  }
+  .targetLinks a svg {
+    margin-right: 5px;
+  }
+  .animals {
+    width: 95%;
+  }
+  .animals a {
+    width: 55%;
+    font-size: 1rem;
+  }
+  .animals a:last-child.active {
+    margin-left: -10px;
+  }
+  .animals a:last-child svg {
+    margin-left: 10px;
+  }
+  .animals a:first-child.active {
+    margin-right: -10px;
+  }
+  .animals a:first-child svg {
+    margin-right: 10px;
+  }
+  .footer__nav,
+  .footer_info {
+    display: none;
+  }
+  .footer_info_cntr {
+    display: block;
+  }
+  .baner__buttons {
+    margin: 0 auto 20px;
+  }
+  .search {
+    max-width: 95%;
+  }
+  .search button {
+    right: 1%;
   }
 }
