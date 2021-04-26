@@ -1,198 +1,110 @@
 
-@media only screen and (max-width : 1025px) {
-    .bg_circle {display: none;}
-    main {
-        padding:0 20px 120px;
-        min-height: 79vh;
-    }
-    .brands__item {
-        padding: 50px 40px;
+@media only screen and (max-width : 1250px) {
+    .wrap {
+        padding:0 20px;
     }
 }
 /*-------------------------------------------*/
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 1080px) {
     html {
         font-size: 14px;
     }
-
-    .header__item {
-        max-width: 440px;
-        margin-right: 25px;
-    }
-    .header {
-        overflow: hidden;
-        background-size: cover;
-         background-position: top;
-    }
-    .header__img {
-        &:before {
-            top:15px;
-		    left: -12px;
-        }
-    }
-    .nav li:not(:last-child) {
-        margin-right: 30px;
-    }
-    .about__description {
-        margin: 0 auto 60px;
-    }
-    .about__item {
-        margin-bottom: 60px;
-    }
-    footer {
-        height: auto;
-        .wrap {
-            padding: 0;
-            display: block;
-        }
-        nav {
-            padding: 44px 0;
-        }
-        .nav {
-            justify-content: center;
-        }
-    }
-    .footer__tel {
-        width: 100%;
-        padding: 50px 0;
-        box-sizing:border-box;
-    }
-    main {
-        padding: 0 20px;
-    }
-    .advantages__list {
-        padding: 20px 0;
-    }
-    .mob {
-        display: block;
-    }
-    header {
-        .nav {
+    .header__info {
+        &>div:nth-child(2n) {
             display: none;
         }
     }
-}
-@media only screen and (max-width : 680px) {
-    .brands .wrap {
-        display: block;
-    }
-    .brands__item {
-        width: 100%;
-        height: auto;
-        margin-bottom: 20px;
-        text-align: center;
-        img {
-            margin: 0 auto 50px;
-        }
-        p {
-            font-size: 16px;
-        }
+    .catalogLink {
         a {
-            position: static;
-            margin-top: 50px;
+            width: 300px;
         }
-    }
-    .about__item, .about__img_hide {
-        display: block;
-    }
-    .about__img {
-        display: none;
     }
 }
 /*-------------------------------------------*/
-@media only screen and (max-width : 450px) {
-    .wrap {
-        padding: 0 20px;
-    }
-       .header__block {
-        display: block;
-    }
+@media only screen and (max-width : 980px) {
     header {
-        margin-bottom: 0;
-        
+        margin-bottom: 40px;
     }
-    .logo {
-        max-width: 213px;
+    .targetLinks {
+        margin: 0 auto 50px;
     }
-    h1 {
-        font-size: 28px;
-        margin-bottom: 30px;
-    }
-    .header {
-        padding-bottom: 7px;
-        overflow: visible;
-        background: #E8F8F3;
-    }
-    .header__item {
-        margin-right: 0;
-        p {
-            font-size: 18px;
-            margin-bottom: 50px;
+    .catalogLink {
+        .flex(space-around);
+        margin: 0 auto 50px;
+        a {
+            padding:20px 0;
         }
     }
-    .header__img {
-        max-width: 238px;
-        margin:0 auto -50px;
-    }
-    .brands  {
+    .baner {
         margin-bottom: 50px;
-        padding-top: 35px;
+        padding:30px 0;
+        img {display: none;}
     }
-    
-    .about__description {
-        padding: 0 20px;
-        text-align: left;
+    .imgFront {
+        margin: 0 auto 50px;
+    }
+    .about {
+        padding-bottom: 50px;
     }
     footer {
-        .nav {
-            a {
-                font-size: 14px;
-            }
-        }
+        padding: 40px 0;
     }
-    
-    .advantages {
-        display: block;
-        padding-bottom: 70px;
+    .header__option a:first-child {
+        margin-right: 10px;
     }
-    .advantages__img {
-        width: 100%;
-    }
-    .advantages__list {
-        padding: 0 20px;
-        h2 {
-            font-size: 18px;
-            margin-bottom: 25px;
-        }
-    }
-    details > summary {
-        font-size: 18px;
-        span {
+}
+@media only screen and (max-width : 840px) {
+    .header__info {
+        div:first-child {
             display: none;
         }
     }
-    .details__conent {
-        a {
-            padding-left:0;
+    .about {
+        .wrap {
+            display: block;
         }
     }
-    .contact__wrap {
+    .about__img {
+        margin:0 auto 20px;
+    }
+    .about__text {
+        margin: auto;
+    }
+    .footer__nav:first-child {
+        margin-right: 0%;
+    }
+    .footer_info_cntr {
+        margin: 0;
+    }
+    footer .wrap {
+        .flex(space-around);
+    }
+    .catalogLink {
         display: block;
-    }
-    .contact__info {
-        margin:0 auto 35px;
-    }
-    .contact__item {
-        h2 {
-            font-size: 18px;
+        a {
+            margin: 0 auto 25px;
         }
     }
-    .investorContact {
-        padding:65px 20px 95px;
+}
+@media only screen and (max-width : 690px) {
+    .baner {
+        .wrap {
+            display: block;
+        }
+        p {
+            max-width: 100%;
+            margin: 0 auto 20px;
+            text-align: center;
+        }
     }
-    .why__item {
-        margin-bottom: 50px;
+    .baner__buttons {
+        margin-bottom: 20px;
     }
+    .about__img {
+        max-width: 100%;
+    }
+}
+@media only screen and (max-width : 450px) {
 }
 
 

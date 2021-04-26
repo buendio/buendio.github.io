@@ -1,182 +1,38 @@
-@media only screen and (max-width: 1025px) {
-  .bg_circle {
-    display: none;
-  }
-  main {
-    padding: 0 20px 120px;
-    min-height: 79vh;
-  }
-  .brands__item {
-    padding: 50px 40px;
-  }
-}
-/*-------------------------------------------*/
-@media only screen and (max-width: 769px) {
-  html {
-    font-size: 14px;
-  }
-  .header__item {
-    max-width: 440px;
-    margin-right: 25px;
-  }
-  .header {
-    overflow: hidden;
-    background-size: cover;
-    background-position: top;
-  }
-  .header__img:before {
-    top: 15px;
-    left: -12px;
-  }
-  .nav li:not(:last-child) {
-    margin-right: 30px;
-  }
-  .about__description {
-    margin: 0 auto 60px;
-  }
-  .about__item {
-    margin-bottom: 60px;
-  }
-  footer {
-    height: auto;
-  }
-  footer .wrap {
-    padding: 0;
-    display: block;
-  }
-  footer nav {
-    padding: 44px 0;
-  }
-  footer .nav {
-    justify-content: center;
-  }
-  .footer__tel {
-    width: 100%;
-    padding: 50px 0;
-    box-sizing: border-box;
-  }
-  main {
-    padding: 0 20px;
-  }
-  .advantages__list {
-    padding: 20px 0;
-  }
-  .mob {
-    display: block;
-  }
-  header .nav {
-    display: none;
-  }
-}
-@media only screen and (max-width: 680px) {
-  .brands .wrap {
-    display: block;
-  }
-  .brands__item {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  .brands__item img {
-    margin: 0 auto 50px;
-  }
-  .brands__item p {
-    font-size: 16px;
-  }
-  .brands__item a {
-    position: static;
-    margin-top: 50px;
-  }
-  .about__item,
-  .about__img_hide {
-    display: block;
-  }
-  .about__img {
-    display: none;
-  }
-}
-/*-------------------------------------------*/
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 1250px) {
   .wrap {
     padding: 0 20px;
   }
-  .header__block {
-    display: block;
-  }
-  header {
-    margin-bottom: 0;
-  }
-  .logo {
-    max-width: 213px;
-  }
-  h1 {
-    font-size: 28px;
-    margin-bottom: 30px;
-  }
-  .header {
-    padding-bottom: 7px;
-    overflow: visible;
-    background: #E8F8F3;
-  }
-  .header__item {
-    margin-right: 0;
-  }
-  .header__item p {
-    font-size: 18px;
-    margin-bottom: 50px;
-  }
-  .header__img {
-    max-width: 238px;
-    margin: 0 auto -50px;
-  }
-  .brands {
-    margin-bottom: 50px;
-    padding-top: 35px;
-  }
-  .about__description {
-    padding: 0 20px;
-    text-align: left;
-  }
-  footer .nav a {
+}
+/*-------------------------------------------*/
+@media only screen and (max-width: 1080px) {
+  html {
     font-size: 14px;
   }
-  .advantages {
-    display: block;
-    padding-bottom: 70px;
-  }
-  .advantages__img {
-    width: 100%;
-  }
-  .advantages__list {
-    padding: 0 20px;
-  }
-  .advantages__list h2 {
-    font-size: 18px;
-    margin-bottom: 25px;
-  }
-  details > summary {
-    font-size: 18px;
-  }
-  details > summary span {
+  .header__info > div:nth-child(2n) {
     display: none;
   }
-  .details__conent a {
-    padding-left: 0;
+  .catalogLink a {
+    width: 300px;
   }
-  .contact__wrap {
-    display: block;
+}
+/*-------------------------------------------*/
+@media only screen and (max-width: 980px) {
+  header {
+    margin-bottom: 40px;
   }
-  .contact__info {
-    margin: 0 auto 35px;
+  .targetLinks {
+    margin: 0 auto 50px;
   }
-  .contact__item h2 {
-    font-size: 18px;
+  .catalogLink {
+    margin: 0 auto 50px;
   }
-  .investorContact {
-    padding: 65px 20px 95px;
+  .catalogLink a {
+    padding: 20px 0;
   }
-  .why__item {
-    margin-bottom: 50px;
+  .baner {
+    padding: 30px 0;
+  }
+  .baner img {
+    display: none;
   }
 }
