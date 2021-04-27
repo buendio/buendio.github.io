@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Главная</title>
+    <title>Список</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
 </head>
 
-<body>
+<body class="page">
     <header>
         <div class="wrap">
             <a href="/" class="logo"><img src="img/logo.svg" alt="logo"></a>
@@ -79,6 +79,10 @@
         </nav>
     </header>
     <main>
+        <form action="" class="search">
+            <input type="text" placeholder="Поиск...">
+            <button type="submit">НАЙТИ</button>
+        </form>
         <section class="animals">
             <a href="" class="active">
                 <svg  viewBox="0 0 60 47" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -93,100 +97,40 @@
                 </svg>                    
             </a>
         </section>
-        <form action="" class="search">
-            <input type="text" placeholder="Поиск...">
-            <button type="submit">НАЙТИ</button>
-        </form>
-        <section class="targetLinks">
-            <a href="">
-                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#diskount"></use>
-                </svg>
-                АКЦИИ   
-            </a>
-            <a href="">
-                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#produc"></use>
-                </svg>
-                МОИ ПОКУПКИ    
-            </a>
-            <a href="">
-                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#bell"></use>
-                </svg>
-                ПОДПИСКА    
-            </a>
-        </section>
-        <section class="catalogLink">
-            <a href="">
-                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#corm"></use>
-                </svg>                              
-                КОРМА
-            </a>
-            <a href="">
-                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#allCategory"></use>
-                </svg>
-                    
-                Все<br>категории
-            </a>
-            <a href="">
-                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#napol"></use>                  
-                </svg>                    
-                ПОДПИСКА
-            </a>
-        </section>
-        <section class="baner">
+        <section class="all">
             <div class="wrap">
-                <img src="img/kisspng.png" alt="">
-                <p>
-                    <span>Скидка 5%</span> сразу после регистрации !!!
-                </p>
-                <div class="baner__buttons">
-                    <button class="baner__enter btnJs">ВХОД</button>
-                    <button class="baner__register btnJs">РЕГИСТРАЦИЯ</button>
-                </div>
-                <div class="baner__social">
-                    <a href="">
-                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <use xlink:href="#ggl"></use>
-                        </svg>
-                    </a>
-                    <a href="">
-                        <svg width="11" height="21" viewBox="0 0 11 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <use xlink:href="#faseb"></use>
-                        </svg>                    
-                    </a>    
-                    <a href="">
-                        <svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <use xlink:href="#aple"></use>
-                        </svg>
-                            
-                            
-                    </a>
-                </div>
-            </div>
-        </section>
-        <img src="img/pro-plan-cat_banner_0 1.png" alt="" class="imgFront">
-        <section class="about">
-            <h2>
-                <span>Почему</span>
-                <svg width="241" height="83" viewBox="0 0 241 83" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#h2"></use>
-                </svg>        
-            </h2>
-            <div class="wrap">
-                <img src="img/british-longhair-kitten-australian-shepherd-sitting-each-other-isolated-white 1.jpg" alt="" class="about__img">
-                <div class="about__text">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nunc sapien, pulvinar eu tortor et, fringilla elementum orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla tristique, diam consectetur blandit semper, enim felis efficitur nisi, sed feugiat turpis nulla at libero. Aenean gravida lorem sit amet tristique sagittis. Duis posuere quis eros et tristique. In lorem purus, dignissim in facilisis a, congue in nunc. Suspendisse elementum, nibh tincidunt mattis eleifend, nisi diam congue odio, sed eleifend nulla enim quis diam. Ut pretium ullamcorper elit. Quisque ullamcorper ultrices magna. Praesent nunc nunc, hendrerit eget fermentum at, molestie ut tellus. Suspendisse dapibus mollis sem sit amet consectetur.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nunc sapien, pulvinar eu tortor et, fringilla elementum orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla tristique, diam consectetur blandit semper, enim felis efficitur nisi, sed feugiat turpis nulla at libero. Aenean gravida lorem sit amet tristique sagittis.
-                    </p>
-                </div>
+                <a href="" class="all__item">
+                        <img src="img/Subtract.svg" alt="" class="all__img">        
+                    <p class="all__text">Уход <br> гигиена</p>
+                </a>
+                <a href="" class="all__item">
+                        <img src="img/aksesuar.svg" alt="" class="all__img">        
+                    <p class="all__text">Аксессуары к туалетам </p>
+                </a>
+                <a href="" class="all__item">
+                        <img src="img/door.svg" alt="" class="all__img">        
+                    <p class="all__text">Дверцы</p>
+                </a>
+                <a href="" class="all__item">
+                        <img src="img/Subtract.svg" alt="" class="all__img">        
+                    <p class="all__text">Уход <br> гигиена</p>
+                </a>
+                <a href="" class="all__item">
+                        <img src="img/aksesuar.svg" alt="" class="all__img">        
+                    <p class="all__text">Аксессуары к туалетам </p>
+                </a>
+                <a href="" class="all__item">
+                        <img src="img/door.svg" alt="" class="all__img">        
+                    <p class="all__text">Дверцы</p>
+                </a>
+                <a href="" class="all__item">
+                        <img src="img/aksesuar.svg" alt="" class="all__img">        
+                    <p class="all__text">Аксессуары к туалетам </p>
+                </a>
+                <a href="" class="all__item">
+                        <img src="img/door.svg" alt="" class="all__img">        
+                    <p class="all__text">Дверцы</p>
+                </a>
             </div>
         </section>
     </main>
@@ -242,48 +186,6 @@
             </nav>
         </div>
     </footer>
-    <div class="modal">
-        <div class="modal__wrap">
-                <svg class="close" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="12" cy="12" r="12" fill="#FCC000"/>
-                    <rect width="2.4" height="16.8" transform="matrix(-0.733987 -0.679163 -0.679163 0.733987 18.5859 6.64951)" fill="white"/>
-                    <rect width="2.4" height="16.8" transform="matrix(0.679163 -0.733987 -0.733987 -0.679163 17.3516 18.5858)" fill="white"/>
-                </svg>                    
-            <h2>РЕГИСТРАЦИЯ</h2>
-            <form action="" class="modal__register">
-                <input type="text" placeholder="Ваше имя..." class="inpt">
-                <input type="email" placeholder="Ваш E-mail..." class="inpt">
-                <input type="password" placeholder="Ваш Пароль..." class="inpt">
-                <input type="password" placeholder ="Подтвердить пароль..." class="inpt">
-                <div class="moreRegister">
-                    <p>Регистрация с помощью:</p>
-                    <div class="baner__social">
-                        <a href="">
-                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <use xlink:href="#ggl"></use>
-                            </svg>
-                        </a>
-                        <a href="">
-                            <svg width="11" height="21" viewBox="0 0 11 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <use xlink:href="#faseb"></use>
-                            </svg>                    
-                        </a>    
-                        <a href="">
-                            <svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <use xlink:href="#aple"></use>
-                            </svg>            
-                        </a>
-                    </div>
-                </div>
-                <button type="submit" class="btn">ЗАРЕГИСТРИРОВАТЬСЯ</button>
-            </form>
-            <form action="" class="modal_enter">
-                <input type="email" placeholder="Ваш E-mail..." class="inpt">
-                <input type="password" placeholder="Ваш Пароль..." class="inpt">
-                <button type="submit" class="btn btn2">ВХОД</button>
-            </form>
-        </div>
-    </div>
     <svg width="0" height="0" style="position:absolute">
         <symbol id="phone">
             <g clip-path="url(#clip0)">

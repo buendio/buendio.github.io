@@ -92,14 +92,17 @@
     }
 }
 @media only screen and (max-width : 690px) {
+    .mob {
+        display: block;
+    }
     .logo {
         max-width: 80px;
     }
     header {
+        margin-bottom: 0;
         padding:10px 0 20px;
-        .wrap {
-            
-            padding:70px 0px 30px;
+        .wrap {           
+            padding:70px 10px 30px;
         }
     }
     .header__info {
@@ -191,6 +194,26 @@
         max-width: 95%;
         button {
             right: 1%;
+        }
+    }
+    .modal__wrap {
+        width: 100%;
+        padding: 50px 20px 30px;
+    }
+    .moreRegister {
+       p { margin-right: 30px; }  
+    }
+    .all {
+        .wrap {
+            margin-top: 50px;  
+        }
+    }
+    .all__item {
+        margin:0 auto 30px;
+    }
+    .header__option  {
+        a {
+            max-width:40px;
         }
     }
 }
