@@ -23,11 +23,8 @@
 /*-------------------------------------------*/
 @media only screen and (max-width : 980px) {
     body {
-        &:after {
+        &:after, &::before {
             display: none;
-        }
-        &::before {
-            right: 20%;
         }
     }
     header {
@@ -163,23 +160,28 @@
     }
     .animals {
         width: 95%;
-        a {
+        a {   
             width: 55%;
             font-size: 1rem;
             &:last-child {
+                .flex(flex-end);
                 &.active {
-                    margin-left: -10px;
+                    margin-left: -30px;
                 }
                 svg {
+                    width: 53px;
                     margin-left: 10px;
+                    margin-right: 10px;
                 }
             }
             &:first-child {
+                .flex;
                 &.active {
-                    margin-right: -10px;
+                    margin-right: -30px;
                 }
                 svg {
                     margin-right: 10px;
+                    margin-left: 10px;
                 }
             }
         }

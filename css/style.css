@@ -841,11 +841,9 @@ footer h3 {
 }
 /*-------------------------------------------*/
 @media only screen and (max-width: 980px) {
-  body:after {
-    display: none;
-  }
+  body:after,
   body::before {
-    right: 20%;
+    display: none;
   }
   header {
     margin-bottom: 40px;
@@ -984,17 +982,30 @@ footer h3 {
     width: 55%;
     font-size: 1rem;
   }
+  .animals a:last-child {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
   .animals a:last-child.active {
-    margin-left: -10px;
+    margin-left: -30px;
   }
   .animals a:last-child svg {
+    width: 53px;
     margin-left: 10px;
+    margin-right: 10px;
+  }
+  .animals a:first-child {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
   }
   .animals a:first-child.active {
-    margin-right: -10px;
+    margin-right: -30px;
   }
   .animals a:first-child svg {
     margin-right: 10px;
+    margin-left: 10px;
   }
   .footer__nav,
   .footer_info {
