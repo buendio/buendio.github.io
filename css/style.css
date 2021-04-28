@@ -782,7 +782,7 @@ footer h3 {
 }
 .all__item {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   width: 270px;
   height: 140px;
@@ -796,6 +796,7 @@ footer h3 {
 .all__img {
   box-sizing: border-box;
   border-radius: 50%;
+  margin-right: 10px;
 }
 .all__text {
   line-height: 1.5;
