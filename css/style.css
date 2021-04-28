@@ -1100,6 +1100,9 @@ details.filter[open] summary::after {
     align-items: center;
     padding: 20px 0 20px 20px;
   }
+  .catalogLink a:first-child svg {
+    margin-right: 15%;
+  }
   .mob {
     display: block;
   }
