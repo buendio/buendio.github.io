@@ -17,57 +17,32 @@ $(document).ready(function(){
   $('.close').on('click', function(e){
     $('.modal').toggleClass('active');
    });
-//////////////////////range slider///////////////////////////////////
-  const slider = document.getElementById('rangeSlider');
-
-  noUiSlider.create(slider, {
-      start: [0, 500],
-      connect: true,
-      step:1,
-      range: {
-          'min': 0,
-          'max': 1000
-      }
+//////////////////////////////////////////////////
+$('.closeAside').on('click', function(e){
+  $('aside').removeClass('active');
+  $('aside').toggleClass('hide');
+ });
+ $('.products__btn').on('click', function(e){
+  $('aside').removeClass('hide');
+  $('aside').toggleClass('active');
+ });
+///////////////////////////////////////////////////
+  /////////////////slickslider////////////////////////////////
+  $('.sliderFor').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.sliderNav'
   });
-  const input0 = document.getElementById('inpt1');
-	const input1 = document.getElementById('inpt2');
-	const inputs = [input0, input1];
-  slider.noUiSlider.on('update', function(values, handle){
-		inputs[handle].value = Math.round(values[handle]);
-	});
-  const setSlider = (i, value) => {
-		let arr = [null, null];
-		arr[i] = value;
-
-		slider.noUiSlider.set(arr);
-	};
-  inputs.forEach((el, index) => {
-		el.addEventListener('change', (e) => {
-			setSlider(index, e.currentTarget.value);
-		});
-	});
-  /////////////////SCROLL////////////////////////////////
-  //  $(".nav, .nav_mob").on("click","a", function (event) {
-  //   //отменяем стандартную обработку нажатия по ссылке
-  //   event.preventDefault();
-
-  //   //забираем идентификатор бока с атрибута href
-  //   var id  = $(this).attr('href'),
-
-  //   //узнаем высоту от начала страницы до блока на который ссылается якорь
-  //     top = $(id).offset().top;
-    
-  //   //анимируем переход на расстояние - top за 1500 мс
-  //   $('body,html').animate({scrollTop: top}, 1500);
-  // });
-  ////////////////END SCROLL////////////////////////////////
-
-  ////////////////ADD CLASS/////////////////////////////////
-  // $("#selectBackground ul li a").click(function(e) {
-  //   e.preventDefault();
-  //   $("#selectBackground ul li a").removeClass('active');
-  //   $(this).addClass('active');
-  // });
-  ///////////////END ADD CLASS//////////////////////////////
+  $('.sliderNav').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.sliderFor',
+    arrows: true,
+    prevArrow:'<button class="prev"></button>',
+    nextArrow:'<button class="next"></button>',
+    focusOnSelect: true
+  });
 
 }); // end ready 

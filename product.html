@@ -3,11 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Каталог</title>
+    <title>Продукт</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="js/nouislider.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
 </head>
 
 <body class="page catalogPage">
@@ -90,304 +91,71 @@
                     <use xlink:href="#caret"></use>
                 </svg>
             <a href="">Сухие корма</a>
-        </div>
-        <article class="wrap2">
-            <aside>
-                <svg class="closeAside" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="12" cy="12" r="12" fill="#FCC000"/>
-                    <rect width="2.4" height="16.8" transform="matrix(-0.733987 -0.679163 -0.679163 0.733987 18.5859 6.64951)" fill="white"/>
-                    <rect width="2.4" height="16.8" transform="matrix(0.679163 -0.733987 -0.733987 -0.679163 17.3516 18.5858)" fill="white"/>
+                <svg class="caret" width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">           
+                    <use xlink:href="#caret"></use>
                 </svg>
-                <details open class="filter">
-                    <summary>Бренд</summary>
-                    <div class="filter__wrap">    
-                        <input type="checkbox" id="check1">
-                        <label for="check1">Royal Canin (Роял Канин)</label>
+            <a href="">Royal Canin Sterilised 37 Cat Regular</a>
+        </div>
+        <section class="product">
+            <div class="wrap2">
+                <div class="product__slider">
+                    <div class="review_stars_wrap">
+                        <div id="review_stars">
+                            <input id="star-4" type="radio" name="stars"/>
+                            <label title="Отлично" for="star-4">
+                                <i class="fa fa-star"></i>
+                            </label>
+                            <input id="star-3" type="radio" name="stars"/>
+                            <label title="Хорошо" for="star-3">
+                                <i class="fa fa-star"></i>
+                            </label>
+                            <input id="star-2" type="radio" name="stars" checked="checked" />
+                            <label title="Нормально" for="star-2">
+                                <i class="fa fa-star"></i>
+                            </label>
+                            <input id="star-1" type="radio" name="stars"/>
+                            <label title="Плохо" for="star-1">
+                                <i class="fa fa-star"></i>
+                            </label>
+                            <input id="star-0" type="radio" name="stars"/>
+                            <label title="Ужасно" for="star-0">
+                                <i class="fa fa-star"></i>
+                            </label>
+                        </div>
                     </div>
-                    <div class="filter__wrap">
-                        <input type="checkbox" id="check2">
-                        <label for="check2">Acana (Акана)</label>
+                    <div class="product__dop">
+                        <div class="product__sale"></div>
+                        <div class="product__akciya"></div>
                     </div>
-                    <div class="filter__wrap">
-                        <input type="checkbox" id="check3">
-                        <label for="check3">Hills (Хиллс)</label>
+                    <div class="sliderFor">
+                        <img src="img/bigProduct.png" alt="">
+                        <img src="https://content2.rozetka.com.ua/goods/images/big_tile/28073920.jpg" alt="">
+                        <img src="img/bigProduct.png" alt="">
+                        <img src="https://content.rozetka.com.ua/goods/images/big_tile/13511419.jpg" alt="">
                     </div>
-                </details>
-                <details class="filter">
-                    <summary>Возраст</summary>
-                    <div class="filter__wrap">
-                        <input type="checkbox" id="check21">
-                        <label for="check21">1 год</label>
+                    <div class="sliderNav">
+                        <div class="sliderNav__item">
+                            <img src="img/bigProduct.png" alt="">
+                        </div>
+                        <div class="sliderNav__item">
+                            <img src="https://content2.rozetka.com.ua/goods/images/big_tile/28073920.jpg" alt="">
+                        </div>
+                        <div class="sliderNav__item">
+                            <img src="img/products.png" alt="">
+                        </div>
+                        <div class="sliderNav__item">
+                            <img src="https://content.rozetka.com.ua/goods/images/big_tile/13511419.jpg" alt="">
+                        </div>
                     </div>
-                    <div class="filter__wrap">
-                        <input type="checkbox" id="check22">
-                        <label for="check22">2 года</label>
-                    </div>
-                </details>
-                <details class="filter">
-                    <summary>Размер породы</summary>
-                    <div class="filter__wrap">
-                        <input type="checkbox" id="check11">
-                        <label for="check11">Royal Canin (Роял Канин)</label>
-                    </div>
-                    <div class="filter__wrap">
-                        <input type="checkbox" id="check12">
-                        <label for="check12">Acana (Акана)</label>
-                    </div>
-                </details>
-                <details class="filter">
-                    <summary>Возраст</summary>
-                    <div class="filter__wrap">
-                        <input type="checkbox" id="check13">
-                        <label for="check13">Щенок</label>
-                    </div>
-                    <div class="filter__wrap">
-                        <input type="checkbox" id="check14">
-                        <label for="check14">Взрослый</label>
-                    </div>
-                </details>
-                <div class="filter__price">
-                    <h3>Цена <span>(грн.)</span></h3>
-                    <div class="filter__price_slider" id="rangeSlider"></div>
-                    <div class="filter__price_inputs">
-                        <label for="" class="filter__price_label">
-                            <input type="number" min="0" max="500" placeholder="0" class="filter__price_input" id="inpt1">
-                        </label>
-                        <label for="" class="filter__price_label">
-                            <input type="number" min="0" max="500" placeholder="500" class="filter__price_input" id="inpt2">
-                        </label>
-                        <button class="filter__price_btn">ок</button>
-                    </div>
-                    
                 </div>
-            </aside>
-            <section class="products">
-                <div class="products__filters">
-                    <div class="products__filter">
-                        <div class="products__close">
-                            <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <use xlink:href="#prcl"></use>
-                            </svg>                                                  
-                        </div>
-                        Royal Canin (Роял Канин)
-                    </div>   
-                    <div class="products__filter">
-                        <div class="products__close">
-                            <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <use xlink:href="#prcl"></use>
-                            </svg>                                                  
-                        </div>
-                        Royal Canin (Роял Канин)
+                <div class="product__descrip">
+                    <div class="product__title">
+                        <h1>Royal Canin <br>Sterilised 37 Cat Regular</h1>
+                        <div class="product__articul">Код товара: 14337</div>
                     </div>
-                    <button class="products__btn btn">ФИЛЬТР</button>
-                    <a href="" class="products__link">
-                        По популярности 
-                        <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5 8L9.33013 0.5H0.669873L5 8Z" fill="#FCC000"/>
-                        </svg>                           
-                    </a>   
                 </div>
-                <div class="products__wrap">
-                    <div class="products__item">
-                        <div class="products__more">
-                            <div class="products__sale"></div>
-                            <div class="products__new"></div>
-                            <div class="products__akciya"></div>
-                                
-                        </div>
-                        <a href="">
-                            <img src="img/products.png" alt="" class="products__img">
-                        </a>
-                        <div class="products__text">
-                            Royal Canin Sterilised 37 Cat Regular - корм Роял Канин для стерилизованных кошек
-                        </div>
-                        <div class="products__weight">
-                            <div class="weight__wrap">
-                                <input id="r11" type="radio" name="r2" checked>
-                                <label for="r11">2 кг</label>
-                            </div>
-                            <div class="weight__wrap">
-                                <input id="r22" type="radio" name="r2">
-                                <label for="r22">4 кг</label>
-                            </div>
-                            <div class="weight__wrap">
-                                <input id="r33" type="radio" name="r2">
-                                <label for="r33">6 кг</label>
-                            </div>
-                            <div class="weight__wrap">
-                                <input id="r44" type="radio" name="r2">
-                                <label for="r44">8 кг</label>
-                            </div>
-                            <div class="weight__wrap">
-                                <input id="r55" type="radio" name="r2">
-                                <label for="r55">10 кг</label>
-                            </div>
-                        </div>
-                        <div class="stock stockIn">
-                            Готов к отправке
-                        </div>
-                        <div class="products__slogan">
-                            Доставим, отправим, сегодня!!
-                        </div>
-                        <div class="products__footer">
-                            <div class="products__oldPrice">480 грн</div>
-                            <div class="products__price">452 <span>грн</span></div>
-                            <button class="products__cart">Купить!</button>
-                        </div>
-                    </div>
-                    <div class="products__item">
-                        <div class="products__more">
-                            <div class="products__sale"></div>
-
-                                
-                        </div>
-                        <a href="">
-                            <img src="img/products.png" alt="" class="products__img">
-                        </a>
-                        <div class="products__text">
-                            Royal Canin Sterilised 37 Cat Regular - корм Роял Канин для стерилизованных кошек
-                        </div>
-                        <div class="products__weight">
-                            <div class="weight__wrap">
-                                <input id="r111" type="radio" name="r3" checked>
-                                <label for="r111">2 кг</label>
-                            </div>
-                            <div class="weight__wrap">
-                                <input id="r222" type="radio" name="r3">
-                                <label for="r222">4 кг</label>
-                            </div>
-                            <div class="weight__wrap">
-                                <input id="r333" type="radio" name="r3">
-                                <label for="r333">6 кг</label>
-                            </div>
-                            <div class="weight__wrap">
-                                <input id="r444" type="radio" name="r3">
-                                <label for="r444">8 кг</label>
-                            </div>
-                            <div class="weight__wrap">
-                                <input id="r555" type="radio" name="r3">
-                                <label for="r555">10 кг</label>
-                            </div>
-                        </div>
-                        <div class="stock stockIn">
-                            Готов к отправке
-                        </div>
-                        <div class="products__slogan">
-                            Доставим, отправим, сегодня!!
-                        </div>
-                        <div class="products__footer">
-                            <div class="products__oldPrice">480 грн</div>
-                            <div class="products__price">452 <span>грн</span></div>
-                            <button class="products__cart">Купить!</button>
-                        </div>
-                    </div>
-                    <div class="products__item">
-                        <div class="products__more">
-
-                            <div class="products__akciya"></div>
-                                
-                        </div>
-                        <a href="">
-                            <img src="img/products.png" alt="" class="products__img">
-                        </a>
-                        <div class="products__text">
-                            Royal Canin Sterilised 37 Cat Regular - корм Роял Канин для стерилизованных кошек
-                        </div>
-                        <div class="products__weight">
-                            <div class="weight__wrap">
-                                <input id="r1" type="radio" name="r1" checked>
-                                <label for="r1">2 кг</label>
-                            </div>
-                            <div class="weight__wrap">
-                                <input id="r2" type="radio" name="r1">
-                                <label for="r2">4 кг</label>
-                            </div>
-                            <div class="weight__wrap">
-                                <input id="r3" type="radio" name="r1">
-                                <label for="r3">6 кг</label>
-                            </div>
-                            <div class="weight__wrap">
-                                <input id="r4" type="radio" name="r1">
-                                <label for="r4">8 кг</label>
-                            </div>
-                            <div class="weight__wrap">
-                                <input id="r5" type="radio" name="r1">
-                                <label for="r5">10 кг</label>
-                            </div>
-                        </div>
-                        <div class="stock stockIn">
-                            Готов к отправке
-                        </div>
-                        <div class="products__slogan">
-                            Доставим, отправим, сегодня!!
-                        </div>
-                        <div class="products__footer">
-                            <div class="products__oldPrice">480 грн</div>
-                            <div class="products__price">452 <span>грн</span></div>
-                            <button class="products__cart">Купить!</button>
-                        </div>
-                    </div>
-                    <div class="products__item">
-                        <div class="products__more">
-
-                            <div class="products__akciya"></div>
-                                
-                        </div>
-                        <a href="">
-                            <img src="img/products.png" alt="" class="products__img">
-                        </a>
-                        <div class="products__text">
-                            Royal Canin Sterilised 37 Cat Regular - корм Роял Канин для стерилизованных кошек
-                        </div>
-                        <div class="products__weight">
-                            <div class="weight__wrap">
-                                <input id="r1" type="radio" name="r1" checked>
-                                <label for="r1">2 кг</label>
-                            </div>
-                            <div class="weight__wrap">
-                                <input id="r2" type="radio" name="r1">
-                                <label for="r2">4 кг</label>
-                            </div>
-                            <div class="weight__wrap">
-                                <input id="r3" type="radio" name="r1">
-                                <label for="r3">6 кг</label>
-                            </div>
-                            <div class="weight__wrap">
-                                <input id="r4" type="radio" name="r1">
-                                <label for="r4">8 кг</label>
-                            </div>
-                            <div class="weight__wrap">
-                                <input id="r5" type="radio" name="r1">
-                                <label for="r5">10 кг</label>
-                            </div>
-                        </div>
-                        <div class="stock stockIn">
-                            Готов к отправке
-                        </div>
-                        <div class="products__slogan">
-                            Доставим, отправим, сегодня!!
-                        </div>
-                        <div class="products__footer">
-                            <div class="products__oldPrice">480 грн</div>
-                            <div class="products__price">452 <span>грн</span></div>
-                            <button class="products__cart">Купить!</button>
-                        </div>
-                    </div>
-
-                </div>
-                <button class="btn">Показать Ещё</button>
-                <div class="products__info">
-                    Показано: 12 из 250
-                </div>
-                <div class="pagination">
-                    <a href="" class="active">1</a>
-                    <a href="">2</a>
-                    <a href="">3</a>
-                    <a href="">4</a>
-                    <a href="">5</a>
-                </div>
-            </section>
-        </article>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="wrap">
@@ -668,38 +436,6 @@
         </symbol>
     </svg>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="js/nouislider.js"></script>
-    <script>
-        //////////////////////range slider///////////////////////////////////
-        const slider = document.getElementById('rangeSlider');
-
-        noUiSlider.create(slider, {
-            start: [0, 500],
-            connect: true,
-            step:1,
-            range: {
-                'min': 0,
-                'max': 1000
-            }
-        });
-        const input0 = document.getElementById('inpt1');
-        const input1 = document.getElementById('inpt2');
-        const inputs = [input0, input1];
-        slider.noUiSlider.on('update', function(values, handle){
-            inputs[handle].value = Math.round(values[handle]);
-        });
-        const setSlider = (i, value) => {
-            let arr = [null, null];
-            arr[i] = value;
-
-            slider.noUiSlider.set(arr);
-        };
-        inputs.forEach((el, index) => {
-            el.addEventListener('change', (e) => {
-                setSlider(index, e.currentTarget.value);
-            });
-        });
-    </script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="/js/index.js"></script>
 </body>
