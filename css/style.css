@@ -895,6 +895,7 @@ details.filter summary::after {
   box-sizing: border-box;
   width: 22px;
   height: 22px;
+  padding: 0 0 2px 1px;
   border-radius: 50%;
   border: 2px solid #C4C4C4;
   background: #C4C4C4;
