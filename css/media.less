@@ -3,13 +3,14 @@
     .wrap, .wrap2 {
         padding:0 20px;
     }
+    html {
+        font-size: 14px;
+    }
 
 }
 /*-------------------------------------------*/
 @media only screen and (max-width : 1080px) {
-    html {
-        font-size: 14px;
-    }
+    
     .header__info {
         &>div:nth-child(2n) {
             display: none;
@@ -19,6 +20,16 @@
         a {
             width: 300px;
         }
+    }
+    #items {
+            justify-content: space-around;
+           flex-wrap: wrap;
+
+           a {
+            margin-bottom: 20px;
+            border: 2px solid #FCC000;
+            border-radius: 5px;
+           }
     }
 }
 /*-------------------------------------------*/
@@ -57,6 +68,19 @@
     }
     .header__option a:first-child {
         margin-right: 10px;
+    }
+    .wrap2_product {
+        flex-wrap:wrap;
+    }
+    .product__slider {
+        width: 100%;
+        margin: 0 auto 20px;
+    }
+    .product__descrip {
+        width:100%;
+    }
+    .tab__form {
+        width:100%;
     }
 }
 @media only screen and (max-width : 850px) {
@@ -135,6 +159,24 @@
     .products__item {
         margin:0 auto 30px;
     }
+    .tabs-text_flex {
+        flex-wrap:wrap;
+    }
+    .sliderNav {
+        display:none;
+    }
+    .tab-content {
+        .tabs-text_flex  {
+            display: block;
+            .tabs-text_item {
+                &:first-child {
+                    max-width: 100%;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+
 }
 @media only screen and (max-width : 690px) {
     .catalogLink {
@@ -277,10 +319,63 @@
             max-width:40px;
         }
     }
+    #items {
+        justify-content: space-between;
+        align-items:center;
+        li {
+            width: 100%;
+        }
+        a {
+            width: 100%;
+        }
+    }
+    .tab__table {
+        width: 100%;
+    }
+    .productPrice__block {
+        width:75%;
+    }
 }
 @media only screen and (max-width : 450px) {
     .noUi-horizontal .noUi-handle {
         left:27px
+    }
+    .productPrice__delevery {
+        transform:scale(0.7);
+    }
+    .productInfo {
+        display: none;
+    }
+    .productPrice__count {
+        font-size: 1rem;
+        span {
+            font-size: 12px;
+        }
+    }
+    .product__descrip {
+        padding:0 10px;
+    }
+    .tab__table2 {
+        width: 100%;
+        th {
+            font-size: 1rem;
+            padding: 20px 10px;
+        }
+    }
+    .product__title {
+        padding-top: 25px;
+    }
+    .quantity__arrows {
+        width:18px;
+        height: 18px;
+    }
+    .slick-dots {
+        button {
+            margin: 0 5px;
+        }
+    }
+    .productPrice__quantity span {
+        display: none;
     }
 }
 

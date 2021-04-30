@@ -33,7 +33,15 @@ $('.closeAside').on('click', function(e){
     slidesToScroll: 1,
     arrows: false,
     fade: true,
-    asNavFor: '.sliderNav'
+    asNavFor: '.sliderNav',
+    responsive: [
+      {
+        breakpoint: 850,
+        settings: {  
+          dots:true
+        }          
+      }
+    ]
   });
   $('.sliderNav').slick({
     slidesToShow: 3,
@@ -42,7 +50,31 @@ $('.closeAside').on('click', function(e){
     arrows: true,
     prevArrow:'<button class="prev"></button>',
     nextArrow:'<button class="next"></button>',
-    focusOnSelect: true
+    focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 850,
+        settings: 'unslick'        
+      }
+    ]
   });
-
+ //////////////////////TABS//////////////////////////////////////
+ $("#tabs-1").show();
+ $("#items li").click(function() {
+   if ($(this).attr("class") == "active") {
+     return false;
+   }
+   var link = $(this)
+     .children()
+     .attr("href");
+   var prevActive = $("li.active")
+     .children()
+     .attr("href"); 
+   $("li.active").removeClass("active");
+   $(this).addClass("active");
+   $(prevActive).fadeOut(0, function() {
+     $(link).fadeIn(0);
+   });
+   return false;
+ });
 }); // end ready 
