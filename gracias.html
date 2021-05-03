@@ -3,18 +3,22 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Главная</title>
+    <title>Спасибо</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="js/nouislider.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="page catalogPage">
     <header>
         <div class="wrap">
             <a href="/" class="logo"><img src="img/logo.svg" alt="logo"></a>
             <form class="header__lang">
-                <button href="">RU</button>
+                <button>RU</button>
             </form>
             <div class="header__info">
                 <div>
@@ -75,116 +79,30 @@
         </nav>
     </header>
     <main>
-        <section class="animals">
-            <a href="" class="active">
-                <svg  viewBox="0 0 60 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#cat"></use>
-                </svg>
-                КОШКИ
-            </a>
-            <a href="" >
-                СОБАКИ
-                <svg  viewBox="0 0 62 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#dog"></use>
-                </svg>                    
-            </a>
-        </section>
         <form action="" class="search">
             <input type="text" placeholder="Поиск...">
             <button type="submit">НАЙТИ</button>
         </form>
-        <section class="targetLinks">
-            <a href="">
-                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#diskount"></use>
+        <div class="crumbs wrap2">
+            <a href="">Главная</a> 
+                <svg class="caret" width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">           
+                    <use xlink:href="#caret"></use>
                 </svg>
-                АКЦИИ   
-            </a>
-            <a href="">
-                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#produc"></use>
-                </svg>
-                МОИ ПОКУПКИ    
-            </a>
-            <a href="">
-                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#bell"></use>
-                </svg>
-                ПОДПИСКА    
-            </a>
-        </section>
-        <section class="catalogLink">
-            <a href="">
-                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#corm"></use>
-                </svg>                              
-                КОРМА
-            </a>
-            <a href="">
-                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#allCategory"></use>
-                </svg>
-                    
-                Все<br>категории
-            </a>
-            <a href="">
-                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#napol"></use>                  
-                </svg>                    
-                ПОДПИСКА
-            </a>
-        </section>
-        <section class="baner">
-            <div class="wrap">
-                <img src="img/kisspng.png" alt="">
-                <p>
-                    <span>Скидка 5%</span> сразу после регистрации !!!
-                </p>
-                <div class="baner__buttons">
-                    <button class="baner__enter btnJs">ВХОД</button>
-                    <button class="baner__register btnJs">РЕГИСТРАЦИЯ</button>
+            
+            <a href="">Корзина</a>
+        </div>
+        <div class="wrap2 wrap2_gracias">
+             <h2>Спасибо за Ваш Заказ!</h2>
+             <div class="gracias__p">
+                 <p>Ваш заказ успешно оформлен</p>
+                 <p>Номер Вашего заказа: <span>№12345</span></p>
+                 <p>
+                    Наш менеджер свяжется с Вами для уточнения
+                    сроков, условий доставки и оплаты
+                 </p>
                 </div>
-                <div class="baner__social">
-                    <a href="">
-                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <use xlink:href="#ggl"></use>
-                        </svg>
-                    </a>
-                    <a href="">
-                        <svg width="11" height="21" viewBox="0 0 11 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <use xlink:href="#faseb"></use>
-                        </svg>                    
-                    </a>    
-                    <a href="">
-                        <svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <use xlink:href="#aple"></use>
-                        </svg>
-                            
-                            
-                    </a>
-                </div>
-            </div>
-        </section>
-        <img src="img/pro-plan-cat_banner_0 1.png" alt="" class="imgFront">
-        <section class="about">
-            <h2>
-                <span>Почему</span>
-                <svg width="241" height="83" viewBox="0 0 241 83" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#h2"></use>
-                </svg>        
-            </h2>
-            <div class="wrap">
-                <img src="img/british-longhair-kitten-australian-shepherd-sitting-each-other-isolated-white 1.jpg" alt="" class="about__img">
-                <div class="about__text">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nunc sapien, pulvinar eu tortor et, fringilla elementum orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla tristique, diam consectetur blandit semper, enim felis efficitur nisi, sed feugiat turpis nulla at libero. Aenean gravida lorem sit amet tristique sagittis. Duis posuere quis eros et tristique. In lorem purus, dignissim in facilisis a, congue in nunc. Suspendisse elementum, nibh tincidunt mattis eleifend, nisi diam congue odio, sed eleifend nulla enim quis diam. Ut pretium ullamcorper elit. Quisque ullamcorper ultrices magna. Praesent nunc nunc, hendrerit eget fermentum at, molestie ut tellus. Suspendisse dapibus mollis sem sit amet consectetur.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nunc sapien, pulvinar eu tortor et, fringilla elementum orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla tristique, diam consectetur blandit semper, enim felis efficitur nisi, sed feugiat turpis nulla at libero. Aenean gravida lorem sit amet tristique sagittis.
-                    </p>
-                </div>
-            </div>
-        </section>
+                <a href="" class="btn">ВЕРНУТЬСЯ К ПОКУПКАМ</a>
+        </div>
     </main>
     <footer>
         <div class="wrap">
@@ -238,48 +156,6 @@
             </nav>
         </div>
     </footer>
-    <div class="modal">
-        <div class="modal__wrap">
-                <svg class="close" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="12" cy="12" r="12" fill="#FCC000"/>
-                    <rect width="2.4" height="16.8" transform="matrix(-0.733987 -0.679163 -0.679163 0.733987 18.5859 6.64951)" fill="white"/>
-                    <rect width="2.4" height="16.8" transform="matrix(0.679163 -0.733987 -0.733987 -0.679163 17.3516 18.5858)" fill="white"/>
-                </svg>                    
-            <h2>РЕГИСТРАЦИЯ</h2>
-            <form action="" class="modal__register">
-                <input type="text" placeholder="Ваше имя..." class="inpt">
-                <input type="email" placeholder="Ваш E-mail..." class="inpt">
-                <input type="password" placeholder="Ваш Пароль..." class="inpt">
-                <input type="password" placeholder ="Подтвердить пароль..." class="inpt">
-                <div class="moreRegister">
-                    <p>Регистрация с помощью:</p>
-                    <div class="baner__social">
-                        <a href="">
-                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <use xlink:href="#ggl"></use>
-                            </svg>
-                        </a>
-                        <a href="">
-                            <svg width="11" height="21" viewBox="0 0 11 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <use xlink:href="#faseb"></use>
-                            </svg>                    
-                        </a>    
-                        <a href="">
-                            <svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <use xlink:href="#aple"></use>
-                            </svg>            
-                        </a>
-                    </div>
-                </div>
-                <button type="submit" class="btn">ЗАРЕГИСТРИРОВАТЬСЯ</button>
-            </form>
-            <form action="" class="modal_enter">
-                <input type="email" placeholder="Ваш E-mail..." class="inpt">
-                <input type="password" placeholder="Ваш Пароль..." class="inpt">
-                <button type="submit" class="btn btn2">ВХОД</button>
-            </form>
-        </div>
-    </div>
     <svg width="0" height="0" style="position:absolute">
         <symbol id="phone">
             <g clip-path="url(#clip0)">
@@ -536,7 +412,7 @@
                                 </defs>
         </symbol>
         <symbol id="caretDown">
-            <path d="M10.4938 0.755604L18.7964 8.84338C19.0683 9.10836 19.0679 9.53738 18.795 9.80193C18.5223 10.0663 18.0804 10.0656 17.8083 9.80056L9.99984 2.19419L2.19142 9.80083C1.91931 10.0658 1.47771 10.0665 1.20489 9.8022C1.06813 9.66959 0.999752 9.49585 0.999752 9.32212C0.999752 9.14883 1.06767 8.97578 1.20349 8.84341L9.50589 0.755604C9.63661 0.627976 9.8145 0.556359 9.99984 0.556359C10.1852 0.556359 10.3629 0.628181 10.4938 0.755604Z" fill="" stroke=""/>
+            <path d="M10.4938 0.755604L18.7964 8.84338C19.0683 9.10836 19.0679 9.53738 18.795 9.80193C18.5223 10.0663 18.0804 10.0656 17.8083 9.80056L9.99984 2.19419L2.19142 9.80083C1.91931 10.0658 1.47771 10.0665 1.20489 9.8022C1.06813 9.66959 0.999752 9.49585 0.999752 9.32212C0.999752 9.14883 1.06767 8.97578 1.20349 8.84341L9.50589 0.755604C9.63661 0.627976 9.8145 0.556359 9.99984 0.556359C10.1852 0.556359 10.3629 0.628181 10.4938 0.755604Z" fill="black" stroke="black"/>
         </symbol>
          <symbol id="busket">
             <path d="M40.6521 12.9131H38.3713C38.3538 12.8936 38.3375 12.8736 38.3188 12.855L25.8841 0.420234C25.3239 -0.140078 24.4154 -0.140078 23.855 0.420234C23.2947 0.980547 23.2947 1.88899 23.855 2.4493L34.3187 12.913H9.6812L20.145 2.4493C20.7053 1.88899 20.7053 0.980547 20.145 0.420234C19.5847 -0.140078 18.6762 -0.140078 18.1159 0.420234L5.68107 12.855C5.66242 12.8737 5.64609 12.8937 5.62865 12.9131H3.34787C1.50184 12.9131 0 14.4149 0 16.2608V18.1739C0 19.9323 1.36254 21.3782 3.08722 21.5117L5.83722 38.012C6.18466 40.096 7.97019 41.6087 10.083 41.6087H34.3372C36.4654 41.6087 38.2973 40.0199 38.5983 37.913L40.9417 21.5093C42.6527 21.362 43.9999 19.9223 43.9999 18.1739V16.2608C44 14.4149 42.4982 12.9131 40.6521 12.9131ZM41.1305 18.1739C41.1305 18.4376 40.9159 18.6521 40.6522 18.6521C40.2117 18.6521 26.933 18.6521 26.3044 18.6521C25.5121 18.6521 24.8696 19.2945 24.8696 20.0869C24.8696 20.8793 25.512 21.5218 26.3044 21.5218H38.0414L35.7577 37.5073C35.6574 38.2096 35.0468 38.7392 34.3373 38.7392H10.083C9.37879 38.7392 8.78359 38.235 8.66774 37.5402L5.99809 21.5218H17.6956C18.488 21.5218 19.1305 20.8794 19.1305 20.0869C19.1305 19.2946 18.4881 18.6521 17.6956 18.6521C17.0662 18.6521 3.78649 18.6521 3.34787 18.6521C3.08413 18.6521 2.86962 18.4375 2.86962 18.1739V16.2608C2.86962 15.9971 3.08421 15.7826 3.34787 15.7826H40.6522C40.916 15.7826 41.1305 15.9972 41.1305 16.2608V18.1739Z" fill="#FCC000"/>
@@ -568,26 +444,9 @@
                 </clipPath>
                 </defs>
         </symbol>
-        <symbol id="user2">    
-            <path d="M18.6857 22.195C21.5975 22.195 24.1186 21.1506 26.179 19.0901C28.2389 17.03 29.2835 14.5093 29.2835 11.5971C29.2835 8.68602 28.2392 6.16497 26.1787 4.10415C24.1182 2.04434 21.5972 1 18.6857 1C15.7736 1 13.2529 2.04434 11.1927 4.10449C9.13257 6.16463 8.08789 8.68568 8.08789 11.5971C8.08789 14.5093 9.13257 17.0303 11.1927 19.0905C13.2535 21.1503 15.7746 22.195 18.6857 22.195ZM13.0162 5.92763C14.597 4.34686 16.4513 3.57846 18.6857 3.57846C20.9197 3.57846 22.7744 4.34686 24.3556 5.92763C25.9363 7.50875 26.7051 9.36345 26.7051 11.5971C26.7051 13.8315 25.9363 15.6859 24.3556 17.267C22.7744 18.8481 20.9197 19.6165 18.6857 19.6165C16.452 19.6165 14.5976 18.8478 13.0162 17.267C11.4351 15.6862 10.6663 13.8315 10.6663 11.5971C10.6663 9.36345 11.4351 7.50875 13.0162 5.92763Z" fill="#FCC000" stroke="#FCC000" stroke-width="0.5"/>
-            <path d="M37.2298 34.8338C37.1703 33.9764 37.0502 33.0412 36.8733 32.0536C36.6947 31.0586 36.4647 30.118 36.1894 29.2583C35.9048 28.3697 35.5184 27.4922 35.04 26.6513C34.5442 25.7785 33.9615 25.0185 33.3075 24.3931C32.6237 23.7388 31.7865 23.2128 30.8184 22.8291C29.8536 22.4474 28.7844 22.254 27.6407 22.254C27.1915 22.254 26.7572 22.4383 25.9183 22.9845C25.402 23.3212 24.798 23.7106 24.124 24.1413C23.5476 24.5086 22.7668 24.8526 21.8023 25.1642C20.8614 25.4686 19.906 25.6231 18.9627 25.6231C18.0201 25.6231 17.0647 25.4686 16.1231 25.1642C15.1596 24.853 14.3785 24.5089 13.8031 24.1416C13.1354 23.715 12.5312 23.3256 12.0071 22.9842C11.1689 22.438 10.7345 22.2537 10.2854 22.2537C9.14134 22.2537 8.0725 22.4474 7.10805 22.8294C6.14058 23.2124 5.30303 23.7385 4.61855 24.3934C3.96462 25.0191 3.38186 25.7788 2.88638 26.6513C2.40869 27.4922 2.02197 28.3694 1.7373 29.2586C1.46237 30.1183 1.23242 31.0586 1.05383 32.0536C0.876586 33.0399 0.756744 33.9754 0.697327 34.8348C0.638916 35.675 0.609375 36.5495 0.609375 37.4331C0.609375 39.7299 1.33951 41.5893 2.77929 42.9606C4.20129 44.3138 6.08251 44.9999 8.37093 44.9999H29.5572C31.8449 44.9999 33.7261 44.3138 35.1485 42.9606C36.5886 41.5903 37.3187 39.7302 37.3187 37.4327C37.3184 36.5462 37.2885 35.6717 37.2298 34.8338ZM33.3706 41.0924C32.431 41.9867 31.1836 42.4215 29.5568 42.4215H8.37093C6.74382 42.4215 5.49639 41.9867 4.55712 41.0928C3.63564 40.2156 3.18783 39.0182 3.18783 37.4331C3.18783 36.6086 3.21502 35.7945 3.2694 35.0131C3.32244 34.2463 3.43087 33.4041 3.59167 32.5091C3.75045 31.6252 3.95254 30.7957 4.19289 30.0448C4.42352 29.3247 4.73806 28.6117 5.12813 27.9249C5.50042 27.2703 5.92876 26.7087 6.40142 26.2562C6.84352 25.8329 7.40077 25.4864 8.05739 25.2266C8.66466 24.9862 9.34712 24.8547 10.088 24.8348C10.1783 24.8829 10.3391 24.9745 10.5996 25.1444C11.1296 25.4898 11.7406 25.8839 12.416 26.3153C13.1774 26.8007 14.1583 27.2391 15.3302 27.6174C16.5283 28.0048 17.7502 28.2015 18.963 28.2015C20.1759 28.2015 21.3982 28.0048 22.5956 27.6177C23.7685 27.2387 24.749 26.8007 25.5114 26.3146C26.2026 25.8728 26.7964 25.4901 27.3265 25.1444C27.587 24.9748 27.7478 24.8829 27.8381 24.8348C28.5793 24.8547 29.2618 24.9862 29.8694 25.2266C30.5256 25.4864 31.0829 25.8332 31.525 26.2562C31.9977 26.7084 32.426 27.27 32.7983 27.9252C33.1887 28.6117 33.5036 29.3251 33.7339 30.0445C33.9745 30.7964 34.177 31.6256 34.3354 32.5088C34.4959 33.4054 34.6046 34.248 34.6577 35.0134V35.0141C34.7124 35.7925 34.7399 36.6062 34.7403 37.4331C34.7399 39.0185 34.2921 40.2156 33.3706 41.0924Z" fill="#FCC000" stroke="#FCC000" stroke-width="0.5"/>       
-        </symbol>
-        <symbol id="discount">
-            <g clip-path="url(#clip1212)">
-                <path d="M41.0747 22.5699C40.8976 22.2077 40.8976 21.7923 41.0747 21.4301L42.7157 18.073C43.6294 16.2038 42.9055 13.9758 41.0676 13.0007L37.7668 11.2493C37.4107 11.0604 37.1665 10.7242 37.0968 10.3273L36.4513 6.64671C36.0918 4.59745 34.1962 3.2204 32.1365 3.51181L28.4367 4.03517C28.0373 4.09154 27.6425 3.96315 27.3528 3.68291L24.6672 1.08486C23.1718 -0.361802 20.8291 -0.361888 19.3338 1.08486L16.6481 3.68317C16.3583 3.9635 15.9635 4.09163 15.5642 4.03543L11.8644 3.51207C9.80401 3.22048 7.9091 4.59771 7.54963 6.64697L6.90407 10.3274C6.83437 10.7244 6.59022 11.0605 6.23419 11.2495L2.93335 13.0009C1.0955 13.9759 0.371566 16.204 1.28525 18.0732L2.92622 21.4303C3.10325 21.7925 3.10325 22.2079 2.92622 22.5701L1.28516 25.9271C0.37148 27.7963 1.09541 30.0242 2.93326 30.9994L6.2341 32.7508C6.59022 32.9397 6.83437 33.2758 6.90407 33.6728L7.54963 37.3534C7.87687 39.2189 9.4765 40.5272 11.315 40.527C11.496 40.527 11.6798 40.5143 11.8644 40.4882L15.5643 39.9648C15.9633 39.9082 16.3584 40.0369 16.6482 40.3171L19.3338 42.9151C20.0816 43.6386 21.0409 44.0002 22.0004 44.0001C22.9598 44 23.9196 43.6384 24.6671 42.9151L27.3528 40.3171C27.6426 40.0369 28.0375 39.9088 28.4367 39.9648L32.1365 40.4882C34.1971 40.7797 36.0918 39.4026 36.4513 37.3533L37.0969 33.6729C37.1666 33.2758 37.4108 32.9397 37.7668 32.7508L41.0676 30.9994C42.9055 30.0243 43.6294 27.7962 42.7157 25.927L41.0747 22.5699ZM39.8782 28.7575L36.5773 30.5089C35.525 31.0674 34.8032 32.0607 34.5973 33.2343L33.9518 36.9148C33.8302 37.6081 33.1892 38.0738 32.492 37.9754L28.7921 37.452C27.6122 37.2849 26.4447 37.6646 25.5883 38.493L22.9026 41.091C22.3968 41.5803 21.6042 41.5803 21.0982 41.091L18.4126 38.4929C17.6888 37.7928 16.7427 37.4134 15.7549 37.4134C15.5739 37.4134 15.3915 37.4261 15.2088 37.452L11.5089 37.9753C10.8123 38.0738 10.1708 37.608 10.0491 36.9147L9.40346 33.2341C9.19755 32.0605 8.47585 31.0672 7.42338 30.5088L4.12254 28.7575C3.5007 28.4275 3.25578 27.6738 3.5649 27.0414L5.20595 23.6842C5.72914 22.6138 5.72914 21.3861 5.20595 20.3157L3.5649 16.9586C3.25578 16.3261 3.5007 15.5724 4.12254 15.2425L7.42338 13.4911C8.47577 12.9326 9.19755 11.9393 9.40337 10.7658L10.0489 7.08525C10.1706 6.3919 10.8115 5.92613 11.5087 6.02461L15.2086 6.54797C16.3881 6.71494 17.556 6.33536 18.4124 5.50701L21.0981 2.90896C21.6039 2.41964 22.3965 2.41964 22.9025 2.90896L25.5881 5.50701C26.4445 6.33544 27.6123 6.71494 28.792 6.54797L32.4918 6.02461C33.1885 5.92604 33.83 6.3919 33.9516 7.08525L34.5972 10.7658C34.8031 11.9394 35.5248 12.9327 36.5772 13.4911L39.8781 15.2425C40.4999 15.5724 40.7449 16.3261 40.4357 16.9586L38.7947 20.3156C38.2715 21.3859 38.2715 22.6138 38.7947 23.6842L40.4357 27.0412C40.7449 27.6738 40.5 28.4276 39.8782 28.7575Z" fill="#FCC000" stroke="#FCC000" stroke-width="0.5"/>
-                <path d="M31.2717 12.7286C30.7763 12.2331 29.9728 12.2331 29.4772 12.7286L12.7291 29.4769C12.2335 29.9724 12.2335 30.7758 12.7291 31.2714C12.9768 31.5191 13.3016 31.643 13.6262 31.643C13.9509 31.643 14.2758 31.5192 14.5234 31.2714L31.2716 14.5232C31.7673 14.0276 31.7673 13.2242 31.2717 12.7286Z" fill="#FCC000" stroke="#FCC000" stroke-width="0.5"/>
-                <path d="M16.924 10.5802C14.3586 10.5802 12.2715 12.6674 12.2715 15.2328C12.2715 17.7982 14.3586 19.8853 16.924 19.8853C19.4894 19.8853 21.5766 17.7982 21.5766 15.2328C21.5766 12.6674 19.4894 10.5802 16.924 10.5802ZM16.924 17.3475C15.7579 17.3475 14.8093 16.3988 14.8093 15.2327C14.8093 14.0666 15.7579 13.1179 16.924 13.1179C18.0901 13.1179 19.0389 14.0666 19.0389 15.2327C19.0388 16.3988 18.0901 17.3475 16.924 17.3475Z" fill="#FCC000" stroke="#FCC000" stroke-width="0.5"/>
-                <path d="M27.0764 24.1148C24.511 24.1148 22.4238 26.2019 22.4238 28.7673C22.4238 31.3327 24.511 33.4199 27.0764 33.4199C29.6418 33.4199 31.7289 31.3327 31.7289 28.7673C31.7289 26.2019 29.6418 24.1148 27.0764 24.1148ZM27.0764 30.8821C25.9103 30.8821 24.9615 29.9334 24.9615 28.7673C24.9615 27.6012 25.9102 26.6526 27.0764 26.6526C28.2425 26.6526 29.1911 27.6012 29.1911 28.7673C29.1911 29.9334 28.2425 30.8821 27.0764 30.8821Z" fill="#FCC000" stroke="#FCC000" stroke-width="0.5"/>
-                </g>
-                <defs>
-                <clipPath id="clip1212">
-                <rect width="44" height="44" fill="white"/>
-                </clipPath>
-                </defs>
-        </symbol>
     </svg>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <!-- https://developers.google.com/speed/libraries/  actual version -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="/js/index.js"></script>
 </body>
 
