@@ -1247,28 +1247,37 @@ aside {
 	  right:0;
 }
 .product__sale {
-	width:112px;
-	height:113px;
+	width: 118px;
+    height: 45px;
+	margin: 10px 0;
 	background:url(../img/saleBig.svg) no-repeat;
 	background-position:center;
 }
 .product__akciya {
 	width:82px;
 	height:82px;
+	margin: 10px 0;
 	background:url(../img/akciyaBig.svg) no-repeat;
 	background-position:center;
 }
 .productPrice {
 	.flex(space-between);
 	padding:20px 0;
-	border-top: 2px solid #C4C4C4;
 	border-bottom: 2px solid #C4C4C4;
+	&:first-child {
+		border-top: 2px solid #C4C4C4;
+	}
 }
 .productPrice__block {
 	.flex(space-between);
 	width: 51%;
+	&:first-child {
+		max-width: 220px;
+		
+	}
 }
 .productPrice__weight {
+	display: inline-block;
 	padding:5px 0.9375rem;
 	box-sizing: border-box;
 	border-radius: 10px;
@@ -1325,7 +1334,8 @@ aside {
 	font-weight: normal;
 }
 .productPrice__delevery {
-	.flex;
+	display: inline-flex;
+	align-items:center;
 	padding: 5px 10px;
 	background: #F44336;
 	border-radius: 10px;
@@ -2022,9 +2032,14 @@ li.slick-active {
 		border-top:2px solid #C4C4C4;
 	}
 	summary {
-		.flex(space-between);
+		position: relative;
+		.flex;
 		cursor: pointer;
 		svg {
+			position: absolute;
+			right: 0;
+			top: 50%;
+			transform: translateY(-50%);
 			fill:@col;
 			stroke:@col;
 			transform: rotate(180deg);
@@ -2074,6 +2089,7 @@ details.cart__filter[open] {
 	}
 }
 .cart__filterOrder {
+	margin-right: 15%;
 	font-family: 'Roboto', sans-serif;
 	font-size:1.125rem;
 	span {
@@ -2082,6 +2098,7 @@ details.cart__filter[open] {
 	}
 }
 .cart__filterDate {
+	margin-right: 15%;
 	font-size:14px;
 	color: #000000;
 }

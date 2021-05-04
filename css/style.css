@@ -1368,14 +1368,16 @@ aside.active {
   right: 0;
 }
 .product__sale {
-  width: 112px;
-  height: 113px;
+  width: 118px;
+  height: 45px;
+  margin: 10px 0;
   background: url(../img/saleBig.svg) no-repeat;
   background-position: center;
 }
 .product__akciya {
   width: 82px;
   height: 82px;
+  margin: 10px 0;
   background: url(../img/akciyaBig.svg) no-repeat;
   background-position: center;
 }
@@ -1384,8 +1386,10 @@ aside.active {
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
-  border-top: 2px solid #C4C4C4;
   border-bottom: 2px solid #C4C4C4;
+}
+.productPrice:first-child {
+  border-top: 2px solid #C4C4C4;
 }
 .productPrice__block {
   display: flex;
@@ -1393,7 +1397,11 @@ aside.active {
   align-items: center;
   width: 51%;
 }
+.productPrice__block:first-child {
+  max-width: 220px;
+}
 .productPrice__weight {
+  display: inline-block;
   padding: 5px 0.9375rem;
   box-sizing: border-box;
   border-radius: 10px;
@@ -1456,8 +1464,7 @@ aside.active {
   font-weight: normal;
 }
 .productPrice__delevery {
-  display: flex;
-  justify-content: flex-start;
+  display: inline-flex;
   align-items: center;
   padding: 5px 10px;
   background: #F44336;
@@ -2219,12 +2226,17 @@ li.slick-active button {
   border-top: 2px solid #C4C4C4;
 }
 .cart__filter summary {
+  position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   cursor: pointer;
 }
 .cart__filter summary svg {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
   fill: #FCC000;
   stroke: #FCC000;
   transform: rotate(180deg);
@@ -2282,6 +2294,7 @@ details.cart__filter[open] svg {
   font-size: 1.125rem;
 }
 .cart__filterOrder {
+  margin-right: 15%;
   font-family: 'Roboto', sans-serif;
   font-size: 1.125rem;
 }
@@ -2290,6 +2303,7 @@ details.cart__filter[open] svg {
   font-weight: bold;
 }
 .cart__filterDate {
+  margin-right: 15%;
   font-size: 14px;
   color: #000000;
 }
@@ -2852,5 +2866,22 @@ details.cart__filter[open] svg {
   }
   .productPrice__Oldcount:before {
     top: 23%;
+  }
+  .productPrice__block:first-child {
+    max-width: 220px;
+    display: block;
+  }
+  .productPrice__delevery {
+    margin-top: 10px;
+  }
+  .productPrice__Oldcount {
+    font-size: 12px;
+  }
+  .product__dop {
+    right: -21px;
+  }
+  .cart__filterDate,
+  .cart__filterOrder {
+    margin-right: 4%;
   }
 }
