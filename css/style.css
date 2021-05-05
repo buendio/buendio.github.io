@@ -1713,7 +1713,6 @@ aside.active {
 }
 .tabs-text_flex .tabs-text_item:first-child {
   max-width: 570px;
-  order: 1;
 }
 span.emp {
   display: inline-block;
@@ -2883,6 +2882,7 @@ details.cart__filter[open] svg {
     top: 23%;
   }
   .productPrice__block:first-child {
+    width: 38%;
     max-width: 220px;
     display: block;
   }
