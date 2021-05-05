@@ -675,13 +675,22 @@ footer h3 {
 .modal.active {
   display: block;
 }
+.modal #tabs {
+  position: absolute;
+  left: 0;
+  top: -63px;
+}
+.modal #items a {
+  border: 2px solid #FCC000;
+  background: #fff;
+}
 .modal__wrap {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 5vh;
+  top: 20vh;
   width: 568px;
-  padding: 100px 100px 140px;
+  padding: 60px 100px;
   box-sizing: border-box;
   background: rgba(240, 240, 240, 0.9);
   border-radius: 10px;
@@ -2449,6 +2458,9 @@ details.cart__filter[open] svg {
   html {
     font-size: 14px;
   }
+  .modal #tabs {
+    top: -53px;
+  }
 }
 /*-------------------------------------------*/
 @media only screen and (max-width: 1080px) {
@@ -2466,6 +2478,9 @@ details.cart__filter[open] svg {
     margin-bottom: 20px;
     border: 2px solid #FCC000;
     border-radius: 5px;
+  }
+  .modal #items {
+    flex-wrap: nowrap;
   }
   .cart__itemBody {
     padding: 0 10px 70px;

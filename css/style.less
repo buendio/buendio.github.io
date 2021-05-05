@@ -586,14 +586,25 @@ footer {
 	&.active {
 		display:block;
 	}
+	#tabs {
+		position: absolute;
+		left:0;
+		top:-63px;
+	}
+	#items {
+		a {
+			border: 2px solid #FCC000;
+			background:#fff;
+		}
+	}
 }
 .modal__wrap {
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
-	top: 5vh;
+	top: 20vh;
 	width: 568px;
-	padding: 100px 100px 140px;
+	padding: 60px 100px;
 	box-sizing:border-box;
 	background: rgba(240, 240, 240, 0.9);
 	border-radius: 10px;
