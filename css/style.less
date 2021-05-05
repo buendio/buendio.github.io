@@ -689,7 +689,7 @@ footer {
 	width: 270px;
 	height: 140px;
 	margin-bottom: 30px;
-	padding:35px;
+	padding:35px 25px;
 	box-sizing:border-box;
 	border-radius: 10px;
 	background:#fff;
@@ -697,11 +697,18 @@ footer {
 }
 
 .all__img {
+	display: inline-flex;
+	align-items:center;
+	justify-content: center;
+	width: 72px;
+	height: 72px;
+	background:@col;
 	box-sizing:border-box;	
 	border-radius:50%;
 	margin-right: 10px;
 }
 .all__text {
+	max-width: 138px;
 	line-height: 1.5;
 	font-weight: 600;
 	letter-spacing: 0.1rem;
