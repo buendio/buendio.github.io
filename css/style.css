@@ -818,6 +818,7 @@ footer h3 {
 }
 .all__text {
   max-width: 138px;
+  margin: auto;
   line-height: 1.5;
   font-weight: 600;
   letter-spacing: 0.1rem;
