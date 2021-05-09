@@ -1,6 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 html {
   font-size: 16px;
@@ -56,4 +57,66 @@ hr {
 .midle {
   top: 50%;
   transform: translateY(-50%);
+}
+.mob {
+  width: 45px;
+  height: 70px;
+  overflow: hidden;
+  display: none;
+  background: none;
+}
+.mob span {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 6px;
+  background: #d19f02;
+  border-radius: 4px;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  transition: all 0.1s;
+}
+.mob span:before {
+  content: "";
+  width: 100%;
+  border-radius: 4px;
+  position: absolute;
+  top: -15px;
+  left: 0;
+  height: 6px;
+  background-color: #d19f02;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.mob span:after {
+  border-radius: 4px;
+  content: "";
+  width: 100%;
+  position: absolute;
+  height: 6px;
+  left: 0;
+  background-color: #d19f02;
+  bottom: -15px;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.mob .active {
+  background: none;
+}
+.mob .active:before {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.mob .active:after {
+  bottom: 0;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
