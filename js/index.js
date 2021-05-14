@@ -28,7 +28,7 @@ $(document).ready(function(){
 
   //   //узнаем высоту от начала страницы до блока на который ссылается якорь
   //     top = $(id).offset().top;
-    
+
   //   //анимируем переход на расстояние - top за 1500 мс
   //   $('body,html').animate({scrollTop: top}, 1500);
   // });
@@ -41,5 +41,20 @@ $(document).ready(function(){
   //   $(this).addClass('active');
   // });
   ///////////////END ADD CLASS//////////////////////////////
+  $('.slider_js').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: true,
+    vertical: true,
+    adaptiveHeight: true,
+    autoplay: true,
+    autoplaySpeed: 1500,
+    speed:1000,
+  });
+  $('#makeMeScrollable').marquee()
 
-}); // end ready 
+  $('.up').on('click', function(){
+    $('body,html').animate({scrollTop: 0}, 1500);
+        });
+}); // end ready

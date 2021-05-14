@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <title>Главная</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="js/smoothDivScroll.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
 </head>
@@ -54,12 +56,504 @@
             <button class="header__cart"><span class="bg-cart"></span> Корзина</button>
         </div>
     </header>
-    <h1>Hola Буендио!1111</h1>
-    <p>Мой странный текст</p>
+    <nav>
+        <ul class="wrap nav">
+            <li class="nav__item active">
+                <a href="" class="nav__link">
+                    подоконники
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="612px" height="612px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
+                        <g>
+                            <g id="_x31_0_34_">
+                                <g>
+                                    <path d="M604.501,134.782c-9.999-10.05-26.222-10.05-36.221,0L306.014,422.558L43.721,134.782     c-9.999-10.05-26.223-10.05-36.222,0s-9.999,26.35,0,36.399l279.103,306.241c5.331,5.357,12.422,7.652,19.386,7.296     c6.988,0.356,14.055-1.939,19.386-7.296l279.128-306.268C614.5,161.106,614.5,144.832,604.501,134.782z"/>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+                <ul class="dropdownMenu">
+                    <li class="nav__item"><a class="nav__link" href="">подоконник1</a></li>
+                    <li class="nav__item"><a class="nav__link" href=""> супер подоконник2</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">подоконник3</a></li>
+                </ul>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="">
+                    отливы
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="612px" height="612px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
+                        <g>
+                            <g id="_x31_0_34_">
+                                <g>
+                                    <path d="M604.501,134.782c-9.999-10.05-26.222-10.05-36.221,0L306.014,422.558L43.721,134.782     c-9.999-10.05-26.223-10.05-36.222,0s-9.999,26.35,0,36.399l279.103,306.241c5.331,5.357,12.422,7.652,19.386,7.296     c6.988,0.356,14.055-1.939,19.386-7.296l279.128-306.268C614.5,161.106,614.5,144.832,604.501,134.782z"/>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="" >
+                    москитные сетки
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="612px" height="612px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
+                        <g>
+                            <g id="_x31_0_34_">
+                                <g>
+                                    <path d="M604.501,134.782c-9.999-10.05-26.222-10.05-36.221,0L306.014,422.558L43.721,134.782     c-9.999-10.05-26.223-10.05-36.222,0s-9.999,26.35,0,36.399l279.103,306.241c5.331,5.357,12.422,7.652,19.386,7.296     c6.988,0.356,14.055-1.939,19.386-7.296l279.128-306.268C614.5,161.106,614.5,144.832,604.501,134.782z"/>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="">сендвич панели
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="612px" height="612px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
+                    <g>
+                        <g id="_x31_0_34_">
+                            <g>
+                                <path d="M604.501,134.782c-9.999-10.05-26.222-10.05-36.221,0L306.014,422.558L43.721,134.782     c-9.999-10.05-26.223-10.05-36.222,0s-9.999,26.35,0,36.399l279.103,306.241c5.331,5.357,12.422,7.652,19.386,7.296     c6.988,0.356,14.055-1.939,19.386-7.296l279.128-306.268C614.5,161.106,614.5,144.832,604.501,134.782z"/>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+                </a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="">
+                жалюзи, рулонные шторы
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="612px" height="612px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
+                    <g>
+                        <g id="_x31_0_34_">
+                            <g>
+                                <path d="M604.501,134.782c-9.999-10.05-26.222-10.05-36.221,0L306.014,422.558L43.721,134.782     c-9.999-10.05-26.223-10.05-36.222,0s-9.999,26.35,0,36.399l279.103,306.241c5.331,5.357,12.422,7.652,19.386,7.296     c6.988,0.356,14.055-1.939,19.386-7.296l279.128-306.268C614.5,161.106,614.5,144.832,604.501,134.782z"/>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+            </li>
+            <li class="nav__item"><a class="nav__link" href="">химия</a></li>
+            <li class="nav__item"><a class="nav__link" href="">фурнитура</a></li>
+            <li class="nav__item"><a class="nav__link" href="">крепёж</a></li>
+            <li class="nav__item"><a class="nav__link" href="">разное</a></li>
+        </ul>
+    </nav>
+    <section class="slider">
+        <div class="slider_js">
+            <img src="img/Slide1.png" alt="">
+            <img src="img/slide2.png" alt="">
+            <img src="img/Slide1.png" alt="">
+        </div>
+        <div class="slider__item">
+            <a href="" class="sliderLink">
+                <span class="sliderLink__wrap">
+                    <span class="bg-new"></span>
+                    <span class="sliderLink__text">новинки</span>
+                </span>
+                <span class="sliderLink__arrow"><span class="bg-arrow"></span></span>
+            </a>
+            <a href="" class="sliderLink">
+                <span class="sliderLink__wrap">
+                    <span class="bg-procent"></span>
+                    <span class="sliderLink__text">акции</span>
+                </span>
+                <span class="sliderLink__arrow"><span class="bg-arrow"></span></span>
+            </a>
+            <a href="" class="sliderLink">
+                <span class="sliderLink__wrap">
+                    <span class="bg-sale"></span>
+                    <span class="sliderLink__text">распродажи</span>
+                </span>
+                <span class="sliderLink__arrow"><span class="bg-arrow"></span></span>
+            </a>
+            <a href="" class="sliderLink">
+                <span class="sliderLink__wrap">
+                    <span class="bg-star"></span>
+                    <span class="sliderLink__text">бонусы</span>
+                </span>
+                <span class="sliderLink__arrow"><span class="bg-arrow"></span></span>
+            </a>
+        </div>
+    </section>
+    <section class="mainCatalog">
+        <div class="wrap">
+            <a href="" class="mainCatalog__item">
+                <img src="img/podokonik.jpg" alt="">
+                <p>подоконники</p>
+            </a>
+            <a href="" class="mainCatalog__item">
+                <img src="img/otliv.jpg" alt="">
+                <p>отливы</p>
+            </a>
+            <a href="" class="mainCatalog__item">
+                <img src="img/setki.jpg" alt="">
+                <p>москитные сетки</p>
+            </a>
+            <a href="" class="mainCatalog__item">
+                <img src="img/sendvich.jpg" alt="">
+                <p>сендвич панели</p>
+            </a>
+            <a href="" class="mainCatalog__item">
+                <img src="img/galuzi.jpg" alt="">
+                <p> жалюзи, рулонные шторы</p>
+            </a>
+            <a href="" class="mainCatalog__item">
+                <img src="img/khimiya.jpg" alt="">
+                <p>химия</p>
+            </a>
+            <a href="" class="mainCatalog__item">
+                <img src="img/furnitura.jpg" alt="">
+                <p>фурнитура</p>
+            </a>
+            <a href="" class="mainCatalog__item">
+                <img src="img/krepeg.jpg" alt="">
+                <p>крепёж</p>
+            </a>
+        </div>
+    </section>
+    <section class="akciyaCatalog">
+        <h2 class="titleBigGreen">Акции</h2>
+        <div class="wrap">
+            <div class="products">
+                <div class="products__stock">
+                    <span class="akciya">акция</span>
+                    <span class="new">new</span>
+                </div>
+                <img src="img/tovar1.png" alt="" class="products__img">
+                <p class="products__title">Ручка оконная "Argentina",<br>  цвет белый</p>
+                <div class="products__group">
+                    <div class="products__oldPrice">130.15 грн</div>
+                    <div class="products__price">120.35 грн</div>
+                    <button class="products__btn">заказать</button>
+                </div>
+            </div>
+            <div class="products">
+                <div class="products__stock">
+                    <span class="akciya">акция</span>
+                    <span class="new">new</span>
+                </div>
+                <img src="img/tovar3.png" alt="" class="products__img">
+                <p class="products__title">Ручка оконная "Argentina",<br>  цвет белый</p>
+                <div class="products__group">
+                    <div class="products__oldPrice">130.15 грн</div>
+                    <div class="products__price">120.35 грн</div>
+                    <button class="products__btn">заказать</button>
+                </div>
+            </div>
+            <div class="products">
+                <div class="products__stock">
+                    <span class="akciya">акция</span>
+                    <span class="new">new</span>
+                </div>
+                <img src="img/tovar2.png" alt="" class="products__img">
+                <p class="products__title">Ручка оконная "Argentina",<br>  цвет белый</p>
+                <div class="products__group">
+                    <div class="products__oldPrice">130.15 грн</div>
+                    <div class="products__price">120.35 грн</div>
+                    <button class="products__btn">заказать</button>
+                </div>
+            </div>
+            <div class="products">
+                <div class="products__stock">
+                    <span class="akciya">акция</span>
+                    <span class="new">new</span>
+                </div>
+                <img src="img/tovar1.png" alt="" class="products__img">
+                <p class="products__title">Ручка оконная "Argentina",<br>  цвет белый</p>
+                <div class="products__group">
+                    <div class="products__oldPrice">130.15 грн</div>
+                    <div class="products__price">120.35 грн</div>
+                    <button class="products__btn">заказать</button>
+                </div>
+            </div>
+            <div class="products">
+                <div class="products__stock">
+                    <span class="akciya">акция</span>
+                    <span class="new">new</span>
+                </div>
+                <img src="img/tovar3.png" alt="" class="products__img">
+                <p class="products__title">Ручка оконная "Argentina",<br>  цвет белый</p>
+                <div class="products__group">
+                    <div class="products__oldPrice">130.15 грн</div>
+                    <div class="products__price">120.35 грн</div>
+                    <button class="products__btn">заказать</button>
+                </div>
+            </div>
+            <div class="products">
+                <div class="products__stock">
+                    <span class="akciya">акция</span>
+                    <span class="new">new</span>
+                </div>
+                <img src="img/tovar2.png" alt="" class="products__img">
+                <p class="products__title">Ручка оконная "Argentina",<br>  цвет белый</p>
+                <div class="products__group">
+                    <div class="products__oldPrice">130.15 грн</div>
+                    <div class="products__price">120.35 грн</div>
+                    <button class="products__btn">заказать</button>
+                </div>
+            </div>
+            <div class="products">
+                <div class="products__stock">
+                    <span class="akciya">акция</span>
+                    <span class="new">new</span>
+                </div>
+                <img src="img/tovar2.png" alt="" class="products__img">
+                <p class="products__title">Ручка оконная "Argentina",<br>  цвет белый</p>
+                <div class="products__group">
+                    <div class="products__oldPrice">130.15 грн</div>
+                    <div class="products__price">120.35 грн</div>
+                    <button class="products__btn">заказать</button>
+                </div>
+            </div>
+            <div class="products">
+                <div class="products__stock">
+                    <span class="akciya">акция</span>
+                    <span class="new">new</span>
+                </div>
+                <img src="img/tovar1.png" alt="" class="products__img">
+                <p class="products__title">Ручка оконная "Argentina",<br>  цвет белый</p>
+                <div class="products__group">
+                    <div class="products__oldPrice">130.15 грн</div>
+                    <div class="products__price">120.35 грн</div>
+                    <button class="products__btn">заказать</button>
+                </div>
+            </div>
+            <div class="products">
+                <div class="products__stock">
+                    <span class="akciya">акция</span>
+                    <span class="new">new</span>
+                </div>
+                <img src="img/tovar3.png" alt="" class="products__img">
+                <p class="products__title">Ручка оконная "Argentina",<br>  цвет белый</p>
+                <div class="products__group">
+                    <div class="products__oldPrice">130.15 грн</div>
+                    <div class="products__price">120.35 грн</div>
+                    <button class="products__btn">заказать</button>
+                </div>
+            </div>
+            <div class="products">
+                <div class="products__stock">
+                    <span class="akciya">акция</span>
+                    <span class="new">new</span>
+                </div>
+                <img src="img/tovar2.png" alt="" class="products__img">
+                <p class="products__title">Ручка оконная "Argentina",<br>  цвет белый</p>
+                <div class="products__group">
+                    <div class="products__oldPrice">130.15 грн</div>
+                    <div class="products__price">120.35 грн</div>
+                    <button class="products__btn">заказать</button>
+                </div>
+            </div>
+        </div>
+        <a href="" class="moreLink">Показать ещё</a>
+    </section>
+    <section class="akciyaCatalog">
+        <h2 class="titleBigGreen">Новинки</h2>
+        <div class="wrap">
+            <div class="products">
+                <div class="products__stock">
+                    <span class="akciya">акция</span>
+                    <span class="new">new</span>
+                </div>
+                <img src="img/tovar1.png" alt="" class="products__img">
+                <p class="products__title">Ручка оконная "Argentina",<br>  цвет белый</p>
+                <div class="products__group">
+                    <div class="products__oldPrice">130.15 грн</div>
+                    <div class="products__price">120.35 грн</div>
+                    <button class="products__btn">заказать</button>
+                </div>
+            </div>
+            <div class="products">
+                <div class="products__stock">
+                    <span class="akciya">акция</span>
+                    <span class="new">new</span>
+                </div>
+                <img src="img/tovar3.png" alt="" class="products__img">
+                <p class="products__title">Ручка оконная "Argentina",<br>  цвет белый</p>
+                <div class="products__group">
+                    <div class="products__oldPrice">130.15 грн</div>
+                    <div class="products__price">120.35 грн</div>
+                    <button class="products__btn">заказать</button>
+                </div>
+            </div>
+            <div class="products">
+                <div class="products__stock">
+                    <span class="akciya">акция</span>
+                    <span class="new">new</span>
+                </div>
+                <img src="img/tovar2.png" alt="" class="products__img">
+                <p class="products__title">Ручка оконная "Argentina",<br>  цвет белый</p>
+                <div class="products__group">
+                    <div class="products__oldPrice">130.15 грн</div>
+                    <div class="products__price">120.35 грн</div>
+                    <button class="products__btn">заказать</button>
+                </div>
+            </div>
+            <div class="products">
+                <div class="products__stock">
+                    <span class="akciya">акция</span>
+                    <span class="new">new</span>
+                </div>
+                <img src="img/tovar1.png" alt="" class="products__img">
+                <p class="products__title">Ручка оконная "Argentina",<br>  цвет белый</p>
+                <div class="products__group">
+                    <div class="products__oldPrice">130.15 грн</div>
+                    <div class="products__price">120.35 грн</div>
+                    <button class="products__btn">заказать</button>
+                </div>
+            </div>
+            <div class="products">
+                <div class="products__stock">
+                    <span class="akciya">акция</span>
+                    <span class="new">new</span>
+                </div>
+                <img src="img/tovar3.png" alt="" class="products__img">
+                <p class="products__title">Ручка оконная "Argentina",<br>  цвет белый</p>
+                <div class="products__group">
+                    <div class="products__oldPrice">130.15 грн</div>
+                    <div class="products__price">120.35 грн</div>
+                    <button class="products__btn">заказать</button>
+                </div>
+            </div>
+            <div class="products">
+                <div class="products__stock">
+                    <span class="akciya">акция</span>
+                    <span class="new">new</span>
+                </div>
+                <img src="img/tovar2.png" alt="" class="products__img">
+                <p class="products__title">Ручка оконная "Argentina",<br>  цвет белый</p>
+                <div class="products__group">
+                    <div class="products__oldPrice">130.15 грн</div>
+                    <div class="products__price">120.35 грн</div>
+                    <button class="products__btn">заказать</button>
+                </div>
+            </div>
+            <div class="products">
+                <div class="products__stock">
+                    <span class="akciya">акция</span>
+                    <span class="new">new</span>
+                </div>
+                <img src="img/tovar2.png" alt="" class="products__img">
+                <p class="products__title">Ручка оконная "Argentina",<br>  цвет белый</p>
+                <div class="products__group">
+                    <div class="products__oldPrice">130.15 грн</div>
+                    <div class="products__price">120.35 грн</div>
+                    <button class="products__btn">заказать</button>
+                </div>
+            </div>
+            <div class="products">
+                <div class="products__stock">
+                    <span class="akciya">акция</span>
+                    <span class="new">new</span>
+                </div>
+                <img src="img/tovar1.png" alt="" class="products__img">
+                <p class="products__title">Ручка оконная "Argentina",<br>  цвет белый</p>
+                <div class="products__group">
+                    <div class="products__oldPrice">130.15 грн</div>
+                    <div class="products__price">120.35 грн</div>
+                    <button class="products__btn">заказать</button>
+                </div>
+            </div>
+            <div class="products">
+                <div class="products__stock">
+                    <span class="akciya">акция</span>
+                    <span class="new">new</span>
+                </div>
+                <img src="img/tovar3.png" alt="" class="products__img">
+                <p class="products__title">Ручка оконная "Argentina",<br>  цвет белый</p>
+                <div class="products__group">
+                    <div class="products__oldPrice">130.15 грн</div>
+                    <div class="products__price">120.35 грн</div>
+                    <button class="products__btn">заказать</button>
+                </div>
+            </div>
+            <div class="products">
+                <div class="products__stock">
+                    <span class="akciya">акция</span>
+                    <span class="new">new</span>
+                </div>
+                <img src="img/tovar2.png" alt="" class="products__img">
+                <p class="products__title">Ручка оконная "Argentina",<br>  цвет белый</p>
+                <div class="products__group">
+                    <div class="products__oldPrice">130.15 грн</div>
+                    <div class="products__price">120.35 грн</div>
+                    <button class="products__btn">заказать</button>
+                </div>
+            </div>
+        </div>
+        <a href="" class="moreLink">Показать ещё</a>
+    </section>
+    <section class="info">
+        <div class="wrap">
+            <h1>
+                Интернет-магазин "Миракс" - комплектующие для окон в Запорожье
+            </h1>
+            <p>
+                Вы можете выбрать и купить качественные оконные ручки, оконные ручки с замком и балконные ручки, детские замки, фиксаторы и ограничители для защиты окна, москитные сетки и комплектующие к ним, подоконники и другую оконную фурнитуру известных мировых производителей. Предлагаемая нами оконная фурнитура для окон ПВХ универсальна и подходят на все оконные профильные системы, легко устанавливается самостоятельно. Продажа любых комплектующих для окон в городе Запорожье оптом и в розницу.
+            </p>
+        </div>
 
+    </section>
+    <section class="why">
+        <h2 class="white">Почему выгодно работать с нами?</h2>
+        <div id="makeMeScrollable">
+            <div class="why__wrap">
+                <img src="img/w11.png" alt="">
+                <img src="img/w22.png" alt="">
+                <img src="img/w33.png" alt="">
+                <img src="img/w55.png" alt="">
+                <img src="img/w44.png" alt="">
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <div class="wrap">
+            <a href="/" class="logo"><img src="img/logo.png" alt="logo"></a>
+            <div class="footer__infoBlock">
+                <h6>г. Запорожье, <br>ул. Фортечная, 87  </h6>
+                <div class="footerLink__wrap">
+                    <span class="bg-phone"></span><a href="tel:067-111-111-11">067-111-111-11</a> <a href="tel:067-111-111-11">067-111-111-11</a>
+                </div>
+                <div class="footerLink__wrap">
+                   <span class="bg-mail"></span> <a href="mailto: mirax.zp@gmail.com"> mirax.zp@gmail.com</a>
+                </div>
+                <div class="footerLink__wrap">
+                    <span class="bg-map"></span>
+                    <a href="">Карта проезда </a>
+                </div>
+
+            </div>
+            <div class="footer__infoBlock">
+                <h6>Одесская обл. пгт Любашевка<br> ул. Князя Владимира, 182 </h6>
+                <div class="footerLink__wrap">
+                    <span class="bg-phone"></span><a href="tel:067-111-111-11">067-111-111-11</a> <a href="tel:067-111-111-11">067-111-111-11</a>
+                </div>
+                <div class="footerLink__wrap">
+                   <span class="bg-mail"></span> <a href="mailto: mirax.zp@gmail.com"> mirax.zp@gmail.com</a>
+                </div>
+                <div class="footerLink__wrap">
+                    <span class="bg-map"></span>
+                    <a href="">Карта проезда </a>
+                </div>
+
+            </div>
+            <div class="footer__infoBlock">
+                <h6>График работы<br>магазина</h6>
+                <div class="footerLink__wrap">
+                    <span class="bg-clock"></span><p>Пн - Пт с 8:00 до 17:00</p>
+                </div>
+
+                <p>Сб - Вс  выходной</p>
+            </div>
+        </div>
+        <button class="up"><img src="img/arrowUp.png" alt=""></button>
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <!-- https://developers.google.com/speed/libraries/  actual version -->
-    <script src="/js/index.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- <script src="js/dd.js"></script> -->
+    <script src="js/index.js"></script>
 </body>
 
 </html>
