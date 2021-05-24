@@ -1,7 +1,6 @@
 * {
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box;
 }
 html {
   font-size: 16px;
@@ -14,6 +13,7 @@ img {
 }
 a {
   text-decoration: none ;
+  font-size: 14px;
   color: inherit;
   display: inline-block;
   -webkit-transition: all 0.4s;
@@ -46,167 +46,4 @@ hr {
   margin-block-start: 0em;
   margin-block-end: 0em;
   border-width: 0px;
-}
-h1 {
-  font-size: 2.887vmax;
-  font-weight: bold;
-  color: #494949;
-}
-h2 {
-  font-size: 2.205vmax;
-  font-weight: bold;
-  color: #494949;
-}
-h3 {
-  font-size: 1.89vmax;
-  font-weight: bold;
-  color: #494949;
-}
-h4 {
-  font-size: 1.68vmax;
-  font-weight: bold;
-  color: #494949;
-}
-h5 {
-  font-size: 1.575vmax;
-  font-weight: bold;
-  color: #494949;
-}
-h6 {
-  font-size: 1.26vmax;
-  font-weight: bold;
-  color: #494949;
-}
-p {
-  font-size: 1.26vmax;
-  line-height: 1.25;
-  color: #494949;
-}
-section {
-  position: relative;
-}
-.white {
-  color: #fff;
-}
-.bg-lupa {
-  width: 17px;
-  height: 17px;
-  background: url(../img/icons/css_sprites.png) -92px -57px;
-}
-.bg-mail {
-  width: 24px;
-  height: 23px;
-  background: url(../img/icons/css_sprites.png) -97px -10px;
-}
-.bg-map {
-  width: 22px;
-  height: 26px;
-  background: url(../img/icons/css_sprites.png) -55px -10px;
-}
-.bg-phone {
-  width: 25px;
-  height: 27px;
-  background: url(../img/icons/css_sprites.png) -10px -10px;
-}
-.bg-clock {
-  width: 21px;
-  height: 22px;
-  background: url(../img/icons/css_sprites.png) -51px -57px;
-}
-.bg-lock {
-  width: 21px;
-  height: 24px;
-  background: url(../img/icons/css_sprites.png) -10px -57px;
-}
-.bg-cart {
-  width: 21px;
-  height: 18px;
-  background: url(../img/icons/css_spritesWhite.png) -72px -73px;
-}
-.bg-new {
-  width: 42px;
-  height: 43px;
-  background: url(../img/icons/css_spritesWhite.png) -10px -10px;
-}
-.bg-procent {
-  width: 42px;
-  height: 43px;
-  background: url(../img/icons/css_spritesWhite.png) -72px -10px;
-}
-.bg-sale {
-  width: 42px;
-  height: 43px;
-  background: url(../img/icons/css_spritesWhite.png) -134px -10px;
-}
-.bg-star {
-  width: 42px;
-  height: 42px;
-  background: url(../img/icons/css_spritesWhite.png) -10px -73px;
-}
-.bg-arrow {
-  width: 23px;
-  height: 13px;
-  background: url(../img/icons/css_spritesWhite.png) -113px -73px;
-}
-.mob {
-  width: 45px;
-  height: 70px;
-  overflow: hidden;
-  display: none;
-  background: none;
-}
-.mob span {
-  display: block;
-  position: relative;
-  width: 100%;
-  height: 6px;
-  background: #715194;
-  border-radius: 4px;
-  -webkit-transition: all 0.1s;
-  -moz-transition: all 0.1s;
-  -o-transition: all 0.1s;
-  transition: all 0.1s;
-}
-.mob span:before {
-  content: "";
-  width: 100%;
-  border-radius: 4px;
-  position: absolute;
-  top: -15px;
-  left: 0;
-  height: 6px;
-  background-color: #715194;
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  transition: all 0.4s;
-}
-.mob span:after {
-  border-radius: 4px;
-  content: "";
-  width: 100%;
-  position: absolute;
-  height: 6px;
-  left: 0;
-  background-color: #715194;
-  bottom: -15px;
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  transition: all 0.4s;
-}
-.mob .active {
-  background: none;
-}
-.mob .active:before {
-  top: 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-.mob .active:after {
-  bottom: 0;
-  -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
 }

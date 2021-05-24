@@ -1,4 +1,4 @@
-$(document).ready(function(){
+document.addEventListener('DOMContentLoaded', () => {
   ///////////////scroll header////////////////////////
 	// $(window).scroll(function() {
 	// 	if ($(this).scrollTop() > 1){
@@ -11,9 +11,9 @@ $(document).ready(function(){
   ///////////////scroll header/////////////////////////
 
   ////////////////mob nav//////////////////////////////
-	// $('.nav_mob').hide();//?
+	// $('.nav__mob').hide();//?
   //    $('.mob').on('click', function(){
-  //      $('.nav_mob').slideToggle();
+  //      $('.nav__mob').slideToggle();
   //      $('.mob span').toggleClass('active');
   //     });
   /////////////////mob nav///////////////////////////////
@@ -41,20 +41,5 @@ $(document).ready(function(){
   //   $(this).addClass('active');
   // });
   ///////////////END ADD CLASS//////////////////////////////
-  $('.slider_js').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    dots: true,
-    vertical: true,
-    adaptiveHeight: true,
-    autoplay: true,
-    autoplaySpeed: 1500,
-    speed:1000,
-  });
-  $('#makeMeScrollable').marquee()
 
-  $('.up').on('click', function(){
-    $('body,html').animate({scrollTop: 0}, 1500);
-        });
-}); // end ready
+}); // end DOMContentLoaded
