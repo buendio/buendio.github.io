@@ -82,8 +82,19 @@ h1 {
 .btn svg {
   margin-right: 10px;
 }
+.btn_white {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+}
+.btn_color {
+  background: #F67555;
+  border: 1px solid #F67555;
+  color: #fff;
+}
 /*------------------END BODY && WRAP BASE STYLE------------------------------*/
 header {
+  position: relative;
+  z-index: 999;
   background: #363636;
   font-size: 14px;
 }
@@ -100,9 +111,18 @@ header .logo {
 .header__link:not(:last-child) {
   margin-right: 38px;
 }
-.header__link__grey {
+.header__link_grey {
   color: rgba(255, 255, 255, 0.8);
   font-size: 12px;
+}
+.header__link_help svg {
+  margin-left: 2.5rem;
+}
+.header__link_exit svg {
+  margin-right: 10px;
+}
+.header__link_blank svg {
+  margin: 0 0 0 10px;
 }
 .header__linkImg {
   display: inline-block;
@@ -169,6 +189,9 @@ header .logo {
 .sortFilter span {
   color: rgba(0, 0, 0, 0.6);
 }
+.sortFilter svg {
+  margin-left: 6px;
+}
 .main {
   padding: 1.25rem 0;
 }
@@ -209,6 +232,9 @@ header .logo {
   color: rgba(0, 0, 0, 0.6);
   font-weight: 300;
 }
+.settingLink svg {
+  margin-right: 10px;
+}
 .setingBtn {
   display: inline-block;
   position: relative;
@@ -216,11 +242,13 @@ header .logo {
   height: 3px;
   border-radius: 50%;
   background: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
 }
 .setingBtn:before {
   content: "";
   position: absolute;
   top: -5px;
+  left: 0;
   width: 3px;
   height: 3px;
   border-radius: 50%;
@@ -230,10 +258,147 @@ header .logo {
   content: "";
   position: absolute;
   bottom: -5px;
+  left: 0;
   width: 3px;
   height: 3px;
   border-radius: 50%;
   background: rgba(0, 0, 0, 0.4);
+}
+.catalogItem {
+  position: relative;
+  max-width: 390px;
+  height: 240px;
+  margin-bottom: 15px;
+  padding: 1.875rem;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.catalogItem svg {
+  margin-right: 10px;
+}
+.catalogItem__img {
+  position: absolute;
+  right: -35px;
+  top: -25px;
+  width: 185px;
+  height: 185px;
+}
+.catalogItem__title {
+  margin-bottom: 10px;
+  max-width: 50%;
+  font-size: 1.125rem;
+  color: #000;
+  font-weight: 400;
+}
+.catalogItem__link {
+  display: block;
+  padding-top: 10px;
+  border-top: 1px solid #C4C4C4;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.4);
+}
+#pencilSvg {
+  fill: #F67555;
+}
+.folderItem {
+  max-width: 390px;
+  padding: 1.25rem 1.875rem;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+.folderItem__title {
+  margin: 0 0 0 20px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.folderItem__title span {
+  display: block;
+  margin-top: 5px;
+  font-size: 12px;
+  font-weight: 300;
+}
+.overlay {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+.overlay.active {
+  display: block;
+}
+.popup {
+  position: absolute;
+  left: 50%;
+  top: 30vh;
+  transform: translateX(-50%);
+  width: 43.75%;
+  border-radius: 30px;
+}
+.popup__header {
+  padding: 1.35rem 1.875rem;
+  background: #575757;
+  color: #fff;
+  border-radius: 10px 10px 0px 0px;
+}
+.popup__body {
+  padding: 60px 1.35rem 1.875rem;
+  background: #fff;
+  border-radius: 0px 0px 10px 10px;
+}
+.popup__body input {
+  margin-bottom: 12px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #F67555;
+}
+.popup__body label {
+  margin-bottom: 20px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.8);
+}
+.popup__body span {
+  margin-bottom: 60px;
+  font-weight: 300;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.popup__body .btn {
+  padding: 1rem 2.5rem;
+}
+.popup__body .btn:first-child {
+  margin-right: 10px;
+}
+.popup__body :-moz-placeholder {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.4);
+}
+.popup__body ::-moz-placeholder {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.4);
+}
+.popup__body :-ms-input-placeholder {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.4);
+}
+.popup__body ::-webkit-input-placeholder {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.4);
+}
+.popup_close {
+  cursor: pointer;
 }
 /*~~~~~~~~~~~~~~~~~~~MEDIA~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*-------------------------------------------*/
