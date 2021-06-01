@@ -30,6 +30,14 @@ h1 {
 	svg {
 		margin-right: 10px;
 	}
+	&:focus {
+		box-shadow:none;
+	}
+}
+.btn_small {
+	display: inline-block;
+	padding: 7px 35px;
+	border-radius: 10px;
 }
 .btn_white {
 	background:#fff;
@@ -266,33 +274,37 @@ header {
 	}
 }
 .setingBtn {
-	display: inline-block;
-	position: relative;
-	width: 3px;
-	height: 3px;
-	border-radius:50%;
-	background: rgba(0, 0, 0, 0.4);
-	cursor: pointer;
-	&:before {
-		content:"";
-		position: absolute;
-		top: -5px;
-		left: 0;
+	padding: 5px;
+	span {
+		position: relative;
+		display: inline-block;
 		width: 3px;
 		height: 3px;
 		border-radius:50%;
 		background: rgba(0, 0, 0, 0.4);
+		cursor: pointer;
+		&:before {
+			content:"";
+			position: absolute;
+			top: -5px;
+			left: 0;
+			width: 3px;
+			height: 3px;
+			border-radius:50%;
+			background: rgba(0, 0, 0, 0.4);
+		}
+		&:after {
+			content:"";
+			position: absolute;
+			bottom: -5px;
+			left: 0;
+			width: 3px;
+			height: 3px;
+			border-radius:50%;
+			background: rgba(0, 0, 0, 0.4);
+		}
 	}
-	&:after {
-		content:"";
-		position: absolute;
-		bottom: -5px;
-		left: 0;
-		width: 3px;
-		height: 3px;
-		border-radius:50%;
-		background: rgba(0, 0, 0, 0.4);
-	}
+
 }
 .catalogItem {
 	position: relative;
@@ -551,38 +563,29 @@ header {
 #profileTab {
 	overflow: hidden;
 	border-bottom:none;
-
 	.nav-item {
 		border-bottom:1px solid #C4C4C4;
+		background:#fff;
+		&:hover, &:focus {
+			color:@col;
+		}
 		&:not(:last-child) {
 			.nav-link {
 				border-right:1px solid #C4C4C4;
-				&.active {
-					border-right:1px solid@col;
-				}
 			}
 		}
-		&:nth-child(1) {
+		&:last-child {
 			.nav-link {
-				&.active {
-					border-top-left-radius: 10px;
-				}
-			}
-		}
-		&:nth-child(3) {
-			.nav-link {
-				&.active {
-					border-top-right-radius: 10px;
-				}
+				border-right:1px solid transparent;
 			}
 		}
 	}
 	.nav-link {
 		width: 100%;
-		padding: 20px 0;
+	    padding: 20px 0;
 		border:none;
 		border-radius:none;
-
+		// background:#fff;
 		border-radius:0;
 		font-size: 1rem;
 		.transition;
@@ -649,15 +652,18 @@ header {
 			box-shadow:none;
 		}
 		option {
-
 			background: #F8F8F8;
 			font-size: 14px;
 			font-weight: 300;
+			&:hover {
+				background:#fff;
+			}
 		}
 	}
 }
 .optionWrap {
 	padding: 10px 0 10px 20px;
+	background:red;
 }
 .profile__img {
 	position: relative;
@@ -665,9 +671,18 @@ header {
 	height: 120px;
 	border-radius:50%;
 	cursor: pointer;
-	img {
-		filter: brightness(50%);
+	&:hover, &:focus {
+		img {
+			filter: brightness(50%);
+		}
+		label[for="input__file"] {
+			&::before {
+				display: inline-block;
+				opacity: 1;
+			}
+		}
 	}
+	img {.transition;}
 }
 #input__file {
 	opacity: 0;
@@ -678,16 +693,18 @@ label[for="input__file"] {
 	position: relative;
 	cursor: pointer;
 	&:before {
+		display: none;
+		opacity: 0;
 		content:"";
 		position: absolute;
 		z-index: 11;
 		left: 50%;
 		top: 50%;
 		transform: translateX(-50%) translateY(-50%);
-		display: inline-block;
 		width: 40px;
 		height: 30px;
 		background:url(../img/photo.svg) no-repeat;
+		.transition;
 	}
 }
 #profilePassword {
@@ -800,14 +817,7 @@ label[for="profilePassword"] {
 .table>:not(caption)>*>* {
 	padding: .5rem 2rem;
 }
-.modal {
-	border-radius: 30px;
-}
-.modal-dialog.modal-lg {
-	#profileTab .nav-item:not(:last-child) .nav-link.active {
-		border-right: 1px solid #F67555;
-	}
-}
+
 .modal-content {
 	background:transparent;
 	border-radius: 10px;
@@ -929,6 +939,68 @@ details.catalogBlockDetails[open] {
 		color: #000;
 		svg {transform: rotate(90deg);}
 	}
+}
+.modal {
+	border-radius: 30px;
+	input:focus,  input:hover{
+		border-bottom:1px solid @col;
+	}
+}
+.modal.fade .modal-dialog {
+	.transition(.8s);
+}
+.modal-dialog.modal-lg {
+	#profileTab .nav-item:not(:last-child) .nav-link.active {
+		border-right: 1px solid #F67555;
+	}
+}
+#profileSettingJs {
+
+	.modal-content {
+		max-width: 1200px;
+	}
+	#profileTab {
+		border-radius:10px 10px 0 0;
+	}
+	#profileContent {
+
+			border-radius:0 0 10px 10px ;
+
+	}
+}
+#settingJs   {
+	#profileTab2  {
+		#profileTab;
+		.nav-item {
+			background:#fff;
+			&:nth-child(1), &:nth-child(3) {
+				.nav-link {
+					border-top-right-radius: 0px;
+					border-top-left-radius: 0px;
+				}
+			}
+		}
+	}
+	.modal-body {
+		margin-top: -1px;
+		span {
+			margin-bottom: 40px;
+		}
+	}
+	#profileContent2.tab-content {
+		padding: 30px 30px 30px 60px;
+	}
+	input {
+		max-width: 600px;
+		border-bottom:1px solid #525252;
+	}
+
+}
+.settingJs__img {
+	margin-right: 20px;
+}
+#siteSettingJs {
+
 }
 /*~~~~~~~~~~~~~~~~~~~MEDIA~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 @import "media.less";

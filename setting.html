@@ -53,12 +53,12 @@
                     <div class="col-md-10">
                         <h1>Chameleon on the finger</h1>
                         <div class="d-flex align-items-center">
-                            <a href="" class="btn">
+                            <button class="btn"  data-bs-toggle="modal" data-bs-target="#siteSettingJs">
                                 <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <use xlink:href="#settingSvg"/>
                                 </svg>
                                 Site settings
-                            </a>
+                            </button>
                             <a href="">
                                 <svg width="13" height="18" viewBox="0 0 13 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <use xlink:href="#postAllSvg"/>
@@ -251,124 +251,154 @@
         </div>
     </section>
 
-    <!-- Modal creatPageJs -->
-    <div class="modal fade" id="settingJs" tabindex="-1" aria-labelledby="creatPageJsLabel" aria-hidden="true">
+    <!-- Modal settingJs -->
+    <div class="modal fade" id="settingJs" tabindex="-1" aria-labelledby="settingJsLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
-                <div class="popup__header d-flex justify-content-between align-items-center">
+                <div class="modal-header d-flex justify-content-between align-items-center">
                     Page settings
                     <button type="button" class="btn-close btn-close-white popup_close" aria-label="Close" data-bs-dismiss="modal"></button>
                  </div>
-                 <ul class="nav nav-tabs w-100 d-flex justify-content-stretch" id="profileTab">
-                    <li class="nav-item flex-grow-1" role="presentation">
-                        <button class="nav-link active" data-bs-toggle="tab"  data-bs-target="#PersonalData">Main</button>
-                    </li>
-                    <li class="nav-item flex-grow-1" role="presentation">
-                        <button class="nav-link rounded-0" data-bs-toggle="tab" data-bs-target="#Security">SEO</button>
-                    </li>
-                    <li class="nav-item flex-grow-1" role="presentation">
-                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#Transactions">Actions</button>
-                    </li>
-                    <li class="nav-item flex-grow-1" role="presentation">
-                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#Transactions">Additionally</button>
-                    </li>
-                </ul>
-                <div id="profileContent" class="tab-content">
-                    <div class="tab-pane fade show active" role="tabpanel" id="PersonalData">
-                        <div class="profile__img m-auto">
-
-                            <input type="file" id="input__file" multiple>
-                            <label for="input__file">
-                                <img class=" rounded-circle" src="img/photo_2020-05-24_00-25-17 1.png" alt="" width="120" height="120">
-                            </label>
-
-                        </div>
-                        <form action="" class="profile__form">
-                            <label for="profileName">name</label>
-                            <input type="text" id="profileName" placeholder="Denis Kozyr">
-                            <label for="profileMail">E-mail</label>
-                            <input type="email" id="profileMail" placeholder="dkozyr0k@gmail.com">
-                            <select class="form-select " aria-label=".form-select-sm example">
-                                <div class="optionWrap"><option selected>Русский</option></div>
-                                <div class="optionWrap"><option selected>English</option></div>
-                                <div class="optionWrap"><option selected>Español</option></div>
-
-                            </select>
-                            <button type="submit">Save changes</button>
-                        </form>
-                    </div>
-                    <div class="tab-pane fade" role="tabpanel" id="Security">
-                          <div class="profile__succes active">
-                            <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <use xlink:href="#succesSvg"/>
-                            </svg>
-                            Your password has been successfully changed
-                          </div>
-                          <form action="" class="profile__form profile__form_first active">
-                            <label for="profilePassword">password</label>
-                            <input type="text" id="profilePassword" placeholder="********">
-                            <div id="ChangePassword">Change Password</div>
-                            <p>
-                                <span>two factor authentication</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, nihil.
-                            </p>
-                            <button type="submit">Connect Google Authenticator</button>
-                        </form>
-                        <form action="" class="profile__form profile__form_password">
-                            <div class="profile__formTitle">Security > <span>Password change</span></div>
-                            <div class="profile__danger active">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <use xlink:href="#AtSvg"/>
-                                </svg>
-                                Old password is not correct
+                <div class="modal-body p-0">
+                    <ul class="nav nav-tabs w-100 d-flex justify-content-stretch" id="profileTab2">
+                        <li class="nav-item flex-grow-1" role="presentation">
+                            <button class="nav-link active" data-bs-toggle="tab"  data-bs-target="#mainTab">Main</button>
+                        </li>
+                        <li class="nav-item flex-grow-1" role="presentation">
+                            <button class="nav-link rounded-0" data-bs-toggle="tab" data-bs-target="#Security">SEO</button>
+                        </li>
+                        <li class="nav-item flex-grow-1" role="presentation">
+                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#Transactions">Actions</button>
+                        </li>
+                        <li class="nav-item flex-grow-1" role="presentation">
+                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#Transactions">Additionally</button>
+                        </li>
+                    </ul>
+                    <div id="profileContent2" class="tab-content">
+                        <div class="tab-pane fade show active" role="tabpanel" id="mainTab">
+                            <label class="d-block" for="createSite2">page title</label>
+                            <input class="d-block w-100" type="text" id="createSite2" placeholder="example website">
+                            <span class="d-block">The name will be used in Netbooster'e</span>
+                            <label class="d-block" for="createSite2">page title</label>
+                            <input class="d-block w-100" type="text" id="createSite2" placeholder="example website">
+                            <span class="d-block">The name will be used in Netbooster'e</span>
+                            <label class="d-block" for="createSite2">page title</label>
+                            <input class="d-block w-100" type="text" id="createSite2" placeholder="example website">
+                            <span class="d-block">The name will be used in Netbooster'e</span>
+                            <div class="d-flex align-items-center mb-2">
+                                <img class="rounded-circle settingJs__img" src="img/chameleon-276603_1920 1.png" alt="" width="80" height="80">
+                                <button class="btn_small btn_color ">Replace</button>
                             </div>
-                            <label for="currentPassword">current password</label>
-                            <input type="password" id="currentPassword" >
-                            <label for="newPassword">new password</label>
-                            <input type="password" id="newPassword" >
-                            <label for="newPassword2">repeat new password</label>
-                            <input type="password" id="newPassword2" >
-
-                            <button class="w-100" type="submit">Change password</button>
-                        </form>
-                    </div>
-                    <div class="tab-pane fade" role="tabpanel" id="Transactions">
-                        <div class="table-responsive">
-                            <table class="table table-borderless tranTable">
-                                <thead>
-                                  <tr>
-                                    <th scope="col">Date</th>
-                                    <th scope="col">Time</th>
-                                    <th scope="col">Tariff</th>
-                                    <th scope="col">Term</th>
-                                    <th scope="col">Amount</th>
-                                    <th scope="col">Payment method</th>
-                                    <th scope="col">PDF</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td>2021-05-09</td>
-                                    <td>17:19:41</td>
-                                    <td>Basic</td>
-                                    <td>1 month</td>
-                                    <td>11 $</td>
-                                    <td>PayPal</td>
-                                    <td><a href="">Download PDF</a></td>
-                                  </tr>
-                                  <tr>
-                                    <td>2011-05-11</td>
-                                    <td>17:19:41</td>
-                                    <td>Standart</td>
-                                    <td>1 month</td>
-                                    <td>111 $</td>
-                                    <td>bank card</td>
-                                    <td><a href="">Download PDF</a></td>
-                                  </tr>
-
-                                </tbody>
-                            </table>
+                            <span>Lorem ipsum dolor sit amet.</span>
+                            <div class="text-end">
+                                <button class="btn btn_white popup_close" data-bs-dismiss="modal">Close</button>
+                                <a href="catalog.html" class="btn btn_color">Create a page</a>
+                            </div>
                         </div>
+                        <div class="tab-pane fade" role="tabpanel" id="Security">
+                              <div class="profile__succes active">
+                                <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="#succesSvg"/>
+                                </svg>
+                                Your password has been successfully changed
+                              </div>
+                              <form action="" class="profile__form profile__form_first active">
+                                <label for="profilePassword">password</label>
+                                <input type="text" id="profilePassword" placeholder="********">
+                                <div id="ChangePassword">Change Password</div>
+                                <p>
+                                    <span>two factor authentication</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, nihil.
+                                </p>
+                                <button type="submit">Connect Google Authenticator</button>
+                            </form>
+                            <form action="" class="profile__form profile__form_password">
+                                <div class="profile__formTitle">Security > <span>Password change</span></div>
+                                <div class="profile__danger active">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="#AtSvg"/>
+                                    </svg>
+                                    Old password is not correct
+                                </div>
+                                <label for="currentPassword">current password</label>
+                                <input type="password" id="currentPassword" >
+                                <label for="newPassword">new password</label>
+                                <input type="password" id="newPassword" >
+                                <label for="newPassword2">repeat new password</label>
+                                <input type="password" id="newPassword2" >
 
+                                <button class="w-100" type="submit">Change password</button>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" role="tabpanel" id="Transactions">
+                            <div class="table-responsive">
+                                <table class="table table-borderless tranTable">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">Date</th>
+                                        <th scope="col">Time</th>
+                                        <th scope="col">Tariff</th>
+                                        <th scope="col">Term</th>
+                                        <th scope="col">Amount</th>
+                                        <th scope="col">Payment method</th>
+                                        <th scope="col">PDF</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>2021-05-09</td>
+                                        <td>17:19:41</td>
+                                        <td>Basic</td>
+                                        <td>1 month</td>
+                                        <td>11 $</td>
+                                        <td>PayPal</td>
+                                        <td><a href="">Download PDF</a></td>
+                                      </tr>
+                                      <tr>
+                                        <td>2011-05-11</td>
+                                        <td>17:19:41</td>
+                                        <td>Standart</td>
+                                        <td>1 month</td>
+                                        <td>111 $</td>
+                                        <td>bank card</td>
+                                        <td><a href="">Download PDF</a></td>
+                                      </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- Modal siteSettingJs -->
+    <div class="modal fade" id="siteSettingJs" tabindex="-1" aria-labelledby="creatPageJsLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3 bg-dark">
+                            <ul class="nav nav-tabs w-100 d-flex justify-content-stretch" id="profileTab">
+                                <li class="nav-item flex-grow-1" role="presentation">
+                                    <button class="nav-link active" data-bs-toggle="tab"  data-bs-target="#PersonalData">Main</button>
+                                </li>
+                                <li class="nav-item flex-grow-1" role="presentation">
+                                    <button class="nav-link rounded-0" data-bs-toggle="tab" data-bs-target="#Security">SEO</button>
+                                </li>
+                                <li class="nav-item flex-grow-1" role="presentation">
+                                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#Transactions">Actions</button>
+                                </li>
+                                <li class="nav-item flex-grow-1" role="presentation">
+                                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#Transactions">Additionally</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-9 bg-white">2</div>
                     </div>
                 </div>
             </div>

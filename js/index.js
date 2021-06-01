@@ -29,16 +29,16 @@ document.addEventListener('DOMContentLoaded', () => {
   //   overlay.classList.add('active');
   // })
 
-  document.querySelector('.settingJs').addEventListener('click', (e) => {
-    e.preventDefault();
-    popup.forEach(element => {
-      element.style.display = 'none';
-      if (element.classList.contains('settingJs')) {
-        element.style.display = 'block';
-      }
-    })
-    overlay.classList.add('active');
-  })
+  // document.querySelector('.settingJs').addEventListener('click', (e) => {
+  //   e.preventDefault();
+  //   popup.forEach(element => {
+  //     element.style.display = 'none';
+  //     if (element.classList.contains('settingJs')) {
+  //       element.style.display = 'block';
+  //     }
+  //   })
+  //   overlay.classList.add('active');
+  // })
 
   document.addEventListener('click', (e) => {
     if (e.target.classList.contains('overlay')) {
@@ -63,5 +63,8 @@ document.addEventListener('DOMContentLoaded', () => {
     toggleClass(document.querySelector('.dropdownList'), 'active');
 
   })
-
+  var myModalEl = document.getElementById('creatPageJs')
+  myModalEl.addEventListener('show.bs.modal', function (event) {
+    console.log("qw");
+  })
 }); // end DOMContentLoaded
