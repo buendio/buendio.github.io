@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="bgE5">
     <header class="py-3">
         <div class="container-fluid">
             <div class="row">
@@ -43,286 +43,105 @@
             </div>
         </div>
     </header>
-    <section class="navSection">
-        <div class="container d-flex align-items-center">
-            <button class="btn btn_color active "  data-bs-toggle="modal" data-bs-target="#creatPageJs">
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#plusSvg"/>
-                </svg>
-                Create a new page
-            </button>
-            <button class="btn btn_transparent" data-bs-toggle="modal" data-bs-target="#creatFolderJs">
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#plusSvg"/>
-                </svg>
-                Create a folder
-            </button>
-            <a href="cart.html" class="navSection__cart">
-                <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#cartSvg"/>
-                </svg>
-                Cart (111)
-            </a>
-            <div class="sortFilter  ms-auto me-0">
-                <span class="me-2">Sort:</span>
-                <a href="">New first
-                    <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <use xlink:href="#caretDownSvg"/>
-                    </svg>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <section class="main">
-        <div class="container">
-            <h2 class="mainTitle">folders</span></h2>
-            <div class="row m-0 justify-content-between">
-                <div  class="folderItem col-md-4 d-inline-flex align-items-center">
-                    <svg width="30" height="26" viewBox="0 0 30 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <use xlink:href="#folderSvg"/>
-                    </svg>
-                    <h3 class="folderItem__title">Netbooster project <span>2 sites</span></h3>
-                    <div class="dropdownBox  ms-auto me-0">
-                        <div class="setingBtn" type="button"></div>
-
-                        <ul class="dropdownList" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdownItem" href="#">
-                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <use xlink:href="#penSvg"/>
-                                </svg>
-                                Rename
-                                </a>
-                            </li>
-                            <li><a class="dropdownItem color_red" href="#">
-                               <svg width="10" height="11" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <use xlink:href="#cartSvg"/>
-                                </svg>
-                                 Delete
-                                </a>
-                            </li>
-                        </ul>
-                      </div>
-
-                </div>
-            </div>
-            <h2 class="mainTitle">sites</span></h2>
-            <div class="row m-0 justify-content-between">
-                <div class="catalogItem col-md-4 d-inline-flex flex-column justify-content-between">
-                    <a href="setting.html" class="catalogItem__link d-inline-flex flex-column justify-content-between h-100">
-                        <img src="img/QJQXf9Gxd0w1.png" alt="" class="catalogItem__img rounded-circle">
-                        <span class="catalogItem__subTitle">
-                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <use xlink:href="#pencilSvg"/>
+    <section class="catalog">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-2 bgEA">
+                    <h2 class="text-center">Choosing a template</h2>
+                    <div class="inputSearch ">
+                        <input class="d-block w-100 bg-none" type="text" placeholder="search by topic">
+                    </div>
+                    <h3 class="catalogBlock__title_decor d-flex align-items-center"><span></span> types</h3>
+                    <div class="catalogBlock__filter">
+                        <a href="">Best Templates</a>
+                    </div>
+                    <div class="catalogBlock__filter">
+                        <a href="">All Templates</a>
+                    </div>
+                    <h3 class="catalogBlock__title_decor d-flex align-items-center"><span></span> categories</h3>
+                    <details  class="catalogBlockDetails">
+                        <summary>
+                            <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.90382 8.9713C0.874718 8.94227 0.851629 8.90779 0.835875 8.86982C0.820121 8.83186 0.812012 8.79116 0.812012 8.75005C0.812012 8.70895 0.820121 8.66825 0.835875 8.63028C0.851629 8.59231 0.874718 8.55783 0.90382 8.5288L4.43319 5.00005L0.90382 1.4713C0.874765 1.44225 0.851717 1.40775 0.835993 1.36979C0.820268 1.33183 0.812175 1.29114 0.812175 1.25005C0.812175 1.20896 0.820268 1.16827 0.835993 1.13031C0.851717 1.09235 0.874765 1.05786 0.90382 1.0288C0.932875 0.999747 0.967368 0.976699 1.00533 0.960975C1.04329 0.945251 1.08398 0.937158 1.12507 0.937158C1.16616 0.937158 1.20685 0.94525 1.24481 0.960975C1.28277 0.976699 1.31726 0.999747 1.34632 1.0288L5.09632 4.7788C5.12542 4.80783 5.14851 4.84232 5.16426 4.88028C5.18002 4.91825 5.18813 4.95895 5.18813 5.00005C5.18813 5.04116 5.18002 5.08186 5.16426 5.11982C5.14851 5.15779 5.12542 5.19227 5.09632 5.2213L1.34632 8.9713C1.31729 9.0004 1.28281 9.02349 1.24484 9.03925C1.20688 9.055 1.16617 9.06311 1.12507 9.06311C1.08397 9.06311 1.04326 9.055 1.0053 9.03925C0.967333 9.02349 0.932849 9.0004 0.90382 8.9713Z" fill="#F67555"/>
                             </svg>
-                            Edit
-                        </span>
-                        <span class="catalogItem__title d-block">Chameleon on the finger</span>
-
-                    </a>
-                    <a href="tariffs.html" class="catalogItem__link2">
-                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <use xlink:href="#targetSvg"/>
-                        </svg>
-                        spasibo-chto-ne-na-penise.com
-                    </a>
-                </div>
-
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Modal creatPageJs -->
-    <div class="modal fade" id="creatPageJs" tabindex="-1" aria-labelledby="creatPageJsLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="popup__header d-flex justify-content-between align-items-center">
-                    Create a new page
-                    <button type="button" class="btn-close btn-close-white popup_close" aria-label="Close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="popup__body">
-                    <label class="d-block" for="createSite2">page title</label>
-                    <input class="d-block w-100" type="text" id="createSite2" placeholder="example website">
-                    <span class="d-block">The name will be used in Netbooster'e</span>
-                    <div class="text-end">
-                        <button class="btn btn_white popup_close" data-bs-dismiss="modal">Close</button>
-                        <a href="catalog.html" class="btn btn_color">Create a page</a>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-    </div>
-
-    <!-- Modal creatPageJs -->
-    <div class="modal fade" id="creatFolderJs" tabindex="-1" aria-labelledby="creatPageJsLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="popup__header d-flex justify-content-between align-items-center">
-                    Create a new folder
-                    <button type="button" class="btn-close btn-close-white popup_close" aria-label="Close" data-bs-dismiss="modal"></button>
-                 </div>
-                 <div class="popup__body">
-                    <label class="d-block" for="createFolder">folder name</label>
-                    <input class="d-block w-100" type="text" id="createFolder" placeholder="ex. Landing pages">
-                    <span class="d-block">folders are used to simplify navigation</span>
-                    <div class="text-end">
-                        <button class="btn btn_white popup_close" aria-label="Close" data-bs-dismiss="modal">Close</button>
-                        <button class="btn btn_color">Create a folder</button>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-    </div>
-
-
-
-    <div class="overlay">
-        <div class="modal fade " id="creatSiteJs" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="popup__header d-flex justify-content-between align-items-center">
-               Create a new page
-               <button type="button" class="btn-close btn-close-white popup_close" aria-label="Close"></button>
-            </div>
-
-        </div>
-        <div class="popup creatFolderJs">
-            <div class="popup__header d-flex justify-content-between align-items-center">
-               Create a new folder
-               <button type="button" class="btn-close btn-close-white popup_close" aria-label="Close"></button>
-            </div>
-            <div class="popup__body">
-                <label class="d-block" for="createFolder">folder name</label>
-                <input class="d-block w-100" type="text" id="createFolder" placeholder="ex. Landing pages">
-                <span class="d-block">folders are used to simplify navigation</span>
-                <div class="text-end">
-                    <button class="btn btn_white popup_close">Close</button>
-                    <button class="btn btn_color">Create a folder</button>
-                </div>
-            </div>
-        </div>
-        <div class="popup popup_big bg-white settingJs">
-            <ul class="nav nav-tabs w-100 d-flex justify-content-stretch" id="profileTab">
-                <li class="nav-item flex-grow-1" role="presentation">
-                    <button class="nav-link active" data-bs-toggle="tab"  data-bs-target="#PersonalData">Personal data</button>
-                </li>
-                <li class="nav-item flex-grow-1" role="presentation">
-                    <button class="nav-link rounded-0" data-bs-toggle="tab" data-bs-target="#Security">Security</button>
-                </li>
-                <li class="nav-item flex-grow-1" role="presentation">
-                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#Transactions">Transactions</button>
-                </li>
-            </ul>
-            <div id="profileContent" class="tab-content">
-                <div class="tab-pane fade show active" role="tabpanel" id="PersonalData">
-                    <div class="profile__img m-auto">
-
-                        <input type="file" id="input__file" multiple>
-                        <label for="input__file">
-                            <img class=" rounded-circle" src="img/photo_2020-05-24_00-25-17 1.png" alt="" width="120" height="120">
-                        </label>
-
-                    </div>
-                    <form action="" class="profile__form">
-                        <label for="profileName">name</label>
-                        <input type="text" id="profileName" placeholder="Denis Kozyr">
-                        <label for="profileMail">E-mail</label>
-                        <input type="email" id="profileMail" placeholder="dkozyr0k@gmail.com">
-                        <select class="form-select " aria-label=".form-select-sm example">
-                            <div class="optionWrap"><option selected>Русский</option></div>
-                            <div class="optionWrap"><option selected>English</option></div>
-                            <div class="optionWrap"><option selected>Español</option></div>
-
-                        </select>
-                        <button type="submit">Save changes</button>
-                    </form>
-                </div>
-                <div class="tab-pane fade" role="tabpanel" id="Security">
-                      <div class="profile__succes active">
-                        <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <use xlink:href="#succesSvg"/>
-                        </svg>
-                        Your password has been successfully changed
-                      </div>
-                      <form action="" class="profile__form profile__form_first active">
-                        <label for="profilePassword">password</label>
-                        <input type="text" id="profilePassword" placeholder="********">
-                        <div id="ChangePassword">Change Password</div>
-                        <p>
-                            <span>two factor authentication</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, nihil.
-                        </p>
-                        <button type="submit">Connect Google Authenticator</button>
-                    </form>
-                    <form action="" class="profile__form profile__form_password">
-                        <div class="profile__formTitle">Security > <span>Password change</span></div>
-                        <div class="profile__danger active">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <use xlink:href="#AtSvg"/>
-                            </svg>
-                            Old password is not correct
+                            Business
+                        </summary>
+                        <div class="details__content">
+                            <div class="catalogBlock__filter">
+                                <a href="">The property</a>
+                            </div>
+                            <div class="catalogBlock__filter">
+                                <a href="">Furniture</a>
+                            </div>
+                            <div class="catalogBlock__filter">
+                                <a href="">Tourism</a>
+                            </div>
+                            <div class="catalogBlock__filter">
+                                <a href="">Alcogolizm</a>
+                            </div>
                         </div>
-                        <label for="currentPassword">current password</label>
-                        <input type="password" id="currentPassword" >
-                        <label for="newPassword">new password</label>
-                        <input type="password" id="newPassword" >
-                        <label for="newPassword2">repeat new password</label>
-                        <input type="password" id="newPassword2" >
-
-                        <button class="w-100" type="submit">Change password</button>
-                    </form>
+                    </details>
+                    <details  class="catalogBlockDetails">
+                        <summary>
+                            <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.90382 8.9713C0.874718 8.94227 0.851629 8.90779 0.835875 8.86982C0.820121 8.83186 0.812012 8.79116 0.812012 8.75005C0.812012 8.70895 0.820121 8.66825 0.835875 8.63028C0.851629 8.59231 0.874718 8.55783 0.90382 8.5288L4.43319 5.00005L0.90382 1.4713C0.874765 1.44225 0.851717 1.40775 0.835993 1.36979C0.820268 1.33183 0.812175 1.29114 0.812175 1.25005C0.812175 1.20896 0.820268 1.16827 0.835993 1.13031C0.851717 1.09235 0.874765 1.05786 0.90382 1.0288C0.932875 0.999747 0.967368 0.976699 1.00533 0.960975C1.04329 0.945251 1.08398 0.937158 1.12507 0.937158C1.16616 0.937158 1.20685 0.94525 1.24481 0.960975C1.28277 0.976699 1.31726 0.999747 1.34632 1.0288L5.09632 4.7788C5.12542 4.80783 5.14851 4.84232 5.16426 4.88028C5.18002 4.91825 5.18813 4.95895 5.18813 5.00005C5.18813 5.04116 5.18002 5.08186 5.16426 5.11982C5.14851 5.15779 5.12542 5.19227 5.09632 5.2213L1.34632 8.9713C1.31729 9.0004 1.28281 9.02349 1.24484 9.03925C1.20688 9.055 1.16617 9.06311 1.12507 9.06311C1.08397 9.06311 1.04326 9.055 1.0053 9.03925C0.967333 9.02349 0.932849 9.0004 0.90382 8.9713Z" fill="#F67555"/>
+                            </svg>
+                            Blog
+                        </summary>
+                        <div class="details__content">
+                            <div class="catalogBlock__filter">
+                                <a href="">The property</a>
+                            </div>
+                            <div class="catalogBlock__filter">
+                                <a href="">Furniture</a>
+                            </div>
+                            <div class="catalogBlock__filter">
+                                <a href="">Tourism</a>
+                            </div>
+                            <div class="catalogBlock__filter">
+                                <a href="">Alcogolizm</a>
+                            </div>
+                        </div>
+                    </details>
                 </div>
-                <div class="tab-pane fade" role="tabpanel" id="Transactions">
-                    <div class="table-responsive">
-                        <table class="table table-borderless tranTable">
-                            <thead>
-                              <tr>
-                                <th scope="col">Date</th>
-                                <th scope="col">Time</th>
-                                <th scope="col">Tariff</th>
-                                <th scope="col">Term</th>
-                                <th scope="col">Amount</th>
-                                <th scope="col">Payment method</th>
-                                <th scope="col">PDF</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>2021-05-09</td>
-                                <td>17:19:41</td>
-                                <td>Basic</td>
-                                <td>1 month</td>
-                                <td>11 $</td>
-                                <td>PayPal</td>
-                                <td><a href="">Download PDF</a></td>
-                              </tr>
-                              <tr>
-                                <td>2011-05-11</td>
-                                <td>17:19:41</td>
-                                <td>Standart</td>
-                                <td>1 month</td>
-                                <td>111 $</td>
-                                <td>bank card</td>
-                                <td><a href="">Download PDF</a></td>
-                              </tr>
 
-                            </tbody>
-                        </table>
+
+                <div class="col-10" >
+                    <h2 class="text-center">Choose the template that suits you</h2>
+                    <div class="d-flex justify-content-between flex-wrap px-md-4">
+                        <a href="" class="catalogBlock  mb-5 p-0">
+                            <div class="catalogBlock__img">
+
+                            </div>
+                            <h3 class="catalogBlock__title text-center">Empty page</h3>
+                        </a>
+                        <a href="" class="catalogBlock   mb-5 p-0">
+                            <div class="catalogBlock__img">
+                                <img  src="img/QJQXf9Gxd0w1.png" alt="">
+                            </div>
+                            <h3 class="catalogBlock__title text-center">Construction company</h3>
+                        </a>
+                        <a href="" class="catalogBlock   mb-5 p-0">
+                            <div class="catalogBlock__img">
+                                <img  src="img/chameleon-276603_1920 1.png" alt="">
+                            </div>
+                            <h3 class="catalogBlock__title text-center">Fotograf company</h3>
+                        </a>
+                        <a href="" class="catalogBlock   mb-5 p-0">
+                            <div class="catalogBlock__img">
+                                <img  src="img/chameleon-276603_1920 1.png" alt="">
+                            </div>
+                            <h3 class="catalogBlock__title text-center">Fotograf company</h3>
+                        </a>
                     </div>
-
                 </div>
             </div>
         </div>
-    </div>
-
-
+    </section>
     <svg width="0" height="0" style="position:absolute;">
         <symbol id="bellSvg">
             <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
         </symbol>
-        <symbol id="penSvg"> <path d="M10.1234 0.376789L10.2351 0.265039C10.3192 0.180976 10.4191 0.114304 10.5289 0.0688286C10.6388 0.0233532 10.7566 -3.47831e-05 10.8755 3.88272e-08C10.9944 3.48608e-05 11.1122 0.0234918 11.222 0.0690315C11.3319 0.114571 11.4317 0.181302 11.5157 0.265414C11.5998 0.349525 11.6665 0.449371 11.7119 0.559249C11.7574 0.669127 11.7808 0.786887 11.7808 0.905804C11.7807 1.02472 11.7573 1.14247 11.7117 1.25232C11.6662 1.36217 11.5995 1.46198 11.5154 1.54604L11.4036 1.65704C11.5948 1.87144 11.6967 2.15083 11.6885 2.43796C11.6802 2.72509 11.5625 2.99819 11.3594 3.20129L3.64036 10.921C3.59211 10.969 3.5317 11.003 3.46561 11.0193L0.465612 11.7693C0.402831 11.7849 0.337074 11.784 0.274732 11.7667C0.212389 11.7494 0.155583 11.7163 0.109835 11.6706C0.0640867 11.6248 0.0309526 11.568 0.0136536 11.5057C-0.0036455 11.4433 -0.00452105 11.3776 0.011112 11.3148L0.761112 8.31479C0.777522 8.24897 0.811477 8.18884 0.859362 8.14079L8.09086 0.909289C8.01854 0.858386 7.93055 0.834683 7.84244 0.842369C7.75434 0.850054 7.67178 0.888633 7.60936 0.951289L5.14036 3.42104C5.1055 3.45591 5.0641 3.48356 5.01855 3.50243C4.97299 3.5213 4.92417 3.53101 4.87486 3.53101C4.82555 3.53101 4.77673 3.5213 4.73117 3.50243C4.68562 3.48356 4.64423 3.45591 4.60936 3.42104C4.5745 3.38617 4.54684 3.34478 4.52797 3.29923C4.5091 3.25367 4.49939 3.20485 4.49939 3.15554C4.49939 3.10623 4.5091 3.05741 4.52797 3.01185C4.54684 2.9663 4.5745 2.9249 4.60936 2.89004L7.07986 0.421039C7.28309 0.2178 7.5564 0.100054 7.84371 0.0919651C8.13101 0.083876 8.41052 0.186057 8.62486 0.377539C8.83093 0.193368 9.09759 0.0914977 9.37397 0.0913593C9.65035 0.091221 9.9171 0.192824 10.1234 0.376789ZM9.64036 0.951289C9.57004 0.880987 9.47467 0.841494 9.37524 0.841494C9.2758 0.841494 9.18043 0.880987 9.11011 0.951289L1.46236 8.59754L0.889362 10.8903L3.18211 10.3173L10.8299 2.67104C10.8648 2.6362 10.8925 2.59482 10.9114 2.54926C10.9303 2.50371 10.94 2.45486 10.94 2.40554C10.94 2.35621 10.9303 2.30737 10.9114 2.26181C10.8925 2.21625 10.8648 2.17487 10.8299 2.14004L9.64111 0.951289H9.64036Z" fill="black"/></symbol>
         <symbol id="closeSvg" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0.969364 0.969364C1.03903 0.899519 1.1218 0.844104 1.21291 0.806295C1.30403 0.768485 1.40171 0.749023 1.50036 0.749023C1.59901 0.749023 1.6967 0.768485 1.78781 0.806295C1.87893 0.844104 1.9617 0.899519 2.03136 0.969364L6.00036 4.93986L9.96936 0.969364C10.0391 0.899632 10.1219 0.844317 10.213 0.806579C10.3041 0.76884 10.4017 0.749416 10.5004 0.749416C10.599 0.749416 10.6966 0.76884 10.7877 0.806579C10.8788 0.844317 10.9616 0.899632 11.0314 0.969364C11.1011 1.0391 11.1564 1.12188 11.1941 1.21299C11.2319 1.3041 11.2513 1.40175 11.2513 1.50036C11.2513 1.59898 11.2319 1.69663 11.1941 1.78774C11.1564 1.87885 11.1011 1.96163 11.0314 2.03136L7.06086 6.00036L11.0314 9.96936C11.1011 10.0391 11.1564 10.1219 11.1941 10.213C11.2319 10.3041 11.2513 10.4017 11.2513 10.5004C11.2513 10.599 11.2319 10.6966 11.1941 10.7877C11.1564 10.8788 11.1011 10.9616 11.0314 11.0314C10.9616 11.1011 10.8788 11.1564 10.7877 11.1941C10.6966 11.2319 10.599 11.2513 10.5004 11.2513C10.4017 11.2513 10.3041 11.2319 10.213 11.1941C10.1219 11.1564 10.0391 11.1011 9.96936 11.0314L6.00036 7.06086L2.03136 11.0314C1.96163 11.1011 1.87885 11.1564 1.78774 11.1941C1.69663 11.2319 1.59898 11.2513 1.50036 11.2513C1.40175 11.2513 1.3041 11.2319 1.21299 11.1941C1.12188 11.1564 1.0391 11.1011 0.969364 11.0314C0.899632 10.9616 0.844317 10.8788 0.806579 10.7877C0.76884 10.6966 0.749416 10.599 0.749416 10.5004C0.749416 10.4017 0.76884 10.3041 0.806579 10.213C0.844317 10.1219 0.899632 10.0391 0.969364 9.96936L4.93986 6.00036L0.969364 2.03136C0.899519 1.9617 0.844104 1.87893 0.806295 1.78781C0.768485 1.6967 0.749023 1.59901 0.749023 1.50036C0.749023 1.40171 0.768485 1.30403 0.806295 1.21291C0.844104 1.1218 0.899519 1.03903 0.969364 0.969364Z" fill="white"/>
         </symbol>
@@ -336,7 +155,7 @@
             <path d="M6 0C6.19891 0 6.38968 0.0790178 6.53033 0.21967C6.67098 0.360322 6.75 0.551088 6.75 0.75V5.25H11.25C11.4489 5.25 11.6397 5.32902 11.7803 5.46967C11.921 5.61032 12 5.80109 12 6C12 6.19891 11.921 6.38968 11.7803 6.53033C11.6397 6.67098 11.4489 6.75 11.25 6.75H6.75V11.25C6.75 11.4489 6.67098 11.6397 6.53033 11.7803C6.38968 11.921 6.19891 12 6 12C5.80109 12 5.61032 11.921 5.46967 11.7803C5.32902 11.6397 5.25 11.4489 5.25 11.25V6.75H0.75C0.551088 6.75 0.360322 6.67098 0.21967 6.53033C0.0790178 6.38968 0 6.19891 0 6C0 5.80109 0.0790178 5.61032 0.21967 5.46967C0.360322 5.32902 0.551088 5.25 0.75 5.25H5.25V0.75C5.25 0.551088 5.32902 0.360322 5.46967 0.21967C5.61032 0.0790178 5.80109 0 6 0Z"/>
         </symbol>
         <symbol id="caretDownSvg">
-            <path d="M8.51273 0.989507L5.00706 6.96532L1.58469 0.941412L8.51273 0.989507Z"  />
+            <path d="M8.51273 0.989507L5.00706 6.96532L1.58469 0.941412L8.51273 0.989507Z" fill="#F8F8F8" stroke="black"/>
         </symbol>
         <symbol id="worldSvg">
             <path d="M0 7C0 5.14348 0.737498 3.36301 2.05025 2.05025C3.36301 0.737498 5.14348 0 7 0C8.85652 0 10.637 0.737498 11.9497 2.05025C13.2625 3.36301 14 5.14348 14 7C14 8.85652 13.2625 10.637 11.9497 11.9497C10.637 13.2625 8.85652 14 7 14C5.14348 14 3.36301 13.2625 2.05025 11.9497C0.737498 10.637 0 8.85652 0 7ZM6.5625 0.942375C5.97625 1.12088 5.39437 1.65987 4.91138 2.5655C4.75224 2.86658 4.61537 3.17892 4.50187 3.5H6.5625V0.942375ZM3.57875 3.5C3.72459 3.03522 3.91201 2.58452 4.13875 2.15337C4.29004 1.8673 4.46477 1.59424 4.66113 1.337C3.577 1.7866 2.64426 2.53717 1.97313 3.5H3.57875ZM3.0695 6.5625C3.09575 5.79513 3.19025 5.05925 3.3425 4.375H1.46475C1.13848 5.06192 0.943787 5.80388 0.89075 6.5625H3.0695ZM4.24113 4.375C4.06903 5.09233 3.96994 5.82523 3.94537 6.5625H6.5625V4.375H4.24113ZM7.4375 4.375V6.5625H10.0538C10.0295 5.82525 9.93071 5.09235 9.75887 4.375H7.4375ZM3.94625 7.4375C3.97053 8.17474 4.06932 8.90764 4.24113 9.625H6.5625V7.4375H3.94625ZM7.4375 7.4375V9.625H9.75887C9.9225 8.95562 10.0266 8.218 10.0546 7.4375H7.4375ZM4.50187 10.5C4.62262 10.8378 4.76 11.151 4.91138 11.4345C5.39437 12.3401 5.97713 12.8783 6.5625 13.0576V10.5H4.50187ZM4.66113 12.663C4.46475 12.4058 4.29003 12.1327 4.13875 11.8466C3.91202 11.4155 3.72459 10.9648 3.57875 10.5H1.97313C2.64422 11.4629 3.57698 12.2134 4.66113 12.663ZM3.3425 9.625C3.18427 8.90581 3.09288 8.17352 3.0695 7.4375H0.89075C0.945 8.21625 1.14538 8.95387 1.46475 9.625H3.3425ZM9.33887 12.663C10.423 12.2134 11.3558 11.4629 12.0269 10.5H10.4212C10.2754 10.9648 10.088 11.4155 9.86125 11.8466C9.71 12.1327 9.53527 12.4058 9.33887 12.663ZM7.4375 10.5V13.0576C8.02375 12.8791 8.60563 12.3401 9.08862 11.4345C9.24 11.151 9.37737 10.8378 9.49813 10.5H7.4375ZM10.6575 9.625H12.5352C12.8546 8.95387 13.055 8.21625 13.1093 7.4375H10.9305C10.9071 8.17352 10.8157 8.90581 10.6575 9.625ZM13.1093 6.5625C13.0562 5.80389 12.8615 5.06193 12.5352 4.375H10.6575C10.8098 5.05925 10.9043 5.79513 10.9305 6.5625H13.1093ZM9.86125 2.15337C10.0774 2.55938 10.2655 3.01087 10.4212 3.5H12.0269C11.3558 2.53714 10.423 1.78656 9.33887 1.337C9.52962 1.5855 9.70463 1.86025 9.86125 2.15337ZM9.49813 3.5C9.38464 3.17891 9.24777 2.86658 9.08862 2.5655C8.60563 1.65987 8.02375 1.12175 7.4375 0.942375V3.5H9.49813Z" fill="white"/>
@@ -375,8 +194,8 @@
             <path fill-rule="evenodd" clip-rule="evenodd" d="M18.0002 0.5625C18.0002 0.413316 17.941 0.270242 17.8355 0.164752C17.73 0.0592632 17.5869 0 17.4377 0L11.8127 0C11.6635 0 11.5205 0.0592632 11.415 0.164752C11.3095 0.270242 11.2502 0.413316 11.2502 0.5625C11.2502 0.711684 11.3095 0.854758 11.415 0.960248C11.5205 1.06574 11.6635 1.125 11.8127 1.125H16.0798L6.91447 10.2892C6.86217 10.3415 6.82069 10.4036 6.79238 10.472C6.76408 10.5403 6.74951 10.6135 6.74951 10.6875C6.74951 10.7615 6.76408 10.8347 6.79238 10.903C6.82069 10.9714 6.86217 11.0335 6.91447 11.0858C6.96677 11.138 7.02886 11.1795 7.09719 11.2078C7.16552 11.2361 7.23876 11.2507 7.31272 11.2507C7.38668 11.2507 7.45992 11.2361 7.52825 11.2078C7.59659 11.1795 7.65867 11.138 7.71097 11.0858L16.8752 1.92037V6.1875C16.8752 6.33668 16.9345 6.47976 17.04 6.58525C17.1455 6.69074 17.2885 6.75 17.4377 6.75C17.5869 6.75 17.73 6.69074 17.8355 6.58525C17.941 6.47976 18.0002 6.33668 18.0002 6.1875V0.5625Z" fill="#F67555"/>
         </symbol>
         <symbol id="cartSvg">
-            <path d="M4.5 5.5C4.63261 5.5 4.75979 5.55268 4.85355 5.64645C4.94732 5.74021 5 5.86739 5 6V12C5 12.1326 4.94732 12.2598 4.85355 12.3536C4.75979 12.4473 4.63261 12.5 4.5 12.5C4.36739 12.5 4.24021 12.4473 4.14645 12.3536C4.05268 12.2598 4 12.1326 4 12V6C4 5.86739 4.05268 5.74021 4.14645 5.64645C4.24021 5.55268 4.36739 5.5 4.5 5.5ZM7 5.5C7.13261 5.5 7.25979 5.55268 7.35355 5.64645C7.44732 5.74021 7.5 5.86739 7.5 6V12C7.5 12.1326 7.44732 12.2598 7.35355 12.3536C7.25979 12.4473 7.13261 12.5 7 12.5C6.86739 12.5 6.74021 12.4473 6.64645 12.3536C6.55268 12.2598 6.5 12.1326 6.5 12V6C6.5 5.86739 6.55268 5.74021 6.64645 5.64645C6.74021 5.55268 6.86739 5.5 7 5.5ZM10 6C10 5.86739 9.94732 5.74021 9.85355 5.64645C9.75979 5.55268 9.63261 5.5 9.5 5.5C9.36739 5.5 9.24021 5.55268 9.14645 5.64645C9.05268 5.74021 9 5.86739 9 6V12C9 12.1326 9.05268 12.2598 9.14645 12.3536C9.24021 12.4473 9.36739 12.5 9.5 12.5C9.63261 12.5 9.75979 12.4473 9.85355 12.3536C9.94732 12.2598 10 12.1326 10 12V6Z"/>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.5 3C13.5 3.26522 13.3946 3.51957 13.2071 3.70711C13.0196 3.89464 12.7652 4 12.5 4H12V13C12 13.5304 11.7893 14.0391 11.4142 14.4142C11.0391 14.7893 10.5304 15 10 15H4C3.46957 15 2.96086 14.7893 2.58579 14.4142C2.21071 14.0391 2 13.5304 2 13V4H1.5C1.23478 4 0.98043 3.89464 0.792893 3.70711C0.605357 3.51957 0.5 3.26522 0.5 3V2C0.5 1.73478 0.605357 1.48043 0.792893 1.29289C0.98043 1.10536 1.23478 1 1.5 1H5C5 0.734784 5.10536 0.48043 5.29289 0.292893C5.48043 0.105357 5.73478 0 6 0L8 0C8.26522 0 8.51957 0.105357 8.70711 0.292893C8.89464 0.48043 9 0.734784 9 1H12.5C12.7652 1 13.0196 1.10536 13.2071 1.29289C13.3946 1.48043 13.5 1.73478 13.5 2V3ZM3.118 4L3 4.059V13C3 13.2652 3.10536 13.5196 3.29289 13.7071C3.48043 13.8946 3.73478 14 4 14H10C10.2652 14 10.5196 13.8946 10.7071 13.7071C10.8946 13.5196 11 13.2652 11 13V4.059L10.882 4H3.118ZM1.5 3V2H12.5V3H1.5Z" />
+            <path d="M4.5 5.5C4.63261 5.5 4.75979 5.55268 4.85355 5.64645C4.94732 5.74021 5 5.86739 5 6V12C5 12.1326 4.94732 12.2598 4.85355 12.3536C4.75979 12.4473 4.63261 12.5 4.5 12.5C4.36739 12.5 4.24021 12.4473 4.14645 12.3536C4.05268 12.2598 4 12.1326 4 12V6C4 5.86739 4.05268 5.74021 4.14645 5.64645C4.24021 5.55268 4.36739 5.5 4.5 5.5ZM7 5.5C7.13261 5.5 7.25979 5.55268 7.35355 5.64645C7.44732 5.74021 7.5 5.86739 7.5 6V12C7.5 12.1326 7.44732 12.2598 7.35355 12.3536C7.25979 12.4473 7.13261 12.5 7 12.5C6.86739 12.5 6.74021 12.4473 6.64645 12.3536C6.55268 12.2598 6.5 12.1326 6.5 12V6C6.5 5.86739 6.55268 5.74021 6.64645 5.64645C6.74021 5.55268 6.86739 5.5 7 5.5ZM10 6C10 5.86739 9.94732 5.74021 9.85355 5.64645C9.75979 5.55268 9.63261 5.5 9.5 5.5C9.36739 5.5 9.24021 5.55268 9.14645 5.64645C9.05268 5.74021 9 5.86739 9 6V12C9 12.1326 9.05268 12.2598 9.14645 12.3536C9.24021 12.4473 9.36739 12.5 9.5 12.5C9.63261 12.5 9.75979 12.4473 9.85355 12.3536C9.94732 12.2598 10 12.1326 10 12V6Z" fill="black" fill-opacity="0.4"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.5 3C13.5 3.26522 13.3946 3.51957 13.2071 3.70711C13.0196 3.89464 12.7652 4 12.5 4H12V13C12 13.5304 11.7893 14.0391 11.4142 14.4142C11.0391 14.7893 10.5304 15 10 15H4C3.46957 15 2.96086 14.7893 2.58579 14.4142C2.21071 14.0391 2 13.5304 2 13V4H1.5C1.23478 4 0.98043 3.89464 0.792893 3.70711C0.605357 3.51957 0.5 3.26522 0.5 3V2C0.5 1.73478 0.605357 1.48043 0.792893 1.29289C0.98043 1.10536 1.23478 1 1.5 1H5C5 0.734784 5.10536 0.48043 5.29289 0.292893C5.48043 0.105357 5.73478 0 6 0L8 0C8.26522 0 8.51957 0.105357 8.70711 0.292893C8.89464 0.48043 9 0.734784 9 1H12.5C12.7652 1 13.0196 1.10536 13.2071 1.29289C13.3946 1.48043 13.5 1.73478 13.5 2V3ZM3.118 4L3 4.059V13C3 13.2652 3.10536 13.5196 3.29289 13.7071C3.48043 13.8946 3.73478 14 4 14H10C10.2652 14 10.5196 13.8946 10.7071 13.7071C10.8946 13.5196 11 13.2652 11 13V4.059L10.882 4H3.118ZM1.5 3V2H12.5V3H1.5Z" fill="black" fill-opacity="0.4"/>
         </symbol>
         <symbol id="infoSvg">
             <path d="M7 13.125C5.37555 13.125 3.81763 12.4797 2.66897 11.331C1.52031 10.1824 0.875 8.62445 0.875 7C0.875 5.37555 1.52031 3.81763 2.66897 2.66897C3.81763 1.52031 5.37555 0.875 7 0.875C8.62445 0.875 10.1824 1.52031 11.331 2.66897C12.4797 3.81763 13.125 5.37555 13.125 7C13.125 8.62445 12.4797 10.1824 11.331 11.331C10.1824 12.4797 8.62445 13.125 7 13.125ZM7 14C8.85652 14 10.637 13.2625 11.9497 11.9497C13.2625 10.637 14 8.85652 14 7C14 5.14348 13.2625 3.36301 11.9497 2.05025C10.637 0.737498 8.85652 0 7 0C5.14348 0 3.36301 0.737498 2.05025 2.05025C0.737498 3.36301 0 5.14348 0 7C0 8.85652 0.737498 10.637 2.05025 11.9497C3.36301 13.2625 5.14348 14 7 14Z" fill="black" fill-opacity="0.6"/>
@@ -402,10 +221,7 @@
             <path d="M5.67251 1.9875C4.48199 2.3156 3.29957 2.67237 2.12626 3.0575C2.01912 3.09221 1.92388 3.1563 1.85139 3.24249C1.77891 3.32868 1.73208 3.4335 1.71626 3.545C1.02376 8.74125 2.62376 12.5325 4.53251 15.03C5.34065 16.098 6.30427 17.0389 7.39126 17.8213C7.82376 18.1262 8.20626 18.3463 8.50751 18.4875C8.65751 18.5588 8.78001 18.6063 8.87376 18.635C8.91476 18.6494 8.95703 18.6598 9.00001 18.6663C9.04247 18.6593 9.08429 18.6489 9.12501 18.635C9.22001 18.6063 9.34251 18.5588 9.49251 18.4875C9.79251 18.3463 10.1763 18.125 10.6088 17.8213C11.6957 17.0388 12.6593 16.098 13.4675 15.03C15.3763 12.5338 16.9763 8.74125 16.2838 3.545C16.2681 3.43345 16.2213 3.32856 16.1488 3.24235C16.0763 3.15614 15.981 3.09208 15.8738 3.0575C15.06 2.79125 13.6863 2.3575 12.3275 1.98875C10.94 1.6125 9.66376 1.33375 9.00001 1.33375C8.33751 1.33375 7.06001 1.6125 5.67251 1.98875V1.9875ZM5.34001 0.7C6.69626 0.33125 8.13751 0 9.00001 0C9.86251 0 11.3038 0.33125 12.66 0.7C14.0475 1.075 15.4463 1.51875 16.2688 1.7875C16.6126 1.90106 16.9175 2.10933 17.1484 2.38838C17.3792 2.66742 17.5266 3.00592 17.5738 3.365C18.3188 8.96125 16.59 13.1088 14.4925 15.8525C13.6031 17.0262 12.5425 18.0598 11.3463 18.9188C10.9326 19.216 10.4944 19.4773 10.0363 19.7C9.68626 19.865 9.31001 20 9.00001 20C8.69001 20 8.31501 19.865 7.96376 19.7C7.50565 19.4773 7.06739 19.216 6.65376 18.9188C5.45754 18.0598 4.39698 17.0262 3.50751 15.8525C1.41001 13.1088 -0.318743 8.96125 0.426257 3.365C0.473366 3.00592 0.620811 2.66742 0.851653 2.38838C1.0825 2.10933 1.38737 1.90106 1.73126 1.7875C2.92525 1.39601 4.12851 1.03341 5.34001 0.7Z" fill="#18AC00"/>
             <path d="M12.5683 6.43252C12.6265 6.49058 12.6727 6.55954 12.7042 6.63548C12.7357 6.71141 12.7519 6.79281 12.7519 6.87502C12.7519 6.95723 12.7357 7.03863 12.7042 7.11456C12.6727 7.19049 12.6265 7.25946 12.5683 7.31752L8.81829 11.0675C8.76023 11.1257 8.69126 11.1719 8.61533 11.2034C8.5394 11.2349 8.458 11.2511 8.37579 11.2511C8.29358 11.2511 8.21218 11.2349 8.13625 11.2034C8.06032 11.1719 7.99135 11.1257 7.93329 11.0675L6.05829 9.19252C6.00018 9.13441 5.95408 9.06542 5.92264 8.9895C5.89119 8.91357 5.875 8.8322 5.875 8.75002C5.875 8.66784 5.89119 8.58646 5.92264 8.51054C5.95408 8.43461 6.00018 8.36563 6.05829 8.30752C6.1164 8.24941 6.18539 8.20331 6.26131 8.17186C6.33723 8.14041 6.41861 8.12423 6.50079 8.12423C6.58297 8.12423 6.66434 8.14041 6.74027 8.17186C6.81619 8.20331 6.88518 8.24941 6.94329 8.30752L8.37579 9.74127L11.6833 6.43252C11.7413 6.37431 11.8103 6.32814 11.8862 6.29663C11.9622 6.26512 12.0436 6.2489 12.1258 6.2489C12.208 6.2489 12.2894 6.26512 12.3653 6.29663C12.4413 6.32814 12.5102 6.37431 12.5683 6.43252Z" fill="#18AC00"/>
         </symbol>
-        <symbol id="eyeSvg">
-            <path d="M16 5.5C16 5.5 13 0 8 0C3 0 0 5.5 0 5.5C0 5.5 3 11 8 11C13 11 16 5.5 16 5.5ZM1.173 5.5C1.65651 4.76512 2.21264 4.08069 2.833 3.457C4.12 2.168 5.88 1 8 1C10.12 1 11.879 2.168 13.168 3.457C13.7884 4.08069 14.3445 4.76512 14.828 5.5C14.77 5.587 14.706 5.683 14.633 5.788C14.298 6.268 13.803 6.908 13.168 7.543C11.879 8.832 10.119 10 8 10C5.88 10 4.121 8.832 2.832 7.543C2.21165 6.91931 1.65552 6.23487 1.172 5.5H1.173Z" fill="black"/>
-            <path d="M8 3C7.33696 3 6.70107 3.26339 6.23223 3.73223C5.76339 4.20107 5.5 4.83696 5.5 5.5C5.5 6.16304 5.76339 6.79893 6.23223 7.26777C6.70107 7.73661 7.33696 8 8 8C8.66304 8 9.29893 7.73661 9.76777 7.26777C10.2366 6.79893 10.5 6.16304 10.5 5.5C10.5 4.83696 10.2366 4.20107 9.76777 3.73223C9.29893 3.26339 8.66304 3 8 3ZM4.5 5.5C4.5 4.57174 4.86875 3.6815 5.52513 3.02513C6.1815 2.36875 7.07174 2 8 2C8.92826 2 9.8185 2.36875 10.4749 3.02513C11.1313 3.6815 11.5 4.57174 11.5 5.5C11.5 6.42826 11.1313 7.3185 10.4749 7.97487C9.8185 8.63125 8.92826 9 8 9C7.07174 9 6.1815 8.63125 5.52513 7.97487C4.86875 7.3185 4.5 6.42826 4.5 5.5Z" fill="black"/>
-        </symbol>
+
     </svg>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>

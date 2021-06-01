@@ -4,27 +4,30 @@ document.addEventListener('DOMContentLoaded', () => {
   const popup = document.querySelectorAll('.popup');
   const overlay = document.querySelector('.overlay');
 
-  document.querySelector('.creatSiteJs').addEventListener('click', (e) => {
-    e.preventDefault();
-    popup.forEach(element => {
-      element.style.display = 'none';
-      if (element.classList.contains('creatSiteJs')) {
-        element.style.display = 'block';
-      }
-    })
-    document.querySelector('.overlay').classList.add('active');
-  })
+  //////////////////////toggleClass/////////////////////////////////////
+  const toggleClass = (elem, className) => elem.classList[(elem.classList.contains(className)) ? 'remove' : 'add'](className)
 
-  document.querySelector('.creatFolderJs').addEventListener('click', (e) => {
-    e.preventDefault();
-    popup.forEach(element => {
-      element.style.display = 'none';
-      if (element.classList.contains('creatFolderJs')) {
-        element.style.display = 'block';
-      }
-    })
-    overlay.classList.add('active');
-  })
+  // document.querySelector('.creatSiteJs').addEventListener('click', (e) => {
+  //   e.preventDefault();
+  //   popup.forEach(element => {
+  //     element.style.display = 'none';
+  //     if (element.classList.contains('creatSiteJs')) {
+  //       element.style.display = 'block';
+  //     }
+  //   })
+  //   document.querySelector('.overlay').classList.add('active');
+  // })
+
+  // document.querySelector('.creatFolderJs').addEventListener('click', (e) => {
+  //   e.preventDefault();
+  //   popup.forEach(element => {
+  //     element.style.display = 'none';
+  //     if (element.classList.contains('creatFolderJs')) {
+  //       element.style.display = 'block';
+  //     }
+  //   })
+  //   overlay.classList.add('active');
+  // })
 
   document.querySelector('.settingJs').addEventListener('click', (e) => {
     e.preventDefault();
@@ -43,6 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   })
 
+
   popup_close.forEach(element => {
     element.addEventListener('click', (e) => document.querySelector('.overlay').classList.remove('active'));
   });
@@ -51,6 +55,12 @@ document.addEventListener('DOMContentLoaded', () => {
     e.preventDefault();
     document.querySelector('.profile__form_first').classList.remove('active');
     document.querySelector('.profile__form_password').classList.add('active');
+
+  });
+
+  document.querySelector('.setingBtn').addEventListener('click', (e) => {
+    e.preventDefault();
+    toggleClass(document.querySelector('.dropdownList'), 'active');
 
   })
 
