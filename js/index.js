@@ -3,20 +3,18 @@ document.addEventListener('DOMContentLoaded', () => {
   const popup_close = document.querySelectorAll('.popup_close');
   const popup = document.querySelectorAll('.popup');
   const overlay = document.querySelector('.overlay');
+  const bellSvg = document.querySelectorAll('.bellSvg');
 
   //////////////////////toggleClass/////////////////////////////////////
-  const toggleClass = (elem, className) => elem.classList[(elem.classList.contains(className)) ? 'remove' : 'add'](className)
+  const toggleClass = (elem, className) => elem.classList[(elem.classList.contains(className)) ? 'remove' : 'add'](className);
 
-  // document.querySelector('.creatSiteJs').addEventListener('click', (e) => {
-  //   e.preventDefault();
-  //   popup.forEach(element => {
-  //     element.style.display = 'none';
-  //     if (element.classList.contains('creatSiteJs')) {
-  //       element.style.display = 'block';
-  //     }
-  //   })
-  //   document.querySelector('.overlay').classList.add('active');
-  // })
+  bellSvg.forEach(el => {
+    el.addEventListener('click', e => {
+      toggleClass(document.querySelector('.header__nota'), 'active')
+    })
+  })
+
+
 
   // document.querySelector('.creatFolderJs').addEventListener('click', (e) => {
   //   e.preventDefault();
@@ -63,8 +61,5 @@ document.addEventListener('DOMContentLoaded', () => {
     toggleClass(document.querySelector('.dropdownList'), 'active');
 
   })
-  var myModalEl = document.getElementById('creatPageJs')
-  myModalEl.addEventListener('show.bs.modal', function (event) {
-    console.log("qw");
-  })
+
 }); // end DOMContentLoaded
