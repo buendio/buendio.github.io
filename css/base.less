@@ -48,36 +48,13 @@ hr {
 @col:#F67555;
  ///////////////////////////////////////////////////////////////////
 
- .overlay {
-	display: none;
-	position: absolute;
-	z-index: 900;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	background:rgba(0, 0, 0, 0.6);
-	&.active {
-		display: block;
-	}
-}
-.popup {
-	display: none;
-	position: absolute;
-	left: 50%;
-	top: 30vh;
-	transform: translateX(-50%);
-	width: 43.75%;
-	border-radius: 30px;
-}
-
-.popup__header, .modal-header {
+.modal-header {
 	padding: 1.35rem 1.875rem;
 	background: #575757;
 	color:#fff;
 	border-radius: 10px 10px 0px 0px;
 }
-.popup__body, .modal-body {
+.modal-body {
 	padding:60px 1.35rem 1.875rem;
 	background:#fff;
 	border-radius: 0px 0px 10px 10px;
@@ -106,9 +83,7 @@ hr {
      :-ms-input-placeholder {font-family: 'Inter', sans-serif;font-size: 18px;font-weight: 300;color: rgba(0, 0, 0, 0.4);}
      ::-webkit-input-placeholder {font-family: 'Inter', sans-serif;font-size: 18px;font-weight: 300;color: rgba(0, 0, 0, 0.4);}
 }
-.popup_close {
-	cursor:pointer;
-}
+
 
 //~"calc(100% - 800px)";
 

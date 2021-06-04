@@ -150,7 +150,10 @@ header {
 		}
 	}
 	&.active {
-		.bellSvg2, .notaInfo {
+		.notaInfo {
+			display: block;
+		}
+		.bellSvg2 {
 			display: block;
 		}
 		.bellSvg1 {
@@ -167,7 +170,7 @@ header {
 	padding:0 0 16px 0;
 	background:#363636;
 	color:#fff;
-
+	.transition;
 	&:after {
 		content: "";
 		position: absolute;
@@ -952,6 +955,7 @@ label[for="profilePassword"] {
 
 	}
 	.col-10 {
+		min-height: 100vh;
 		padding: 50px 10px 10px;
 	}
 }
@@ -980,6 +984,26 @@ label[for="profilePassword"] {
 		width: 100%;
 		height: 240px;
 	}
+	&:hover {
+		.catalogBlock__linkTemplate {
+			visibility: visible;
+			opacity: 1;
+			height: 60px;
+		}
+	}
+}
+.catalogBlock__linkTemplate {
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 0px;
+	background:@col;
+	color:#fff;
+	&:hover {color:#fff;}
+	.transition;
 }
 .catalogBlock__title {
 	margin: 12px 0;
