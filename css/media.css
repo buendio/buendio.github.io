@@ -1,0 +1,225 @@
+@media only screen and (max-width: 1025px) {
+  .wrap {
+    padding: 0 20px;
+  }
+  .calcForm {
+    width: 355px;
+  }
+  h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  .forScreen {
+    height: 610px;
+  }
+  .forScreen img {
+    max-width: 635px;
+    top: auto;
+    bottom: -42px;
+  }
+}
+/*-------------------------------------------*/
+@media only screen and (max-width: 769px) {
+  header {
+    padding: 15px 0;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  }
+  header .btn {
+    display: block;
+    width: 175px;
+    margin: 0 0 0 auto;
+  }
+  .nav {
+    display: none;
+  }
+  .firstScreen {
+    padding: 50px 0;
+  }
+  .subtitle_red {
+    font-size: 16px;
+    line-height: 1.75;
+  }
+  ul.subtitle {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+  h2.title {
+    font-size: 40px;
+  }
+  .secondScreen {
+    padding: 40px 0 20px;
+  }
+  .secondScreen p.subtitle {
+    max-width: 540px;
+    margin: 0 auto 40px;
+  }
+  .secondScreen .screenImg {
+    max-width: 263px;
+  }
+  .secondScreen__list {
+    margin-left: 15px;
+  }
+  .threeScreen .wrap {
+    display: block;
+    max-width: 540px;
+  }
+  .threeScreen img {
+    width: 100%;
+    transform: scale(1);
+  }
+  .threeScreen ul {
+    margin: 0;
+    width: 100%;
+  }
+  .mob {
+    display: block;
+  }
+  header.innerHeader {
+    background: #fff;
+  }
+  header.innerHeader .btn {
+    padding: 12px 0;
+  }
+  .aboutSection.wrap {
+    padding: 70px 20px;
+  }
+  .contactSection__img {
+    max-width: 260px;
+  }
+  .partnerSection .wrap__inner {
+    padding: 120px 20px 215px;
+    background-size: cover;
+  }
+  .benefit {
+    display: block;
+  }
+  .benefit__item {
+    margin: 0 auto 40px;
+  }
+}
+/*-------------------------------------------*/
+@media only screen and (max-width: 650px) {
+  .wrap {
+    padding: 0 10px;
+  }
+  header {
+    top: 0;
+  }
+  header .btn {
+    display: none;
+  }
+  header.out .btn {
+    display: inline-block;
+    margin: 0;
+  }
+  header.out .mob {
+    margin-left: 0;
+  }
+  header.out .logo1 {
+    display: none;
+  }
+  header.out .logoMob {
+    display: block;
+  }
+  .firstScreen {
+    padding: 35px 0 25px;
+    background: none;
+  }
+  .firstScreen .wrap {
+    display: block;
+  }
+  h1 {
+    text-align: center;
+  }
+  .subtitle_red {
+    text-align: center;
+  }
+  .calcForm {
+    width: 95%;
+  }
+  .secondScreen {
+    padding: 0 0 20px;
+  }
+  .secondScreen .screenImg {
+    margin: 0 auto 30px;
+    order: 1;
+  }
+  .secondScreen .btn {
+    margin: 25px auto 0;
+  }
+  h2.title {
+    font-size: 30px;
+  }
+  .secondScreen__list {
+    width: 100%;
+    order: 2;
+  }
+  .threeScreen {
+    padding: 30px 0 100px;
+  }
+  .threeScreen ul span {
+    margin-right: 30px;
+  }
+  .forScreen {
+    height: auto;
+    padding: 160px 0 70px;
+  }
+  .forScreen img {
+    bottom: auto;
+    top: -240px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 354px;
+  }
+  .forScreen .calcForm {
+    background: #fff;
+    margin: auto;
+  }
+  footer {
+    padding: 0 0 30px;
+  }
+  .footer__decor {
+    width: 165px;
+  }
+  .aboutSection.wrap {
+    padding: 40px 10px;
+  }
+  .aboutSection.wrap p {
+    font-size: 18px;
+  }
+  .aboutSection.wrap a {
+    display: block;
+    font-size: 16px;
+    text-align: center;
+  }
+  .aboutSection.wrap a img {
+    margin: 0 auto 5px;
+  }
+  .aboutSection__img {
+    margin: 0 auto 40px;
+  }
+  header.innerHeader .btn {
+    display: none;
+  }
+  .aboutSection__img {
+    max-width: 193px;
+  }
+  .contactSection h2.title {
+    font-size: 30px;
+  }
+  .contactSection__item address {
+    font-size: 16px;
+  }
+  .phoneLink {
+    font-size: 18px;
+  }
+  .contactSection__img {
+    display: none;
+  }
+  .contactSection__form h3 {
+    font-size: 18px;
+  }
+  .contactSection__form .btn2 {
+    width: 100%;
+  }
+}

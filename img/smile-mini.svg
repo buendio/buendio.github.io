@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="99.583" height="47.776" viewBox="0 0 99.583 47.776">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.976" cy="0.042" r="1.956" gradientTransform="translate(0.26) scale(0.48 1)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffe314"/>
+      <stop offset="0.299" stop-color="#ed6e3a"/>
+      <stop offset="0.62" stop-color="#db0566"/>
+      <stop offset="1" stop-color="#1c3b8a"/>
+    </radialGradient>
+  </defs>
+  <g id="smile-mini" transform="translate(-640.318 -357.452)">
+    <path id="Контур_404" data-name="Контур 404" d="M690.1,405.228a49.949,49.949,0,0,1-49.765-44.657,2.816,2.816,0,1,1,5.6-.6,44.436,44.436,0,0,0,88.35,0,2.816,2.816,0,1,1,5.6.6A49.961,49.961,0,0,1,690.1,405.228Z" transform="translate(0)" fill="url(#radial-gradient)"/>
+  </g>
+</svg>
