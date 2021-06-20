@@ -1,330 +1,51 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <title>Главная</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/nouislider.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
 </head>
 
 <body>
+
     <header>
         <div class="wrap">
-            <a href="/" class="logo"><img src="img/logo_flst.svg" width="157" alt="logo" class="logo1"><img src="img/logoMob.svg" alt="" class="logoMob"></a>
-            <button class="btn">Подати заяву</button>
-            <ul class="nav">
-                <li><a href="about.html">Про компанію</a></li>
-                <li><a href="partner.html">Стати партнером</a></li>
-                <li><a href="contact.html">Контакти</a></li>
-            </ul>
-            <button class="mob"><span></span></button>
+            <div class="headerItem">
+                <img class="logo" src="img/galeco.png" alt="" width="200">
+                <img class="logo" src="img/artel.png" alt="" width="200">
+            </div>
+            <div class="headerItem">
+                <div class="headerItem__text">
+                    <p>КОНСУЛЬТАЦІЯ ТА ПРОДАЖ</p>
+                    <a href="tel:+380634365117  ">+38 (063) 436 5117 </a>
+                    <a href="tel:+380675057869  ">+38 (067) 505 7869 </a>
+                </div>
+                <div class="headerItem__text">
+                    <p>РОБОЧІ ДНІ</p>
+                    <span>ПН-ПТ: 9:00-18:00</span>
+                </div>
+            </div>
+            <button class="headerBtn">Безкоштовний замір</button>
         </div>
-        <ul class="nav__mob">
-            <li><a href="">Про компанію</a></li>
-            <li><a href="">Стати партнером</a></li>
-            <li><a href="">Контакти</a></li>
-        </ul>
     </header>
-    <section class="firstScreen">
-        <div class="wrap">
-            <div class="firstScreen__item">
-                <h1>
-                    Іпотеку не дають?
-                    <span>Лізинг допоможе</span>
-                </h1>
-                <ul class="subtitle">
-                    <li>-  Лізинг нерухомості - простіше, ніж іпотека</li>
-                    <li>-  Рішення за 1 день. Прозорі умови.</li>
-                </ul>
-                <p class="subtitle_red">Живи, як в своїй - сплачуй, як за орендовану!</p>
-            </div>
-            <form action="" class="calcForm">
-                <div class="priceFlat_wrap">
-                    <input class="priceFlat" type="number" placeholder="Вартість квартири">
-                </div>
-                <div class="priceSlider1">
-                    <div class="calcForm__title">Перший внесок</div>
-                    <div class="priceSlider__wrap">
-                        <div class="priceSlider" id="priceSlider1"></div>
-                        <label for="" class="priceLabel">
-                            <input type="number" min="30" max="70" placeholder="" class="priceInput" id="priceInput1">%
-                        </label>
-                    </div>
-
-                </div>
-                <div class="priceSlider2">
-                    <div class="calcForm__title">Термін (рокiв)</div>
-                    <div class="priceSlider__wrap">
-                        <div class="priceSlider" id="priceSlider2"></div>
-                        <label for="" class="priceLabel">
-                            <input type="number" min="1" max="5" class="priceInput" id="priceInput2">р.
-                        </label>
-                    </div>
-
-                </div>
-                <div class="result">
-                    <span class="result__total">22,65%</span>
-                    <span class="result__text">
-                        Відсоткова ставка на місяць, % від вартості квартири
-                    </span>
-                </div>
-                <div class="result">
-                    <span class="result__total result__total_red">10 500$</span>
-                    <span class="result__text">
-                        Щомісячний платіж
-                    </span>
-                </div>
-                <button class="btn">Подати заяву</button>
-            </form>
+    <section class="primero">
+        <h1>Водостічні системи у Харкові
+            <span>МИ – ОФІЦІЙНИЙ ДИЛЕР ТМ «GALECO»</span>
+        </h1>
+        <div class="plashka">
+            <div class="plashka__item">ЯКІСТЬ</div>
+            <div class="plashka__item">ГАРАНТІЯ</div>
+            <div class="plashka__item">ІННОВАЦІЯ</div>
         </div>
     </section>
-    <section class="secondScreen">
-        <div class="wrap">
-            <h2 class="title">Мрієш про власне житло?</h2>
-            <p class="subtitle">FlatFinance спеціалізується на лізингу житла для фізичних осіб.
-                Лізинг нерухомості дозволяє отримати власне житло набагато простіше і швидше, ніж за допомогою банку!
-            </p>
-            <div class="dflex">
-                <div class="secondScreen__list">
-                    <h3 class="title">Переваги лізингу від FlatFinance:</h3>
-                    <ul>
-                        <li><span>Розгляд заявки - до 1 дня</span></li>
-                        <li><span>Початковий внесок від 30% </span></li>
-                        <li><span>Первинний (сданий в експлуатацію) або вторинний ринок житла</span></li>
-                        <li><span>Вартість квартири до $100 000</span></li>
-                        <li><span>Мінімальний пакет документів - паспорт та ІПН</span></li>
-                        <li><span>Термін фінансування до 5 років</span></li>
-                        <li><span>Можливість дострокового погашення без штрафів</span></li>
-                        <li><span>Прозорі умови та відсутність прихованих платежів!<br>
-                            Без страхування, витрат на послуги нотаріуса тощо</span></li>
-
-                    </ul>
-                    <button class="btn">Подати заяву</button>
-                </div>
-                <img src="/img/img1.svg" alt="" class="screenImg">
-            </div>
-        </div>
-    </section>
-    <section class="threeScreen">
-        <h2 class="title">
-            <span>5 кроків</span>
-            до власного житла:
-        </h2>
-        <div class="wrap">
-            <img src="/img/step.svg" alt="">
-            <ul>
-                <li>
-                    <span>01</span>
-                    <div>
-                        <h3 class="title">Оберіть квартиру </h3>
-                        <p>Оберіть житло на вторинному ринку або в зданому об'єкті на первинному ринку вартістю до $100 000</p>
-                    </div>
-                </li>
-                <li>
-                    <span>02</span>
-                    <div>
-                        <h3 class="title">Подайте заявку </h3>
-                        <p>Заповніть заявку на сайті FlatFinance та надайте мінімальний пакет документів</p>
-                    </div>
-                </li>
-                <li>
-                    <span>03</span>
-                    <div>
-                        <h3 class="title">Отримайте позитивне рішення</h3>
-                        <p>В робочий час з вами зв'яжеться наш менеджер для уточнення деталей</p>
-                    </div>
-                </li>
-                <li>
-                    <span>04</span>
-                    <div>
-                        <h3 class="title">Підпишіть договір лізингу</h3>
-                        <p>В день підписання договору внесіть початковий внесок – від 30% до 70% від вартості обраного житла</p>
-                    </div>
-                </li>
-                <li>
-                    <span>05</span>
-                    <div>
-                        <h3 class="title">Заселяйтесь в квартиру!</h3>
-                        <p>FlatFinance викупає квартиру у продавця та передає її в фінансовий лізинг клієнту. Після виплати всіх платежів квартира переходить у власність клієнта</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <section class="forScreen">
-        <div class="wrap">
-            <img src="img/img4.svg" alt="">
-            <form action="" class="calcForm">
-                <h3 class="title">Калькулятор</h3>
-                <div class="priceFlat_wrap">
-                    <input class="priceFlat" type="number" placeholder="Вартість квартири">
-                </div>
-                <div class="priceSlider1">
-                    <div class="calcForm__title">Перший внесок</div>
-                    <div class="priceSlider__wrap">
-                        <div class="priceSlider" id="priceSlider3"></div>
-                        <label for="" class="priceLabel">
-                            <input type="number" min="30" max="70" placeholder="" class="priceInput" id="priceInput3">%
-                        </label>
-                    </div>
-
-                </div>
-                <div class="priceSlider2">
-                    <div class="calcForm__title">Термін (рокiв)</div>
-                    <div class="priceSlider__wrap">
-                        <div class="priceSlider" id="priceSlider4"></div>
-                        <label for="" class="priceLabel">
-                            <input type="number" min="1" max="5" class="priceInput" id="priceInput4">р.
-                        </label>
-                    </div>
-
-                </div>
-                <div class="result">
-                    <span class="result__total">22,65%</span>
-                    <span class="result__text">
-                        Відсоткова ставка на місяць, % від вартості квартири
-                    </span>
-                </div>
-                <div class="result">
-                    <span class="result__total result__total_red">10 500$</span>
-                    <span class="result__text">
-                        Щомісячний платіж
-                    </span>
-                </div>
-                <button class="btn">Подати заяву</button>
-            </form>
-        </div>
-    </section>
-    <footer>
-        <div class="footer__decor"></div>
-        <p class="footer__text">
-            © 2017 - 2020 Всі права захищені. Торгова марка FlatFiance.<br>
-            ТОВ «Кредитсервіс» Розпорядження про видачу ліцензії No2084 від 29.11.2018 р
-        </p>
-    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <!-- https://developers.google.com/speed/libraries/  actual version -->
-    <script src="js/nouislider.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            //////////////////top calculcator//////////////////////////
-            const priceSlider1 = document.querySelector('#priceSlider1');
-            const priceSlider2 = document.querySelector('#priceSlider2');
-            const priceInput1 = document.querySelector('#priceInput1');
-            const priceInput2 = document.querySelector('#priceInput2');
-
-            noUiSlider.create(priceSlider1, {
-                start: 45,
-                connect: 'lower',
-                step:1,
-                range: {
-                    'min': 30,
-                    'max': 70
-                },
-                pips: {
-                mode: 'count',
-                stepped: true,
-                values: 5,
-                density: 11
-                }
-            });
-
-            priceSlider1.noUiSlider.on('update', function(values, handle){
-                priceInput1.value = Math.round(values[handle]);
-            });
-
-            priceInput1.addEventListener('change', (e) => {
-                priceSlider1.noUiSlider.set(e.currentTarget.value);
-            });
-            ///////////////////////////////////////////////////////////////
-            noUiSlider.create(priceSlider2, {
-                start: 3,
-                connect: 'lower',
-                step:1,
-                range: {
-                    'min': 1,
-                    'max': 5
-                },
-                pips: {
-                mode: 'count',
-                stepped: true,
-                values: 3,
-                density: 30
-                }
-            });
-
-            priceSlider2.noUiSlider.on('update', function(values, handle){
-                priceInput2.value = Math.round(values[handle]);
-            });
-
-            priceInput2.addEventListener('change', (e) => {
-                priceSlider2.noUiSlider.set(e.currentTarget.value);
-            });
-
-
-            //////////////////bottom calculcator//////////////////////////
-            const priceSlider3 = document.querySelector('#priceSlider3');
-            const priceSlider4 = document.querySelector('#priceSlider4');
-            const priceInput3 = document.querySelector('#priceInput3');
-            const priceInput4 = document.querySelector('#priceInput4');
-
-            noUiSlider.create(priceSlider3, {
-                start: 45,
-                connect: 'lower',
-                step:1,
-                range: {
-                    'min': 30,
-                    'max': 70
-                },
-                pips: {
-                mode: 'count',
-                stepped: true,
-                values: 5,
-                density: 11
-                }
-            });
-
-            priceSlider3.noUiSlider.on('update', function(values, handle){
-                priceInput3.value = Math.round(values[handle]);
-            });
-
-            priceInput3.addEventListener('change', (e) => {
-                priceSlider3.noUiSlider.set(e.currentTarget.value);
-            });
-            ///////////////////////////////////////////////////////////////
-            noUiSlider.create(priceSlider4, {
-                start: 3,
-                connect: 'lower',
-                step:1,
-                range: {
-                    'min': 1,
-                    'max': 5
-                },
-                pips: {
-                mode: 'count',
-                stepped: true,
-                values: 3,
-                density: 30
-                }
-            });
-
-            priceSlider4.noUiSlider.on('update', function(values, handle){
-                priceInput4.value = Math.round(values[handle]);
-            });
-
-            priceInput4.addEventListener('change', (e) => {
-                priceSlider4.noUiSlider.set(e.currentTarget.value);
-            });
-///////////////////////////////////////////////////////
-
-        }); // end DOMContentLoaded
-    </script>
-    <script src="js/jquery.maskedinput.min.js"></script>
-    <script src="js/index.js"></script>
+    <script src="/js/index.js"></script>
 </body>
 
 </html>
