@@ -1,13 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
-  ///////////////scroll header////////////////////////
-	// $(window).scroll(function() {
-	// 	if ($(this).scrollTop() > 1){
-  //    		$('header').addClass("sticky");
-  //  		}
-  // 		 else{
-  //   			 $('header').removeClass("sticky");
-  // 			 }
-	// });
+
+     $('.headerBtn').on('click', function(){
+       $('.overlay').toggleClass('active');
+      });
+     $('.close').on('click', function(){
+       $('.overlay').toggleClass('active');
+      });
   ///////////////scroll header/////////////////////////
 
   ////////////////mob nav//////////////////////////////
