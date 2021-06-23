@@ -1,11 +1,157 @@
 
-@media only screen and (max-width : 1025px) {
-}
 /*-------------------------------------------*/
 @media only screen and (max-width : 769px) {
+    .product {
+        width:48%;
+        height:auto;
+        margin: 0 auto 30px;
+    }
+    .product__logo {
+        top:67px;
+    }
+    .product__title {
+        font-size: 18px;
+        top: 165px;
+    }
+    .product__svg {
+        top:190px;
+    }
+    .advantSection {
+        padding:35px 20px;
+        .dflex {
+            align-items:stretch;
+        }
+    }
+    .advantItem {
+        width: 46%;
+         p {
+            font-size: 13px;
+         }
+        h3 {
+            font-size: 18px;
+        }
+    }
+    .partnerSection {
+
+        .dflex {
+            position:relative;
+            display:block;
+        }
+    }
+    .sertifikatImg {
+        position: absolute;
+        width: 45%;
+        right: 20px;
+        top: 10%;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+    .partnerImg, .partnerText {
+        width:45%;
+    }
+    .infoItem {
+        img {
+            max-width: 80px;
+
+        }
+    }
+    .infoItem_last {
+        img {
+            max-width:60px;
+        }
+    }
+    footer {
+
+    }
+    .footerMap {
+        width:48%
+    }
+    .footerForm {
+        width:48%;
+        padding: 20px 20px 10px;
+        button {
+            width: 70%;
+            padding:5px 0;
+        }
+    }
 }
 /*-------------------------------------------*/
-@media only screen and (max-width : 450px) {
+@media only screen and (max-width : 550px) {
+    .headerItem {
+        &:first-child {
+            display: block;
+        }
+    }
+    .logo {
+        &:not(:last-child) {
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+    }
+    .advantItem {
+        width:100%;
+    }
+    section {
+        h2 {
+            font-size: 18px;
+        }
+    }
+    footer {
+        .dflex {
+            display:block;
+        }
+    }
+    .footerMap {
+        width:100%;
+        margin-bottom:20px;
+    }
+     .footerForm {
+        width:100%;
+        input {
+            margin-bottom: 20px;
+            height:30px;
+        }
+    }
+    .infoItem {
+        img {
+            max-width:40px;
+        }
+    }
+    .infoItem_last {
+        img {
+            max-width:40px;
+        }
+    }
+    .product__title {
+        font-size: 11px;
+        top: 80px;
+    }
+    .product__logo {
+        top: 40px;
+    }
+    .product__svg {display:none;}
+    .headerItem__text:first-child {
+        width: 50%;
+    }
+    .headerItem__text:Last-child {
+        padding-left: 16px;
+    }
+    .segundoScreen {
+        padding:35px 20px;
+    }
+    .preguntaSection {
+        h2 {
+            font-size: 24px;
+        }
+        p {
+            font-size: 18px;
+        }
+        span  {
+            font-size: 14px;
+            letter-spacing: 0.05rem;
+        }
+    }
 }
 
 
