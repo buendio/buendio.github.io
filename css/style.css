@@ -221,7 +221,7 @@ header.sticky {
   position: relative;
   width: 100%;
   height: 46.875vmax;
-  padding-top: 12.76vmax;
+  padding-top: 12vmax;
   background: url(../img/bg1.jpg) no-repeat;
   background-size: cover;
 }
@@ -556,15 +556,12 @@ footer .dflex {
   top: 15px;
   cursor: pointer;
 }
-.close:hover span {
-  background: #EAB734;
-}
 .close span {
   display: block;
   width: 2px;
   height: 20px;
   position: absolute;
-  background: #fff;
+  background: #EAB734;
 }
 .close span:first-child {
   transform: rotate(45deg);
@@ -579,7 +576,7 @@ footer .dflex {
   transform: translateX(-50%);
   width: 52%;
   padding: 15px 3.385vmax;
-  background: rgba(255, 255, 255, 0.7);
+  background: #ffffff;
   border-radius: 30px;
 }
 .formModal input {
@@ -590,6 +587,7 @@ footer .dflex {
   padding-left: 15px;
   border-radius: 30px;
   font-size: 1.5vmax;
+  background: rgba(234, 185, 53, 0.54);
 }
 .formModal label {
   display: block;
@@ -604,7 +602,7 @@ footer .dflex {
   font-size: 1.5vmax;
   text-align: center;
   border-radius: 30px;
-  background: #fff;
+  background: rgba(234, 185, 53, 0.54);
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
   -o-transition: all 0.4s;
