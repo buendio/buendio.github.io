@@ -157,6 +157,9 @@ header {
   padding: 10px 1.04vmax;
   background: #fff;
 }
+header.sticky {
+  background: rgba(255, 255, 255, 0.65);
+}
 .logo {
   max-width: 10.417vmax;
 }
@@ -310,7 +313,7 @@ section h2 {
 }
 .product__title {
   position: absolute;
-  left: 0;
+  left: 10px;
   top: 13vmax;
   font-size: 1.25vmax;
   line-height: 1.21;
@@ -576,7 +579,7 @@ footer .dflex {
   transform: translateX(-50%);
   width: 52%;
   padding: 15px 3.385vmax;
-  background: rgba(17, 64, 109, 0.7);
+  background: rgba(255, 255, 255, 0.7);
   border-radius: 30px;
 }
 .formModal input {
@@ -611,6 +614,25 @@ footer .dflex {
   background: #EAB734;
 }
 /*~~~~~~~~~~~~~~~~~~~MEDIA~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+@media only screen and (max-width: 1025px) {
+  .partnerSection .dflex {
+    position: relative;
+    display: block;
+  }
+  .sertifikatImg {
+    position: absolute;
+    width: 45%;
+    right: 20px;
+    top: 10%;
+  }
+  .sertifikatImg:hover {
+    transform: scale(1.2);
+  }
+  .partnerImg,
+  .partnerText {
+    width: 45%;
+  }
+}
 /*-------------------------------------------*/
 @media only screen and (max-width: 769px) {
   .product {
@@ -643,23 +665,6 @@ footer .dflex {
   .advantItem h3 {
     font-size: 18px;
   }
-  .partnerSection .dflex {
-    position: relative;
-    display: block;
-  }
-  .sertifikatImg {
-    position: absolute;
-    width: 45%;
-    right: 20px;
-    top: 10%;
-  }
-  .sertifikatImg:hover {
-    transform: scale(1.2);
-  }
-  .partnerImg,
-  .partnerText {
-    width: 45%;
-  }
   .infoItem img {
     max-width: 80px;
   }
@@ -676,6 +681,10 @@ footer .dflex {
   .footerForm button {
     width: 70%;
     padding: 5px 0;
+  }
+  .modal {
+    top: 34vh;
+    height: 30vh;
   }
 }
 /*-------------------------------------------*/

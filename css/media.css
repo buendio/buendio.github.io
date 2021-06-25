@@ -1,3 +1,22 @@
+@media only screen and (max-width: 1025px) {
+  .partnerSection .dflex {
+    position: relative;
+    display: block;
+  }
+  .sertifikatImg {
+    position: absolute;
+    width: 45%;
+    right: 20px;
+    top: 10%;
+  }
+  .sertifikatImg:hover {
+    transform: scale(1.2);
+  }
+  .partnerImg,
+  .partnerText {
+    width: 45%;
+  }
+}
 /*-------------------------------------------*/
 @media only screen and (max-width: 769px) {
   .product {
@@ -30,23 +49,6 @@
   .advantItem h3 {
     font-size: 18px;
   }
-  .partnerSection .dflex {
-    position: relative;
-    display: block;
-  }
-  .sertifikatImg {
-    position: absolute;
-    width: 45%;
-    right: 20px;
-    top: 10%;
-  }
-  .sertifikatImg:hover {
-    transform: scale(1.2);
-  }
-  .partnerImg,
-  .partnerText {
-    width: 45%;
-  }
   .infoItem img {
     max-width: 80px;
   }
@@ -63,6 +65,10 @@
   .footerForm button {
     width: 70%;
     padding: 5px 0;
+  }
+  .modal {
+    top: 34vh;
+    height: 30vh;
   }
 }
 /*-------------------------------------------*/
