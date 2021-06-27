@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
    		}
   		 else{
     			 $('header').removeClass("sticky");
-  			 }
+  		}
 	});
-
+////////////////////////////////////////////////////////
 }); // end DOMContentLoaded

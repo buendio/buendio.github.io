@@ -406,6 +406,7 @@ section h2 {
   padding: 0 3.645vmax;
 }
 .partnerSection .dflex {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
@@ -454,6 +455,9 @@ section h2 {
   display: block;
   margin-bottom: 20px;
   font-size: 1.25vmax;
+}
+.infoItem_last img {
+  max-height: 130px;
 }
 /*-------------------END MAIN----------------------------------------*/
 /*+++++++++++++++++++START FOOTER +++++++++++++++++++++++++++++++++++*/
@@ -614,14 +618,13 @@ footer .dflex {
 /*~~~~~~~~~~~~~~~~~~~MEDIA~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 @media only screen and (max-width: 1025px) {
   .partnerSection .dflex {
-    position: relative;
     display: block;
   }
   .sertifikatImg {
     position: absolute;
     width: 45%;
     right: 20px;
-    top: 10%;
+    top: 30px;
   }
   .sertifikatImg:hover {
     transform: scale(1.2);
@@ -630,9 +633,23 @@ footer .dflex {
   .partnerText {
     width: 45%;
   }
+  h1 {
+    font-size: 25px;
+    padding: 18px 30px;
+  }
+  .primero {
+    height: 35.875vmax;
+  }
 }
 /*-------------------------------------------*/
 @media only screen and (max-width: 769px) {
+  .partnerText p {
+    margin-bottom: 10px;
+    font-size: 1.5vmax;
+  }
+  .partnerSection .dflex {
+    padding: 30px 20px;
+  }
   .product {
     width: 48%;
     height: auto;
@@ -676,6 +693,16 @@ footer .dflex {
     width: 48%;
     padding: 20px 20px 10px;
   }
+  .footerForm h3 {
+    margin-bottom: 10px;
+  }
+  .footerForm input {
+    margin-bottom: 15px;
+    height: 30px;
+  }
+  .footerForm textarea {
+    margin-bottom: 15px;
+  }
   .footerForm button {
     width: 70%;
     padding: 5px 0;
@@ -687,6 +714,33 @@ footer .dflex {
 }
 /*-------------------------------------------*/
 @media only screen and (max-width: 550px) {
+  h1 {
+    font-size: 14px;
+    padding: 15px 20px;
+    margin-left: 20px;
+  }
+  h1 span {
+    font-size: 14px;
+  }
+  .primero {
+    padding-top: 50px;
+    background: url(../img/bg1Mob.jpg) no-repeat;
+    height: 275px;
+    background-size: cover;
+  }
+  .plashka {
+    right: 5%;
+  }
+  .plashka__item {
+    width: 90px;
+    font-size: 12px;
+  }
+  .partnerImg {
+    display: none;
+  }
+  .formModal {
+    width: 90%;
+  }
   .headerItem:first-child {
     display: block;
   }
@@ -705,20 +759,17 @@ footer .dflex {
   }
   .footerMap {
     width: 100%;
+    height: 392px;
     margin-bottom: 20px;
   }
   .footerForm {
     width: 100%;
   }
-  .footerForm input {
-    margin-bottom: 20px;
-    height: 30px;
-  }
   .infoItem img {
     max-width: 40px;
   }
   .infoItem_last img {
-    max-width: 40px;
+    max-width: 28px;
   }
   .product__title {
     font-size: 11px;
