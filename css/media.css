@@ -19,6 +19,9 @@
     font-size: 25px;
     padding: 18px 30px;
   }
+  h1 span {
+    font-size: 20px;
+  }
   .primero {
     height: 35.875vmax;
   }
@@ -93,16 +96,45 @@
     top: 34vh;
     height: 30vh;
   }
+  .primero {
+    padding-top: 3vmax;
+  }
+  .segundoScreen .product:nth-child(1) {
+    order: 1;
+  }
+  .segundoScreen .product:nth-child(5) {
+    order: 2;
+  }
+  .segundoScreen .product:nth-child(2) {
+    order: 3;
+  }
+  .segundoScreen .product:nth-child(6) {
+    order: 4;
+  }
+  .segundoScreen .product:nth-child(3) {
+    order: 5;
+  }
+  .segundoScreen .product:nth-child(4) {
+    order: 6;
+  }
+  .segundoScreen .product:nth-child(7) {
+    order: 7;
+  }
+  .segundoScreen .product:nth-child(8) {
+    order: 8;
+  }
 }
 /*-------------------------------------------*/
 @media only screen and (max-width: 550px) {
   h1 {
+    max-width: 190px;
     font-size: 14px;
     padding: 15px 20px;
     margin-left: 20px;
   }
   h1 span {
-    font-size: 14px;
+    margin-top: 5px;
+    font-size: 11px;
   }
   .primero {
     padding-top: 50px;
@@ -125,6 +157,9 @@
   }
   .headerItem:first-child {
     display: block;
+  }
+  .logo {
+    max-width: 50px;
   }
   .logo:not(:last-child) {
     margin-right: 10px;
