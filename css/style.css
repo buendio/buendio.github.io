@@ -838,4 +838,8 @@ footer .dflex {
   .infoSection .dflex {
     max-width: 95%;
   }
+  .headerItem__text a,
+  .headerItem__text span {
+    font-size: 10px;
+  }
 }
