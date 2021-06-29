@@ -615,6 +615,30 @@ footer .dflex {
 .formModal button:hover {
   background: #EAB734;
 }
+#productHidden1 {
+  background: url(../img/stalBig.jpg) no-repeat;
+}
+#productHidden2 {
+  background: url(../img/pvcBig.jpg) no-repeat;
+}
+#productHidden3 {
+  background: url(../img/luxcink.jpg) no-repeat;
+}
+#productHidden4 {
+  background: url(../img/hero_image.jpg) no-repeat;
+}
+#productHidden5 {
+  background: url(../img/stal2.jpg) no-repeat;
+}
+#productHidden6 {
+  background: url(../img/pv2.jpg) no-repeat;
+}
+#productHidden7 {
+  background: url(../img/bezokapowy-scroll1.jpg) no-repeat;
+}
+#productHidden8 {
+  background: url(../img/pas4-bg.jpg) no-repeat;
+}
 /*~~~~~~~~~~~~~~~~~~~MEDIA~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 @media only screen and (max-width: 1025px) {
   .partnerSection .dflex {
@@ -711,8 +735,8 @@ footer .dflex {
     padding: 5px 0;
   }
   .modal {
-    top: 34vh;
-    height: 30vh;
+    top: 10vh;
+    height: 50vh;
   }
   .primero {
     padding-top: 3vmax;
@@ -830,10 +854,12 @@ footer .dflex {
   }
   .preguntaSection p {
     font-size: 18px;
+    margin-bottom: 15px;
   }
   .preguntaSection span {
     font-size: 14px;
     letter-spacing: 0.05rem;
+    margin-bottom: 15px;
   }
   .infoSection .dflex {
     max-width: 95%;
@@ -841,5 +867,32 @@ footer .dflex {
   .headerItem__text a,
   .headerItem__text span {
     font-size: 10px;
+  }
+  .product:hover {
+    filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0));
+  }
+  .sertifikatImg {
+    width: 37%;
+  }
+  .modal {
+    top: 50%;
+    height: 50vh;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  .modal p {
+    font-size: 10px;
+    padding: 10px;
+  }
+  #productHidden1 {
+    background: url(../img/h1.jpg) no-repeat;
+  }
+  #productHidden5 {
+    background: url(../img/h2.jpg) no-repeat;
+  }
+  #productHidden4 {
+    background: url(../img/h4.jpg) no-repeat;
+  }
+  #productHidden8 {
+    background: url(../img/h8.jpg) no-repeat;
   }
 }
