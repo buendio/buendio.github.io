@@ -68,6 +68,9 @@
   .infoItem img {
     max-width: 80px;
   }
+  .infoItem span {
+    font-size: 10px;
+  }
   .infoItem_last img {
     max-width: 60px;
   }
