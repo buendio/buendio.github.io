@@ -902,6 +902,9 @@ footer .dflex {
   #productHidden1 {
     background: url(../img/h1.jpg) no-repeat;
   }
+  #productHidden2 {
+    background: url(../img/h11.jpg) no-repeat;
+  }
   #productHidden3 {
     background: url(../img/h3.jpg) no-repeat;
   }
@@ -913,5 +916,11 @@ footer .dflex {
   }
   #productHidden8 {
     background: url(../img/h8.jpg) no-repeat;
+  }
+  #productHidden6 {
+    background: url(../img/h6.jpg) no-repeat;
+  }
+  #productHidden7 {
+    background: url(../img/h7.jpg) no-repeat;
   }
 }
