@@ -648,10 +648,10 @@ footer .dflex {
     position: absolute;
     width: 45%;
     right: 20px;
-    top: 30px;
+    top: 5vmax;
   }
   .sertifikatImg:hover {
-    transform: scale(1.2);
+    transform: scale(1);
   }
   .partnerImg,
   .partnerText {
@@ -668,8 +668,16 @@ footer .dflex {
     height: 35.875vmax;
   }
 }
+@media only screen and (max-width: 1024px) {
+  .sertifikatImg {
+    width: 38%;
+  }
+}
 /*-------------------------------------------*/
 @media only screen and (max-width: 769px) {
+  .product__logo {
+    max-width: 45px;
+  }
   .partnerText p {
     margin-bottom: 10px;
     font-size: 1.5vmax;
@@ -739,7 +747,7 @@ footer .dflex {
   }
   .modal {
     top: 10vh;
-    height: 50vh;
+    height: 75vh;
   }
   .primero {
     padding-top: 3vmax;
@@ -767,6 +775,11 @@ footer .dflex {
   }
   .segundoScreen .product:nth-child(8) {
     order: 8;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .sertifikatImg {
+    width: 37%;
   }
 }
 /*-------------------------------------------*/
