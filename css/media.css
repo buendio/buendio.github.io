@@ -109,7 +109,7 @@
     max-width: 80px;
   }
   .infoItem span {
-    font-size: 10px;
+    font-size: 16px;
   }
   .infoItem_last img {
     max-width: 60px;
@@ -138,6 +138,9 @@
   .modal {
     top: 10vh;
     height: 550px;
+  }
+  .modal p {
+    font-size: 16px;
   }
   .primero {
     padding-top: 3vmax;
@@ -232,6 +235,9 @@
   }
   .infoItem img {
     max-width: 40px;
+  }
+  .infoItem span {
+    font-size: 10px;
   }
   .infoItem_last img {
     max-width: 28px;

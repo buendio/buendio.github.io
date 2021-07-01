@@ -334,7 +334,6 @@ section h2 {
   width: 95vw;
   height: 90vh;
   background-size: cover !important;
-  font-size: 1.25vmax;
   line-height: 1.22;
   color: #fff;
 }
@@ -347,6 +346,7 @@ section h2 {
   padding: 1.35vmax 0.833vmax;
   background: rgba(17, 64, 109, 0.7);
   border-radius: 20px;
+  font-size: 1.25vmax;
 }
 .preguntaSection {
   width: 100%;
@@ -454,7 +454,7 @@ section h2 {
 .infoItem span {
   display: block;
   margin-bottom: 20px;
-  font-size: 1.25vmax;
+  font-size: 1.5625vmax;
 }
 .infoItem_last img {
   max-height: 130px;
@@ -751,7 +751,7 @@ footer .dflex {
     max-width: 80px;
   }
   .infoItem span {
-    font-size: 10px;
+    font-size: 16px;
   }
   .infoItem_last img {
     max-width: 60px;
@@ -780,6 +780,9 @@ footer .dflex {
   .modal {
     top: 10vh;
     height: 550px;
+  }
+  .modal p {
+    font-size: 16px;
   }
   .primero {
     padding-top: 3vmax;
@@ -874,6 +877,9 @@ footer .dflex {
   }
   .infoItem img {
     max-width: 40px;
+  }
+  .infoItem span {
+    font-size: 10px;
   }
   .infoItem_last img {
     max-width: 28px;
