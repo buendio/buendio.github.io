@@ -777,6 +777,9 @@ footer .dflex {
     width: 70%;
     padding: 5px 0;
   }
+  .footerForm label {
+    font-size: 1.5vmax;
+  }
   .modal {
     top: 10vh;
     height: 550px;
