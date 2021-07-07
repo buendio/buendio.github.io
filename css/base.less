@@ -2,7 +2,6 @@
 * {
 	margin: 0px;
 	padding: 0px;
-  box-sizing: border-box;
 }
 html {
   font-size: 16px;
@@ -39,28 +38,14 @@ hr {
   margin-block-end: 0em;
   border-width: 0px;
 }
-@col : #d19f02;
-.cover(@p: center){
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: @p;
+h2 {
+  font-family: 'Termina';
+  font-weight: 700;
 }
-.abs {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-}
-.midle {
-  top: 50%;
-  transform: translateY(-50%);
-}
-.centr (@top: 50%, @translateY: -50%, @left: 50%, @translateX: -50%) {
-  top: @top;
-  left: @left;
-  transform: translateX(@translateX) translateY(@translateY);
-}
+@colDark : #365B58;
+@colYell : #EBEFA5;
+@colPink : #FFF9EF;
+
 .transition(@a: 0.4s) {
   -webkit-transition: all @a;
   -moz-transition: all @a;
@@ -105,7 +90,7 @@ hr {
   position: relative;
   width: 100%;
   height: 6px;
-  background: @col;
+  background: @colDark;
   border-radius: 4px;
   .transition(0.1s);
   &:before {
@@ -116,7 +101,7 @@ hr {
     top: -15px;
     left: 0;
     height: 6px;
-    background-color: @col;
+    background-color: @colDark;
     .transition;
   }
   &:after {
@@ -126,7 +111,7 @@ hr {
     position: absolute;
     height: 6px;
     left: 0;
-    background-color: @col;
+    background-color: @colDark;
     bottom: -15px;
     .transition;
   }

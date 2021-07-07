@@ -1,7 +1,6 @@
 * {
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box;
 }
 html {
   font-size: 16px;
@@ -47,16 +46,9 @@ hr {
   margin-block-end: 0em;
   border-width: 0px;
 }
-.abs {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-}
-.midle {
-  top: 50%;
-  transform: translateY(-50%);
+h2 {
+  font-family: 'Termina';
+  font-weight: 700;
 }
 .mob {
   width: 45px;
@@ -70,7 +62,7 @@ hr {
   position: relative;
   width: 100%;
   height: 6px;
-  background: #d19f02;
+  background: #365B58;
   border-radius: 4px;
   -webkit-transition: all 0.1s;
   -moz-transition: all 0.1s;
@@ -85,7 +77,7 @@ hr {
   top: -15px;
   left: 0;
   height: 6px;
-  background-color: #d19f02;
+  background-color: #365B58;
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
   -o-transition: all 0.4s;
@@ -98,7 +90,7 @@ hr {
   position: absolute;
   height: 6px;
   left: 0;
-  background-color: #d19f02;
+  background-color: #365B58;
   bottom: -15px;
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
