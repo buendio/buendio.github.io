@@ -50,6 +50,11 @@ h2 {
   font-family: 'Termina';
   font-weight: 700;
 }
+.dflex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
 .mob {
   width: 45px;
   height: 70px;
