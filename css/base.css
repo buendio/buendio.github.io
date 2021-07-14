@@ -13,6 +13,7 @@ img {
 }
 a {
   text-decoration: none ;
+  font-size: 14px;
   color: inherit;
   display: inline-block;
   -webkit-transition: all 0.4s;
@@ -46,74 +47,60 @@ hr {
   margin-block-end: 0em;
   border-width: 0px;
 }
-h2 {
-  font-family: 'Termina';
-  font-weight: 700;
+.modal-header {
+  padding: 1.35rem 1.875rem;
+  background: #575757;
+  color: #fff;
+  border-radius: 10px 10px 0px 0px;
 }
-.dflex {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+.modal-body {
+  padding: 60px 1.35rem 1.875rem;
+  background: #fff;
+  border-radius: 0px 0px 10px 10px;
 }
-.mob {
-  width: 45px;
-  height: 70px;
-  overflow: hidden;
-  display: none;
-  background: none;
+.modal-body input {
+  margin-bottom: 12px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #F67555;
 }
-.mob span {
-  display: block;
-  position: relative;
-  width: 100%;
-  height: 6px;
-  background: #365B58;
-  border-radius: 4px;
-  -webkit-transition: all 0.1s;
-  -moz-transition: all 0.1s;
-  -o-transition: all 0.1s;
-  transition: all 0.1s;
+.modal-body label {
+  margin-bottom: 20px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.8);
 }
-.mob span:before {
-  content: "";
-  width: 100%;
-  border-radius: 4px;
-  position: absolute;
-  top: -15px;
-  left: 0;
-  height: 6px;
-  background-color: #365B58;
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  transition: all 0.4s;
+.modal-body span {
+  margin-bottom: 60px;
+  font-weight: 300;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.6);
 }
-.mob span:after {
-  border-radius: 4px;
-  content: "";
-  width: 100%;
-  position: absolute;
-  height: 6px;
-  left: 0;
-  background-color: #365B58;
-  bottom: -15px;
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  transition: all 0.4s;
+.modal-body .btn {
+  padding: 1rem 2.5rem;
 }
-.mob .active {
-  background: none;
+.modal-body .btn:first-child {
+  margin-right: 10px;
 }
-.mob .active:before {
-  top: 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
+.modal-body :-moz-placeholder {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.4);
 }
-.mob .active:after {
-  bottom: 0;
-  -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+.modal-body ::-moz-placeholder {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.4);
+}
+.modal-body :-ms-input-placeholder {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.4);
+}
+.modal-body ::-webkit-input-placeholder {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.4);
 }

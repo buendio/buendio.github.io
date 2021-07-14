@@ -1,45 +1,65 @@
 document.addEventListener('DOMContentLoaded', () => {
-  ///////////////scroll header////////////////////////
-	// $(window).scroll(function() {
-	// 	if ($(this).scrollTop() > 1){
-  //    		$('header').addClass("sticky");
-  //  		}
-  // 		 else{
-  //   			 $('header').removeClass("sticky");
-  // 			 }
-	// });
-  ///////////////scroll header/////////////////////////
 
-  ////////////////mob nav//////////////////////////////
-	// $('.nav__mob').hide();//?
-  //    $('.mob').on('click', function(){
-  //      $('.nav__mob').slideToggle();
-  //      $('.mob span').toggleClass('active');
-  //     });
-  /////////////////mob nav///////////////////////////////
+  const popup_close = document.querySelectorAll('.popup_close');
+  const popup = document.querySelectorAll('.popup');
+  const overlay = document.querySelector('.overlay');
+  const bellSvg = document.querySelectorAll('.bellSvg');
 
-  /////////////////SCROLL////////////////////////////////
-  //  $(".nav, .nav_mob").on("click","a", function (event) {
-  //   //отменяем стандартную обработку нажатия по ссылке
-  //   event.preventDefault();
+  //////////////////////toggleClass/////////////////////////////////////
+  const toggleClass = (elem, className) => elem.classList[(elem.classList.contains(className)) ? 'remove' : 'add'](className);
 
-  //   //забираем идентификатор бока с атрибута href
-  //   var id  = $(this).attr('href'),
+  bellSvg.forEach(el => {
+    el.addEventListener('click', e => {
+      toggleClass(document.querySelector('.header__nota'), 'active')
+    })
+  })
 
-  //   //узнаем высоту от начала страницы до блока на который ссылается якорь
-  //     top = $(id).offset().top;
 
-  //   //анимируем переход на расстояние - top за 1500 мс
-  //   $('body,html').animate({scrollTop: top}, 1500);
-  // });
-  ////////////////END SCROLL////////////////////////////////
 
-  ////////////////ADD CLASS/////////////////////////////////
-  // $("#selectBackground ul li a").click(function(e) {
+  // document.querySelector('.creatFolderJs').addEventListener('click', (e) => {
   //   e.preventDefault();
-  //   $("#selectBackground ul li a").removeClass('active');
-  //   $(this).addClass('active');
-  // });
-  ///////////////END ADD CLASS//////////////////////////////
+  //   popup.forEach(element => {
+  //     element.style.display = 'none';
+  //     if (element.classList.contains('creatFolderJs')) {
+  //       element.style.display = 'block';
+  //     }
+  //   })
+  //   overlay.classList.add('active');
+  // })
+
+  // document.querySelector('.settingJs').addEventListener('click', (e) => {
+  //   e.preventDefault();
+  //   popup.forEach(element => {
+  //     element.style.display = 'none';
+  //     if (element.classList.contains('settingJs')) {
+  //       element.style.display = 'block';
+  //     }
+  //   })
+  //   overlay.classList.add('active');
+  // })
+
+  document.addEventListener('click', (e) => {
+    if (e.target.classList.contains('overlay')) {
+      overlay.classList.remove('active')
+    }
+  })
+
+
+  popup_close.forEach(element => {
+    element.addEventListener('click', (e) => document.querySelector('.overlay').classList.remove('active'));
+  });
+
+  document.querySelector('#ChangePassword').addEventListener('click', (e) => {
+    e.preventDefault();
+    document.querySelector('.profile__form_first').classList.remove('active');
+    document.querySelector('.profile__form_password').classList.add('active');
+
+  });
+
+  document.querySelector('.setingBtn').addEventListener('click', (e) => {
+    e.preventDefault();
+    toggleClass(document.querySelector('.dropdownList'), 'active');
+
+  })
 
 }); // end DOMContentLoaded

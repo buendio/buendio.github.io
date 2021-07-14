@@ -14,6 +14,7 @@ img {
 }
 a {
 	text-decoration: none ;
+  font-size: 14px;
   color: inherit;
   display: inline-block;
   .transition;
@@ -38,98 +39,53 @@ hr {
   margin-block-end: 0em;
   border-width: 0px;
 }
-h2 {
-  font-family: 'Termina';
-  font-weight: 700;
-}
-@colDark : #365B58;
-@colYell : #EBEFA5;
-@colPink : #FFF9EF;
-.dflex {
-  .flex;
-}
 .transition(@a: 0.4s) {
   -webkit-transition: all @a;
   -moz-transition: all @a;
   -o-transition: all @a;
   transition: all @a;
 }
+@col:#F67555;
  ///////////////////////////////////////////////////////////////////
- .flex(@justify: flex-start, @align: center) {
-	display: flex;
-	justify-content: @justify;
-	align-items: @align;
+
+.modal-header {
+	padding: 1.35rem 1.875rem;
+	background: #575757;
+	color:#fff;
+	border-radius: 10px 10px 0px 0px;
 }
- // space-around
- // space-between
- // flex-start
- // flex-end
- // stretch
- // flex-wrap: wrap;
+.modal-body {
+	padding:60px 1.35rem 1.875rem;
+	background:#fff;
+	border-radius: 0px 0px 10px 10px;
+	input {
+		margin-bottom: 12px;
+		padding-bottom: 7px;
+		border-bottom:1px solid @col;
+	}
+	label {
+		margin-bottom: 20px;
+		font-weight: 300;
+		color: rgba(0, 0, 0, 0.8);
+	}
+	span {
+		margin-bottom: 60px;
+		font-weight: 300;
+		font-size: 12px;
+		color: rgba(0, 0, 0, 0.6);
+	}
+	.btn {
+		padding: 1rem 2.5rem;
+		&:first-child {margin-right: 10px;}
+	}
+	 :-moz-placeholder {font-family: 'Inter', sans-serif;font-size: 18px;font-weight: 300;color: rgba(0, 0, 0, 0.4);}
+	 ::-moz-placeholder {font-family: 'Inter', sans-serif;font-size: 18px;font-weight: 300;color: rgba(0, 0, 0, 0.4);}
+     :-ms-input-placeholder {font-family: 'Inter', sans-serif;font-size: 18px;font-weight: 300;color: rgba(0, 0, 0, 0.4);}
+     ::-webkit-input-placeholder {font-family: 'Inter', sans-serif;font-size: 18px;font-weight: 300;color: rgba(0, 0, 0, 0.4);}
+}
 
-  // display: grid;
-  // grid-template-columns:1fr 1fr 1fr;
-  // grid-template-rows:  300px 300px 300px;
-
-// :-moz-placeholder {color: #000;}
-// ::-moz-placeholder {color: #000;}
-// :-ms-input-placeholder {color: #000;}
-// ::-webkit-input-placeholder {color: #000;}
 
 //~"calc(100% - 800px)";
 
 //.nav li:not(:last-child) {border-right: 1px solid #666;} удаляем у последнего элемента бордер
  //<button class="mob"><span></span></button>
-.mob {
-	width: 45px;
-  height: 70px;
-  overflow: hidden;
-  display: none;
-  background: none;
-}
-.mob span {
-	display: block;
-  position: relative;
-  width: 100%;
-  height: 6px;
-  background: @colDark;
-  border-radius: 4px;
-  .transition(0.1s);
-  &:before {
-    content: "";
-    width: 100%;
-    border-radius: 4px;
-    position: absolute;
-    top: -15px;
-    left: 0;
-    height: 6px;
-    background-color: @colDark;
-    .transition;
-  }
-  &:after {
-    border-radius: 4px;
-  	content: "";
-  	width: 100%;
-    position: absolute;
-    height: 6px;
-    left: 0;
-    background-color: @colDark;
-    bottom: -15px;
-    .transition;
-  }
-}
-.mob .active {
-  background: none;
-}
-.mob .active:before {
-  top: 0;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-.mob .active:after {
-  bottom: 0;
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
