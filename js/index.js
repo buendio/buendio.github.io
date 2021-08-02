@@ -1,230 +1,237 @@
 document.addEventListener('DOMContentLoaded', () => {
   ///////////////scroll header////////////////////////
-  let header = $('header'),
-		scrollPrev = 0;
-
-  $(window).scroll(function() {
-    let scrolled = $(window).scrollTop();
-
-    if ( scrolled > 72 && scrolled > scrollPrev ) {
-      header.addClass('out');
-      $('.dropdown').removeClass('active');
-    } else {
-      header.removeClass('out');
-
-    }
-    scrollPrev = scrolled;
-  });
+	// $(window).scroll(function() {
+	// 	if ($(this).scrollTop() > 1 && $(this).scrollTop() < 2000){
+  //    		$('.stick').addClass("sticky");
+  //  		}
+  // 		 else{
+  //   			 $('.stick').removeClass("sticky");
+  // 			 }
+	// });
+  ///////////////scroll header/////////////////////////
 
   ////////////////mob nav//////////////////////////////
 	$('.nav__mob').hide();//?
      $('.mob').on('click', function(){
        $('.nav__mob').slideToggle();
        $('.mob span').toggleClass('active');
-       $('body').toggleClass('vh');
       });
-  /////////////////AOS animation///////////////////////////////
-  AOS.init();
-  /////////////////////animation number////////////////////////////
-  $(function() {
-		let target_block = $(".nineScreen h2"); // Ищем блок
-		let blockStatus = true;
+  ///////////////mob nav///////////////////////////////
 
-		$(window).scroll(function() {
+  /////////////////SCROLL////////////////////////////////
+  //  $(".nav, .nav_mob").on("click","a", function (event) {
+  //   //отменяем стандартную обработку нажатия по ссылке
+  //   event.preventDefault();
 
-			let scrollEvent = ($(window).scrollTop() > (target_block.position().top - $(window).height()));
+  //   //забираем идентификатор бока с атрибута href
+  //   var id  = $(this).attr('href'),
 
-			if(scrollEvent && blockStatus) {
+  //   //узнаем высоту от начала страницы до блока на который ссылается якорь
+  //     top = $(id).offset().top;
 
-				blockStatus = false; // Запрещаем повторное выполнение функции до следующей перезагрузки страницы.
+  //   //анимируем переход на расстояние - top за 1500 мс
+  //   $('body,html').animate({scrollTop: top}, 1500);
+  // });
+  ////////////////END SCROLL////////////////////////////////
 
-				$({numberValue: 0}).animate({numberValue: 200000}, {
+  ////////////////ADD CLASS/////////////////////////////////
+  // $("#selectBackground ul li a").click(function(e) {
+  //   e.preventDefault();
+  //   $("#selectBackground ul li a").removeClass('active');
+  //   $(this).addClass('active');
+  // });
+  ///////////////END ADD CLASS//////////////////////////////
 
-					duration: 2000, // Продолжительность анимации, где 500 - 0.5 одной секунды, то есть 500 миллисекунд
-					easing: "linear",
+  $('.sliderJs').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    nextArrow:`<button class="next">
+                <svg viewBox="0 0 25 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M24.1252 35.5617L2.89577 18.9523L24.1252 2.38127L23.211 1.22769L0.494274 18.9523L23.2258 36.6769L24.1252 35.5617Z"  stroke-width="0.5"/>
+                </svg>
+              </button>`,
+    prevArrow:`<button class="prev">
+                <svg viewBox="0 0 25 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M24.1252 35.5617L2.89577 18.9523L24.1252 2.38127L23.211 1.22769L0.494274 18.9523L23.2258 36.6769L24.1252 35.5617Z"  stroke-width="0.5"/>
+                </svg>
+              </button>`,
+              responsive: [
+                {
+                  breakpoint: 992,
+                  settings: 'unslick'
+                }
+              ]
+  });
 
-					step: function(val) {
 
-						$(".nineScreen h2").html(Math.ceil(val)); // Блок, где необходимо сделать анимацию
-
-					}
-				});
-			}
-		});
-	});
-  ///////////////////dropdown list/////////////////////////////
-  $('.language').on('click', function(){
-    $('.dropdown').toggleClass('active');
-   });
-  // document.querySelector('.language').addEventListener('click', () => {
-  //   document.querySelector('.dropdown').classList.toggle("active");
-  // }) ;
-/////////////////////animation details//////////////////////////////
-class Accordion {
-  constructor(el) {
-    // сохраняем details
-  this.el = el
-  // сохраняем summary
-  this.summary = el.querySelector('summary')
-  // сохраняем div с классом "content"
-  this.content = el.querySelector('.details__content')
-
-  // сохраняем объект анимации (для ее отмены при необходимости)
-  this.animation = null
-  // находится ли элемент в процессе закрытия?
-  this.isClosing = false
-  // находится ли элемент в процессе раскрытия?
-  this.isExpanding = false
-  // определяем клик по summary
-  this.summary.addEventListener('click', (e) => this.onClick(e))
-  }
-
-  // функция, вызываемая при нажатии на summary
-  onClick(e) {
-    // отменяем стандартное поведение браузера
-    e.preventDefault()
-    // добавляем к details свойство "overflow" со значением "hidden" во избежание переполнения контента
-    this.el.style.overflow = 'hidden'
-    // проверяем, находится ли элемент в процессе закрытия или уже закрыт
-    if (this.isClosing || !this.el.open) {
-      this.open()
-      // проверяем, находится ли элемент в процессе открытия или уже открыт
-    } else if (this.isExpanding || this.el.open) {
-      this.shrink()
-    }
-  }
-
-  // функция, вызываемая для анимированного скрытия контента
-  shrink() {
-    // фиксируем начало закрытия элемента
-    this.isClosing = true
-
-    // сохраняем текущую высоту элемента
-    const startHeight = `${this.el.offsetHeight}px`
-    // рассчитываем высоту summary
-    const endHeight = `${this.summary.offsetHeight}px`
-
-    // если анимация уже запущена
-    if (this.animation) {
-      // отменяем ее
-      this.animation.cancel()
-    }
-
-    // запускаем WAAPI анимацию
-    this.animation = this.el.animate({
-      // устанавливаем ключевые кадры
-      height: [startHeight, endHeight]
-    }, {
-      // если анимация кажется вам слишком быстрой или слишком медленной, то вы можете изменить значение данного свойства (duration - продолжительность)
-      duration: 400,
-      // вы также можете изменить значение этого свойства (easing (animation-timing-function) - временная функция)
-      easing: 'ease-out'
+  $('.slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    //infinite: false,
+    nextArrow:`<button class="next">
+                <svg viewBox="0 0 25 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M24.1252 35.5617L2.89577 18.9523L24.1252 2.38127L23.211 1.22769L0.494274 18.9523L23.2258 36.6769L24.1252 35.5617Z"  stroke-width="0.5"/>
+                </svg>
+              </button>`,
+    prevArrow:`<button class="prev">
+                <svg viewBox="0 0 25 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M24.1252 35.5617L2.89577 18.9523L24.1252 2.38127L23.211 1.22769L0.494274 18.9523L23.2258 36.6769L24.1252 35.5617Z"  stroke-width="0.5"/>
+                </svg>
+              </button>`,
+  })
+  function slickify() {
+    $('.catalogSectionJs').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      //infinite: false,
+      nextArrow:`<button class="next">
+                  <svg viewBox="0 0 25 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M24.1252 35.5617L2.89577 18.9523L24.1252 2.38127L23.211 1.22769L0.494274 18.9523L23.2258 36.6769L24.1252 35.5617Z"  stroke-width="0.5"/>
+                  </svg>
+                </button>`,
+      prevArrow:`<button class="prev">
+                  <svg viewBox="0 0 25 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M24.1252 35.5617L2.89577 18.9523L24.1252 2.38127L23.211 1.22769L0.494274 18.9523L23.2258 36.6769L24.1252 35.5617Z"  stroke-width="0.5"/>
+                  </svg>
+                </button>`,
     })
-
-    // после завершения анимации вызываем onAnimationFinish()
-    this.animation.onfinish = () => this.onAnimationFinish(false)
-    // если анимация отменена, присваиваем переменной "isClosing" значение "false"
-    this.animation.oncancel = () => this.isClosing = false
   }
-
-  // функция, вызываемая для раскрытия элемента после клика
-  open() {
-    // устанавливаем элементу фиксированную высоту
-    this.el.style.height = `${this.el.offsetHeight}px`
-    // добавляем details атрибут "open"
-    this.el.open = true
-    // ожидаем следующего кадра для вызова функции "expand"
-    requestAnimationFrame(() => this.expand())
-  }
-
-  // функция, вызываемая для анимированного показа контента
-  expand() {
-    // фиксируем начало раскрытия элемента
-    this.isExpanding = true
-    // получаем фиксированную высоту элемента
-    const startHeight = `${this.el.offsetHeight}px`
-    // рассчитываем высоту открытого элемента (высота summary + высота содержимого)
-    const endHeight = `${this.summary.offsetHeight + this.content.offsetHeight}px`
-
-    // если анимация уже запущена
-    if (this.animation) {
-      // отменяем ее
-      this.animation.cancel()
+  $(window).resize(function(){
+    var $windowWidth = $(window).width();
+    if ($windowWidth < 600) {
+        slickify();
     }
-
-    // запускаем WAAPI анимацию
-    this.animation = this.el.animate({
-      height: [startHeight, endHeight]
-    }, {
-      duration: 400,
-      easing: 'ease-out'
-    })
-
-    this.animation.onfinish = () => this.onAnimationFinish(true)
-    this.animation.oncancel = () => this.isClosing = false
-  }
-  // коллбэк, вызываемый после завершения shrink или expand
-  onAnimationFinish(open) {
-    // устанавливаем значение атрибута "open"
-    this.el.open = open
-    // удаляем переменную, хранящую анимацию
-    this.animation = null
-    // сбрасываем значения
-    this.isClosing = false
-    this.isExpanding = false
-    // удаляем overflow и фиксированную высоту
-    this.el.style.height = this.el.style.overflow = ''
-  }
-}
-document.querySelectorAll('details').forEach(el => {
-  new Accordion(el)
-})
-///////////////////////Lazy looad iframe////////////////////////////
-if ("IntersectionObserver" in window) {
-    var iframesLazy = document.querySelectorAll("iframe.iframe-youtube-lazy-video");
-    var iframeObserver = new IntersectionObserver(function (entries, observer) {
-    entries.forEach(function (entry) {
-      if (entry.isIntersecting && entry.target.src.length == 0) {
-      entry.target.src = entry.target.dataset.src;
-      iframeObserver.unobserve(entry.target);
-      }
-    });
-    });
-    iframesLazy.forEach(function (iframe) {
-      iframeObserver.observe(iframe);
-    });
-  } else {
-    var iframesLazy = document.querySelector('iframe.iframe-youtube-lazy-video');
-    for (var i = 0; i < iframesLazy.length; i++) {
-    if (lazyVids[i].getAttribute('data-src')) {
-      lazyVids[i].setAttribute('src', lazyVids[i].getAttribute('data-src'));
-    }
-    }
-  }
-/////////////////frame youTube/////////////////////
-$('.ytJs').on('click', function() {
-  $(".frame").addClass('active');
-})
-
-$(".frame").click(function (e){ // отслеживаем событие клика по веб-документу
- console.log(e.target);
-  var block = $(".frame__yt"); // определяем элемент, к которому будем применять условия (можем указывать ID, класс либо любой другой идентификатор элемента)
-  if (!block.is(e.target) // проверка условия если клик был не по нашему блоку
-      && block.has(e.target).length === 0) { // проверка условия если клик не по его дочерним элементам
-         // если условия выполняются - скрываем наш элемент
-
-         let video = $(".frame__yt").attr("data-src");
-        $(".frame__yt").attr("src","");
-         $(".frame__yt").attr("src",video);
-        $(".frame").removeClass('active');
-      }
 });
-/////////////////preloader/////////////////////////////
-window.onload = function () {
-  document.body.classList.add('loaded_hiding');
-  window.setTimeout(function () {
-    document.body.classList.add('loaded');
-    document.body.classList.remove('loaded_hiding');
-  }, 500);
+if ($(window).width() < 600) {
+  slickify();
 }
+
+
+function slickify2() {
+  $('.productWrap__item_un').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    //infinite: false,
+    nextArrow:`<button class="next">
+                <svg viewBox="0 0 25 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M24.1252 35.5617L2.89577 18.9523L24.1252 2.38127L23.211 1.22769L0.494274 18.9523L23.2258 36.6769L24.1252 35.5617Z"  stroke-width="0.5"/>
+                </svg>
+              </button>`,
+    prevArrow:`<button class="prev">
+                <svg viewBox="0 0 25 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M24.1252 35.5617L2.89577 18.9523L24.1252 2.38127L23.211 1.22769L0.494274 18.9523L23.2258 36.6769L24.1252 35.5617Z"  stroke-width="0.5"/>
+                </svg>
+              </button>`,
+  })
+}
+
+$(window).resize(function(){
+  var $windowWidth = $(window).width();
+  if ($windowWidth < 600) {
+      slickify2();
+  }
+});
+if ($(window).width() < 600) {
+slickify2();
+}
+
+  $('.fotos').slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows:false,
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          centerMode: true,
+          centerPadding: '80px',
+        }
+      }
+    ]
+  });
+
+  $('.select').each(function() {
+    const _this = $(this),
+        selectOption = _this.find('option'),
+        selectOptionLength = selectOption.length,
+        selectedOption = selectOption.filter(':selected'),
+        duration = 450; // длительность анимации
+
+    _this.hide();
+    _this.wrap('<div class="select"></div>');
+    $('<div>', {
+        class: 'new-select',
+        text: _this.children('option:disabled').text()
+    }).insertAfter(_this);
+
+    const selectHead = _this.next('.new-select');
+    $('<div>', {
+        class: 'new-select__list'
+    }).insertAfter(selectHead);
+
+    const selectList = selectHead.next('.new-select__list');
+    for (let i = 1; i < selectOptionLength; i++) {
+        $('<div>', {
+            class: 'new-select__item',
+            html: $('<span>', {
+                text: selectOption.eq(i).text()
+            })
+        })
+        .attr('data-value', selectOption.eq(i).val())
+        .appendTo(selectList);
+    }
+
+    const selectItem = selectList.find('.new-select__item');
+    selectList.slideUp(0);
+    selectHead.on('click', function() {
+        if ( !$(this).hasClass('on') ) {
+            $(this).addClass('on');
+            selectList.slideDown(duration);
+
+            selectItem.on('click', function() {
+                let chooseItem = $(this).data('value');
+
+                $('select').val(chooseItem).attr('selected', 'selected');
+                selectHead.text( $(this).find('span').text() );
+
+                selectList.slideUp(duration);
+                selectHead.removeClass('on');
+            });
+
+        } else {
+            $(this).removeClass('on');
+            selectList.slideUp(duration);
+        }
+    });
+});
+
+     $('.btnCart').on('click', function(){
+       $('.cart').slideToggle();
+       $(this).toggleClass('active');
+      });
+     $('.close').on('click', function(){
+       $('.cart').slideToggle();
+       $('.btnCart').toggleClass('active');
+      });
+
+////////////////////////////////////////////////
+    $('.cartItemAdd__btn').on('click', function(){
+      $('.cartItemAdd').toggleClass('active');
+    });
+    $('.cartItemAdd__body_close').on('click', function(){
+      $('.cartItemAdd').toggleClass('active');
+    });
+  //////////////////////////////////////////////////
+  $('.product__sizeBtn').on('click', function(){
+    $('.overlay').toggleClass('active');
+
+   });
+  $('.closePopup').on('click', function(){
+    $('.overlay').toggleClass('active');
+
+   });
 }); // end DOMContentLoaded

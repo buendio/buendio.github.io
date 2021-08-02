@@ -2,6 +2,7 @@
 * {
 	margin: 0px;
 	padding: 0px;
+  box-sizing:border-box;
 }
 html {
   font-size: 16px;
@@ -38,8 +39,16 @@ hr {
   margin-block-end: 0em;
   border-width: 0px;
 }
-@col : #F67555;
-
+h2 {
+  font-family: 'Termina';
+  font-weight: 700;
+}
+@colDark : #365B58;
+@colYell : #EBEFA5;
+@colPink : #FFF9EF;
+.dflex {
+  .flex;
+}
 .transition(@a: 0.4s) {
   -webkit-transition: all @a;
   -moz-transition: all @a;
@@ -71,4 +80,4 @@ hr {
 //~"calc(100% - 800px)";
 
 //.nav li:not(:last-child) {border-right: 1px solid #666;} удаляем у последнего элемента бордер
- //<button class="mob"><span></span></button>
+
