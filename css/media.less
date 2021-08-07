@@ -8,7 +8,7 @@
     }
 }
 /*-------------------------------------------*/
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 800px) {
     .caruselSection {
         display: none;
     }
@@ -149,10 +149,31 @@
     .tdHide {
         display: none !important;
     }
-
+    .mainProduct {
+        max-width: 30%;
+    }
+    .faqSection__img {
+        .flex(center, center);
+        min-height: auto;
+        padding-top: 0;
+        height: 80vh;
+        .product__title {
+            margin: 0 auto 90px;
+            &::before {
+                height: 30px;
+            }
+        }
+    }
+    .stick {
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 /*-------------------------------------------*/
 @media only screen and (max-width : 600px) {
+    nav {
+        padding: 12px 20px;
+    }
     .navHeader {
         display: none;
     }
@@ -308,10 +329,13 @@
         order: 2;
     }
     .footerInfo  {
+        order: 3;
         svg {
             position: absolute;
-            right: 10px;
+            right: 20px;
             top: 33px;
+            width: 20px;
+            height: 20px;
         }
     }
     .nav__politic {
@@ -338,7 +362,7 @@
         margin-top: 30px;
     }
     .whySectionItem {
-        padding: 50px 40px;
+        padding: 50px 30px;
     }
     .whySection__it_moods {
         height: 611px;
@@ -406,6 +430,54 @@
             svg {
                 margin-left: 10px;
             }
+        }
+    }
+    .mainProduct {
+        max-width: 100%;
+    }
+    .feedSection {
+        padding:0px 0px 50px;
+    }
+    .feedSection__img {
+        margin-bottom: 70px;
+    }
+    .feedSection__text {
+        font-size: 18px;
+        padding: 0 40px;
+    }
+    .fotos__item {
+        img {
+            width: 95%;
+            height: 300px;
+        }
+    }
+    .whySection__it_moodsWR {
+        padding-top: 50px;
+        height: 87%;
+        .section__title {
+            font-size: 32px;
+        }
+    }
+    .moodsDEsc {
+        max-width: 100%;
+        margin: 0 auto 40px;
+        padding: 0 18px;
+        font-weight: bold;
+    }
+    .whySectionItem__block {
+        p {
+            font-weight: bold;
+        }
+    }
+    .ourStorySection  {
+        .product__title {
+            margin-bottom: 70px;
+            font-size: 28px;
+        }
+    }
+    .storySection__item:nth-child(2) {
+        .storySection__img {
+            top: 223px;
         }
     }
 }
