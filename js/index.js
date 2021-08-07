@@ -268,18 +268,6 @@ slickify2();
           }
         })
        }
-    } else {
-      if (window.pageYOffset > 0 && window.pageYOffset < 500) { // 33px - высота "плашки"
-
-        stick.forEach(el => {
-
-          if (pageYOffset < 200) {
-            el.style.top = `100px`;
-          } else {
-            el.style.top = `${pageYOffset}px`;
-          }
-        })
-       }
     }
 
 
